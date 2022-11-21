@@ -23,10 +23,13 @@ document_date_year=$(date +%Y)
 document_git_tag=$(git describe --tags --abbrev=0)
 
 # Load dot env file with variables
-set -a
-source .env
-set +a
-
+if [ $CI ]; then
+  dontenv .env
+else
+  set -a
+  source .env
+  set +a
+fi
 
 ################################################################################
 ## Environment specific replacements commands
