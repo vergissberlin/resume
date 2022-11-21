@@ -110,30 +110,32 @@ jobs:
     steps:
       - name: Step 1 - Checkout sources
         uses: actions/checkout@v2
-      - name: Step 2 - Create temporary folders
+      - name: Step 2 - Read dotenv vars
+        uses: xom9ikk/dotenv@v2
+      - name: Step 4 - Create temporary folders
         run: |
           mkdir -p Results
           mkdir -p Temp
-      - name: Step 3 - Generate the documents using Docker
+      - name: Step 4 - Generate the documents using Docker
         run: |
           ./Scripts/build.sh
           ls -lisah Results
 
-      - name: Step 4.1 - Upload the single PDF Introduction artifact
+      - name: Step 5.1 - Upload the single PDF Introduction artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf-introduction
           path: Results/andrelademann-introduction.pdf
           if-no-files-found: error
           retention-days: 12
-      - name: Step 4.2 - Upload the single PDF CV artifact
+      - name: Step 5.2 - Upload the single PDF CV artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf-cv
           path: Results/andrelademann-curriculum-vitae.pdf
           if-no-files-found: error
           retention-days: 12
-      - name: Step 4.3 - Upload the single PDF Portfolio artifact
+      - name: Step 5.3 - Upload the single PDF Portfolio artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf-portfolio
@@ -141,14 +143,14 @@ jobs:
           if-no-files-found: error
           retention-days: 12
 
-      - name: Step 5.1 - Upload the PDF artifact
+      - name: Step 6.1 - Upload the PDF artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf
           path: Results/resume-andrelademann.pdf
           if-no-files-found: error
           retention-days: 12
-      - name: Step 5.2 - Upload the EPUB artifact
+      - name: Step 6.2 - Upload the EPUB artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-epub
