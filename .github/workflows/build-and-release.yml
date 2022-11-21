@@ -59,7 +59,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf/andrelademann-introduction.pdf
+          asset_path: ./resume-pdf-introduction/andrelademann-introduction.pdf
           asset_name: andrelademann-introduction.pdf
           asset_content_type: application/pdf
       - name: Step 3.2 Upload CV PDF Release Asset
@@ -69,7 +69,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf/andrelademann-curriculum-vitae.pdf
+          asset_path: ./resume-pdf-curriculum-vitae/andrelademann-curriculum-vitae.pdf
           asset_name: andrelademann-curriculum-vitae.pdf
           asset_content_type: application/pdf
       - name: Step 3.3 Upload Portfolio PDF Release Asset
@@ -79,7 +79,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf/andrelademann-portfolio.pdf
+          asset_path: ./resume-pdf-portfolio/andrelademann-portfolio.pdf
           asset_name: andrelademann-portfolio.pdf
           asset_content_type: application/pdf
 
@@ -117,14 +117,38 @@ jobs:
       - name: Step 3 - Generate the documents using Docker
         run: |
           ./Scripts/build.sh
-      - name: Step 4.1 - Upload the PDF artifact
+          ls -lisah Results
+
+      - name: Step 4.1 - Upload the single PDF Introduction artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-introduction
+          path: Results/andrelademann-introduction.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 4.2 - Upload the single PDF CV artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-cv
+          path: Results/andrelademann-curriculum-vitae.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 4.3 - Upload the single PDF Portfolio artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-portfolio
+          path: Results/andrelademann-portfolio.pdf
+          if-no-files-found: error
+          retention-days: 12
+
+      - name: Step 5.1 - Upload the PDF artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-pdf
           path: Results/resume-andrelademann.pdf
           if-no-files-found: error
           retention-days: 12
-      - name: Step 4.2 - Upload the EPUB artifact
+      - name: Step 5.2 - Upload the EPUB artifact
         uses: actions/upload-artifact@v3
         with:
           name: resume-epub
