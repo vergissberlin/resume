@@ -4,11 +4,13 @@
 
 ## Contact
 
-- [Email](mailto:somel@where.io)
-- [Phone](tel:+41791234567)
-- [Address](https://www.google.com/maps/place/Some+Where+Street+123,+1234+Some+Where,+Switzerland)
-- [Website](https://www.example.ch)
-- [GitHub](https://github.com/example)
-- [LinkedIn](https://www.linkedin.com/in/example/)
-- [Xing](https://www.xing.com/profile/example/cv)
+Zu erreichen bin ich unter folgenden Kontaktdaten:
 
+- [E-Mail](mailto:vergissberlin@gmail.com)
+- [Addresse](https://goo.gl/maps/9UaM21T2JXA6CAPB9)
+- [Blog](https://blog.andrelademann.de)
+- [GitHub](https://github.com/vergissberlin)
+- [LinkedIn](https://www.linkedin.com/in/andre-lademann/)
+- [Xing](https://www.xing.com/profile/Andre_Lademann/cv)
+
+Eine aktuelle Version der Dokumente erhalten Sie auf [GitHub](https/github.com/vergissberlin/resume).

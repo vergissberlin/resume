@@ -3,7 +3,7 @@ from: markdown
 listings: true
 dpi: 75
 variables:
-  lang: en
+  lang: de
   fontsize: 10pt
   toc-own-page: true
   footnotes-pretty: true

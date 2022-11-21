@@ -3,7 +3,7 @@ title:
   - type: main
     text: Resume
   - type: subtitle
-    text: Johanna Doe
+    text: André Lademann
 subject: "Consultant, Architect, Developer, Trainer"
 keywords:
   - Resume
@@ -13,14 +13,14 @@ keywords:
 lang: "en"
 creator:
   - role: author
-    text: Johanna Doe
+    text: André Lademann
 identifier:
   - scheme: DOI
     text: doi:10.234234.234/33
 author:
-  - Johanna Doe
+  - André Lademann
 
 belongs-to-collection: resume
-description: Application document for Johanna Doe
+description: Application document for André Lademann
 publisher:  vergissberlin
-rights: © 2022 Johanna Doe, CC BY-NC
+rights: © 2022 André Lademann, CC BY-NC

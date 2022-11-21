@@ -45,4 +45,4 @@ $sedcmd "s/REPLACE_NAME/$(echo $RESUME_NAME | sed 's/ /\\ /g')/g" $1
 $sedcmd "s/REPLACE_USERNAME/$RESUME_USERNAME/g" $1
 
 # Add "\newpage" in the line before each heading 1
-sed -i '' $'s/^# /\\\n\\\newpage\\\n\\\n# /g' $1
+sed -i '' $'s/^# /\\\n\\newpage\\\n\\\n# /g' $1

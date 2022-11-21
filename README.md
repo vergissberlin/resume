@@ -1,8 +1,8 @@
 # Pandoc with GitHub actions example
 
-[![GitHub all releases](https://img.shields.io/github/downloads/vergissberlin/resume-template/total?style=for-the-badge)](https://github.com/vergissberlin/resume-template/releases) 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/vergissberlin/resume-template?style=for-the-badge)](https://github.com/vergissberlin/resume-template/releases/latest) 
-[![CV - Download](https://img.shields.io/badge/CV-Download-2ea44f?style=for-the-badge)](https://github.com/vergissberlin/resume-template/releases)
+[![GitHub all releases](https://img.shields.io/github/downloads/vergissberlin/resume/total?style=for-the-badge)](https://github.com/vergissberlin/resume/releases) 
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/vergissberlin/resume?style=for-the-badge)](https://github.com/vergissberlin/resume/releases/latest) 
+[![CV - Download](https://img.shields.io/badge/CV-Download-2ea44f?style=for-the-badge)](https://github.com/vergissberlin/resume/releases)
 
 > This repository is a template to create your professional resume as PDF and EPUB with Pandoc, the Eisvogel template and a GitHub Actions.
 
@@ -10,12 +10,12 @@
 
 ## Documents
 
-| View                                                 | Download                                                             | 
-|------------------------------------------------------|----------------------------------------------------------------------|
-| [📄 Introduction](Content/0-introduction.md)         | [📄 PDF](https://github.com/vergissberlin/resume-template/releases/latest) |
-| [📄 Curriculum Vitae](Content/1-curriculum-vitae.md) | [📄 PDF](https://github.com/vergissberlin/resume-template/releases/latest) |
-| [📄 Profile](Content/2-portfolio.md)                 | [📄 PDF](https://github.com/vergissberlin/resume-template/releases/latest) |
-| [📄 Contact](Content/3-contact.md)                   | [📄 PDF](https://github.com/vergissberlin/resume-template/releases/latest) |
+| View                                                 | Download                                                          | 
+|------------------------------------------------------|-------------------------------------------------------------------|
+| [📄 Introduction](Content/0-introduction.md)         | [📄 PDF](https://github.com/vergissberlin/resume/releases/latest) |
+| [📄 Curriculum Vitae](Content/1-curriculum-vitae.md) | [📄 PDF](https://github.com/vergissberlin/resume/releases/latest) |
+| [📄 Profile](Content/2-portfolio.md)                 | [📄 PDF](https://github.com/vergissberlin/resume/releases/latest) |
+| [📄 Contact](Content/3-contact.md)                   | [📄 PDF](https://github.com/vergissberlin/resume/releases/latest) |
 
 ---
 

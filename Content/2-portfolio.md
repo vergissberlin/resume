@@ -2,128 +2,384 @@
 
 > [Introduction](./0-introduction.md) | [CV](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Contact](3-contact.md)
 
-## Table of projects
+## Projektübersicht
 
-* [x] [Example 1](#-example-1) Example 1
-* [x] [Example 2](#-example-2) Example 2
-* [x] [Example 3](#-example-3) Example 3
-* [x] [Other projects](#-other-projects) I am proud of 
+- **IoT**
+    - [CoffeeBin](#-CoffeeBin) Datenvisualisierung und Analytics
+    - [Digitaler Agenturkicker](#-Digitaler-Agenturkicker) IoT Multichannel
+
+- **App development**
+    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
+    - [Tap!Tap!](#-tap-tap) App development
+    - [CamFight](#-CamFight) Mobile Web App
+
+- **Web development**
+    - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
+    - [dynamo-dresden.de](#-dynamo-dresdende) High Performance Web Application
+    - [Blugento](#-blugento) Docker, Marketing Automation, AWS
+
+- **Desktop** (PWA)
+    - [KiTa Tagesplaner](#-KiTa-Tagesplaner) PWA App
+
+- **CICD**
+    - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CICD, Cloud (AWS, Azure)
+    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
+
+- **[Weitere Projekte](#-Weitere-Projekte)**
+    - [Bashlight](#-Bashlight) Commandline enhancer
 
 ---
 
 ## Consulting
 
-### [[↑](#table-of-projects)] Example 1
+
+### [[↑](#projektübersicht)] KiTa Tagesplaner
 
 _2020 - 2021_
 
-![Example 1](Media/Portfolio/example-1.jpg)
+![KiTa Tagesplaner](Media/Portfolio/kita-tagesplaner.png)
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
-quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
-magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,[fastify](https://www.fastify.io/)!
+Erzieherinnen und Erziehern soll ein Werkzeug an die Hand gegeben werden, um den Tagesablauf in der Kita mit Bildern zu
+beschreiben. Die Bilder können per Drag-and-Drop ausgewählt und sortiert werden. Zusätzliche Textfelder können eingefügt
+werden.
 
-**My tasks:** Full stack development, project management, software architecture, customer support.
+Die **Technologie-Highlights** sind *Vue.js* im Frontend mit *jspdf* für die Erstellung von PDFs. Es handelt sich um
+eine einseitige Anwendung, die ohne Internetverbindung genutzt werden kann und auf Desktop-Geräten installierbar ist.
+Die Anwendung erkennt den bevorzugten Lichtmodus des Systems und ändert das Styling in den *Dunkelmodus*, wenn dieser
+aktiviert ist. Sie verwendet benutzerdefinierte Eigenschaften. Für das Backend habe ich auch eine *REST API* mit *
+OpenAPI* erstellt. [fastify](https://www.fastify.io/) war meine Wahl für das Framework.
 
-| Technology Highlights |                                               |
-|-----------------------|-----------------------------------------------|
-| [Vue.JS][vue.js]      | Mobile App with the Vuetify Component Library |
-| [fastify][fastify]    | Backend Framework for NodeJS                  |
-| [jspdf][jspdf]        | pipeline tool for CI/CD                       |
-| [OpenAPI][openapi]    | REST API generation and documentation         |
-| [Heroku][heroku]      | Deployment pipeline for a REST API            |
+**Meine Aufgaben:** Full-Stack-Entwicklung, Projektmanagement, Software-Architektur, Kundenbetreuung.
 
-| Description               | Links                                                            |
-|---------------------------|------------------------------------------------------------------|
-| App                       | <https://kita-tagesplaner.onrender.com>                          |
-| App Repository            | <https://github.com/NULLzuEINS/kindergarten-day-planner-app>     |
-| Repository of the Service | <https://github.com/NULLzuEINS/kindergarten-day-planner-service> |
+| Technik Highlights                 |                                              |
+|------------------------------------|----------------------------------------------|
+| [Vue.JS][vue.js]                   | Mobile App mit der Vuetify Component Library |
+| [fastify][fastify]                 | Backend-Framework für NodeJS                 |
+| [jspdf][jspdf]                     | als Pipeline-Tool für CI/CD                  |
+| [OpenAPI][openapi]                 | REST-API-Generierung und Dokumentation       |
+| [Heroku][heroku]                   | Deployment pipeline für eine REST API        |
+
+| Links                              |                                                                  |
+|------------------------------------|------------------------------------------------------------------|
+| App                                | <https://kita-tagesplaner.onrender.com>                          |
+| Repository der App                 | <https://github.com/NULLzuEINS/kindergarten-day-planner-app>     |
+| Repositorie des Service            | <https://github.com/NULLzuEINS/kindergarten-day-planner-service> |
 
 
-### [[↑](#table-of-projects)] Example 2
-
-_2019 - 2021_
-
-![Example 2](Media/Portfolio/example-2.jpg)
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
-quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-
-**My tasks:** Full stack development, project management, software architecture, customer support.
-
-| Technology Highlights |                                               |
-|-----------------------|-----------------------------------------------|
-| [Vue.JS][vue.js]      | Mobile App with the Vuetify Component Library |
-| [fastify][fastify]    | Backend Framework for NodeJS                  |
-| [jspdf][jspdf]        | pipeline tool for CI/CD                       |
-| [OpenAPI][openapi]    | REST API generation and documentation         |
-| [Heroku][heroku]      | Deployment pipeline for a REST API            |
-
-| Description               | Links                                |
-|---------------------------|--------------------------------------|
-| App                       | <https://example.onrender.com>       |
-| App Repository            | <https://github.com/example/project> | 
-
-## Development
-
-### [[↑](#table-of-projects)] Example 3
-
-_2019 - 2021_
-
-![Example 3](Media/Portfolio/example-3.jpg)
-
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
-natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
-Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
-Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem
-quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id,
-
-**My tasks:** Full stack development, project management, software architecture, customer support.
-
-| Technology Highlights |                                               |
-|-----------------------|-----------------------------------------------|
-| [Vue.JS][vue.js]      | Mobile App with the Vuetify Component Library |
-| [fastify][fastify]    | Backend Framework for NodeJS                  |
-| [jspdf][jspdf]        | pipeline tool for CI/CD                       |
-| [OpenAPI][openapi]    | REST API generation and documentation         |
-| [Heroku][heroku]      | Deployment pipeline for a REST API            |
-
-| Description               | Links                                |
-|---------------------------|--------------------------------------|
-| App                       | <https://example.onrender.com>       |
-| App Repository            | <https://github.com/example/project> | 
+## Projektleitung
 
 
-## Further projects
+### [[↑](#projektübersicht)] AIDA board portal
 
-… I am proud of
+_2013-2016_
 
-### [[↑](#table-of-projects)] Development
+![AIDA Bordportal](Media/Portfolio/aida-bordportal.png)
 
-| Projekt                                                                          |                                                   |
-|:---------------------------------------------------------------------------------|:--------------------------------------------------|
+Das AIDA Bordportal ist auf AIDA Schiffen installiert und dient Gästen und Besatzung zur Orientierung und zur Buchung
+von Ausflügen und Restaurantplätzen. Es ist optimiert für TV, Mobile und spezielle Displays in den Gängen.
+
+**Meine Aufgaben** waren die Team- und Projektleitung, die Installation der Software auf dem Schiff und die Erstellung
+eines Demosystems.
+
+Die **Technologie-Highlights** sind die Unterstützung von *Low-Power-Hardware* (LG TV), *Kartenleser* zum Einloggen in
+Benutzerkonten, Bedienung über *Fernbedienung*, Erstellung und Aktualisierung einer Chrome-Erweiterung aus der Ferne,
+*verschiedene APIs* auf dem Schiff (Restaurants, Ausflüge, Terminbuchungen …)
+
+| Technologische Highlights          |                                    |
+|------------------------------------|------------------------------------|
+| [Docker-Registry][docker-registry] | auf GitLab                         |
+| [Docker Compose][docker-compose]   | für verschiedene Environments      |
+| [AWS ECS][aws-ecs]                 | für das Container-Deployment       |
+| [AWS EC2][aws-ec2]                 | für das Container-Deployment       |
+| [AWS EFS][aws-efs]                 | zum verteilten Speichern von Daten |
+| [AWS RDS][aws-rds]                 | zum Datenbank-Deployment           |
+| [Concourse CI][concourse-ci]       | als Pipeline tool für CI/CD        |
+
+| Links |                                                         |
+|-------|---------------------------------------------------------|
+| Demo  | <https://nr:reiseberater@reiseberater2go.herokuapp.com> |
+
+
+
+### [[↑](#projektübersicht)] dynamo-dresden.de
+
+_2014 - 2015_
+
+![Dynamo Dresden Website](Media/Portfolio/dynamo-dresden.png)
+
+Als technischer Leiter war ich für die Planung verantwortlich. Ich war ein Teil des Pitches.
+Des Weiteren war ich verantwortlich für Lasttests und Leistungsverbesserungen.
+
+| Technologische Highlights                |                         |
+|------------------------------------------|-------------------------|
+| [Varnish][varnish]                       | Reverse Proxy           |
+| [Edge Side Includes][edge-side-includes] | Edge Side Includes      |
+| [Load Testing][jmeter]                   | Load Testing mit jMeter |
+| [TYPO3][typo3]                           | TYPO3 CMS               |
+
+| Links                                                     |                                                              |
+|:----------------------------------------------------------|--------------------------------------------------------------|
+| Website                                                   | <https://www.dynamo-dresden.de>                              |
+| Chrome Extensions Dynamo                                  | <https://chrome.google.com/webstore/search/dynamo%20dresden> |
+
+
+## Software Developement
+
+### [[↑](#projektübersicht)] LEJ Nachbarn App
+
+_2022_
+
+![LEJ Nachbarn App](Media/Portfolio/lejn-store-ios.png)
+
+Der Kunde, Flughafen Leipzig/Halle suchte eine Möglichkeit mit seinen direkten Nachbarn auf digitalem Weg ins Gespräch
+zu kommen. Mein Part war die Umsetzung der App-Variante. **React-Native** zeigt hier seine Stärken, da die App für
+iOS und Android entwickelt werden konnte und somit die Kosten für die Entwicklung deutlich gesenkt werden konnten.
+
+Durch das Senden von Push-Benachrichtigungen können die Nutzer über neue Nachrichten informiert werden. Die App ist
+in der Lage, die Benachrichtigungen auch im Hintergrund zu empfangen und zu verarbeiten.
+
+Die **Technologie-Highlights** Ich habe *React-Native* mit *Expo* (https://expo.dev/) verwendet, um die App zu
+erstellen. Ich habe viel über die Richtlinien/Anforderungen des *Google Play Store* gelernt.
+
+![LEJN Pipeline](Media/Portfolio/lejn-pipeline.png)
+
+Teil des Projektes war die Erstellung einer CI/CD-Pipeline. Die Pipeline habe ich mit GitLab CI erstellt.
+Sie enthält die folgenden Schritte:
+
+1. Build der App
+2. Testen der App
+3. Deployment der App auf Expo _(Bereitstellung einer Review-App bei Merge-Requests)_
+4. Deployment der App auf Google Play Store
+5. Deployment der App auf Apple App Store
+
+
+| Technologische Highlights              |                                  |
+|----------------------------------------|----------------------------------|
+| [React Native][react-native]           | auf GitLab                       |
+| [Expo][expo]                           | Zur Appentwicklung im Browser    |
+| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung   |
+| Push Benachrichtigungen                | Push Benachrichtigungen mit Expo |
+
+| Links             |                                                                        |
+|-------------------|------------------------------------------------------------------------|
+| Website           | <https://taptap.andrelademann.de>                                      |
+| Repository        | <https://github.com/vergissberlin/tap-tap->                            |
+| Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
+| Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
+
+
+### [[↑](#projektübersicht)] Tap! Tap!
+
+_2020_
+
+![Tap! Tap! Play store](Media/Portfolio/tap-tap.png)
+
+Dies ist ein **React-Native** Game-Experiment. Ein Bildschirm - zwei Spieler. Mit jedem Klick auf den Button wird der
+Button größer und der Button des Gegners kleiner. Man gewinnt, wenn der eigene Button die gesamte Spielfläche abdeckt.
+Inspiriert wurde ich von einem Spiel, das wir in der Schule auf unseren Taschenrechnern gespielt haben.
+
+Die **Technologie-Highlights** Ich habe *React-Native* mit *Expo* (https://expo.dev/) verwendet, um die App zu
+erstellen. Ich habe viel über die Richtlinien/Anforderungen des *Google Play Store* gelernt.
+
+| Technologische Highlights              |                                |
+|----------------------------------------|--------------------------------|
+| [React Native][react-native]           | auf GitLab                     |
+| [Expo][expo]                           | Zur Appentwicklung im Browser  |
+| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung |
+
+| Links             |                                                                          |
+|-------------------|--------------------------------------------------------------------------|
+| Website           | <https://taptap.andrelademann.de>                                        |
+| Repository        | <https://github.com/vergissberlin/tap-tap->                              |
+| Google Play Store | <https://play.google.com/store/apps/details?id=com.vergissberlin.taptap> |
+
+### [[↑](#projektübersicht)] Bashlight
+
+![Bashlight](Media/Portfolio/bashlight.png)
+
+Eine Erweiterung der Kommandozeilen-Eingabeaufforderung, die unter anderem den Git-Zweig und den Git-Status anzeigt. In
+der Zwischenzeit gibt es Andere, bessere OpenSource-Projekte zu diesem Thema. Aus diesem Grund habe ich das Projekt
+archiviert.
+
+| Technologische Highlights |                                    |
+|---------------------------|------------------------------------|
+| [bash scripting][bash]    | Prompt, Git, Testing,  Auto update |
+
+| Links         |                                              |
+|---------------|----------------------------------------------|
+| Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
+| Repository    | <https://github.com/vergissberlin/bashlight> |
+
+
+### [[↑](#projektübersicht)] CoffeeBin
+
+_2020_
+
+![img.png](Media/Portfolio/coffee-bin-nodered.png)
+
+Big-Data-Applikation zur Erfassung von Kaffee-Trink-Daten bei Netresearch DTT GmbH. Die Daten werden in einer zeitbasierten Datenbank gespeichert.
+Das Interessante daran ist nun, welche Schlüsse man aus den zunächst banal erscheinenden Daten ziehen kann. Setzt man die Daten in Beziehung zu anderen Daten wie der Anzahl der Tickets im JIRA, lässt sich so eventuell ein Stresslevel ablesen.
+Mit Fachgebiet der Datenanalyse beschäftige ich mich hauptsächlich in meiner Freizeit.
+
+**Technologische Highlights** neben der Entwicklung in C++ zur Erfassung der Daten, kam hier Node-RED zur Steuerung und
+verarbeitung der Datenströme zum Einsatz. Die Speicherung erfolgt in der zeitbasierenden Datenbank InfluxDB und die
+Visualiserung mit Grafana.
+
+![Camp Fight Prototyp](Media/Portfolio/coffee-bin.png)
+
+| Technologische Highlights         |                                                                                                      |
+|-----------------------------------|------------------------------------------------------------------------------------------------------|
+| [Tasmota][tasmota]                | C++ zur Erfassung der Daten                                                                          |
+| [NodeRED][node-red]               | zur Steuerung von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat. |
+| [InfluxDB][influxdb]              | zeitbasierende Speicherung der Daten                                                                 |
+| [Grafana][grafana]                | zur Visualisierung der Daten                                                                         |
+
+### [[↑](#projektübersicht)] CamFight
+
+_2017_
+
+![Camp Fight Prototyp](Media/Portfolio/cam-fight.png)
+
+WebApp erstellt für ein Team-Event. Es handelt sich um eine digitalisierte Form
+einer [Fotorallye](http://www.games-wiki.org/wiki/Photo_rally/). Die Teilnehmer werden nach dem Zufallsprinzip einem
+Team zugewiesen und müssen innerhalb einer bestimmten Zeit Aufgaben lösen. Das Ergebnis jeder Aufgabe ist immer ein
+Foto, das dann am Ende zum Sieger gekürt werden kann. Entstanden als F&E-Projekt innerhalb einer Woche.
+
+Das Besondere dabei war, dass wir zu zweit nur 4 Tage Zeit hatten, um die App zu realisieren. **Rapid Prototyping** mit
+Papierprototypen und Figma direkt mit dem Kunden. **Meine Aufgaben waren** die Erstellung der App, des Frontends, das
+Projektmanagement, die Softwarearchitektur und der Kundensupport.
+
+**Technologische Highlights** waren Vue.js im Frontend mit Vuetify als Komponentenbibliothek, surge.sh statischer
+Dateiserver mit TravisCI Deployment-Automatisierung und REST API mit PHP-Backend und PostMan als Dokumentationstool und
+Amazon S3 für Benutzer-Uploads. Die App war auf mobilen Geräten installierbar. Derzeit gibt es keine aktive
+Herausforderung.
+
+| Technologische Highlights        |                                                   |
+|----------------------------------|---------------------------------------------------|
+| [Heroku][heroku]                 | Deployment der REST API                           |
+| [Vue.JS][vue.js]                 | Mobile App mit der Vuetify Komponenten-Bibliothek |
+| [Vuetify][vuetify]               | Komponenten-Bibliothek für vue.JS                 |
+| [AWS S3][aws-s3]                 | Zum Upload der Fotos durch die Nutzer             |
+| [Travis CI][travis-ci]           | als Pipeline tool für CI/CD                       |
+| [Postman][postman]               | API Dokumentation                                 |
+
+| Links                            |                                              |
+|----------------------------------|----------------------------------------------|
+| App                              | <https://cam-fight.surge.sh>                 |
+| Repository                       | <https://github.com/vergissberlin/cam-fight> |
+| Prototype                        | <https://marvelapp.com/prototype/ahg35jj>    |
+
+### [[↑](#projektübersicht)] Digitaler Agenturkicker
+
+_2015 - 2016_
+
+![](Media/Portfolio/piball-header.png)
+![](Media/Portfolio/piball.png)
+
+Die Digitalisierung des Agentur-Kickers ist ein *Multichannel-Experiment* welches im Rahmen meiner Research &
+Development Zeit bei der [Netresearch DTT GmbH][netresearch] entstanden ist. Ziel war es möglichst viele Ausspielkanäle
+mit einer zentralen Datenbasis zu bedienen. Zusätzliche Herausforderungen waren hier die Hardwarekomponenten und das
+Flottenmanagement mit Belana für dockerisierte Anwendungen. Im Rahmen der Entwicklung habe ich mich mit vielen neuen
+Technologien auseinandergesetzt was mir große Freude bereitete. Es steht daher auch für mich ein großes Interesse an der
+Entwicklung von Software und Hardware.
+
+| Technologische Highlights                                 |                                                                                                                                                                    |
+|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Docker][docker]                                          | auf einer ARM Architektur                                                                                                                                          |
+| [Vue.JS][vue.js]                                          | Mobile App mit der Vuetify Komponenten-Bibliothek                                                                                                                  |
+| [Python][python]                                          | zum Ansprechen von Hardware-Komponenten                                                                                                                            |
+| [Google Firebase][google-firebase]                        | zur Authentifizierung und Nutzung der Echtzeit-Datenbank                                                                                                           |
+| [Google Chrome Extension][google-chrome-extension-piball] | zur Anzeige der Ergebnisse direkt im Browser und zum Auslösen von Notifications. Verfügbar im [Chrome Web Store][google-chrome-extension-piball].                  |
+| [Ionic Framework][ionic-framework]                        | zur Erstellung einer Native App fpr iOS und Androidm                                                                                                               |
+| [Belana.io][belana.io]                                    | zum Flottenmanagement der dockerisierten Anwendung und Node-RED zum Steuern von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat. |
+| [NodeRED][node-red]                                       | zur Steuerung von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat.                                                               |
+
+[google-chrome-extension-piball]: https://chrome.google.com/webstore/detail/piball/ejahllipniehmpdjkfjmhhadeeamdebh?authuser=1&gclid=Cj0KCQiAqvaNBhDLARIsAH1Pq53cYjAiaEGVxuANGCggDpF6nSdgcij-7fla8VVSs3KuESNg-YiemskaAgZREALw_wcB
+
+| Links                                                     |                                                      |
+|-----------------------------------------------------------|------------------------------------------------------|
+| Präsentation                                              | <https://prezi.com/khpva--2yv25/foosball/?present=1> |
+| GitHub Repository                                         | <https://github.com/vergissberlin/piball>            |
+| Web interface                                             | <https://vivid-fire-2266.web.app>                    |
+
+
+### [[↑](#projektübersicht)] Blugento
+
+_2017 - 2018_
+
+![blugento](Media/Portfolio/blugento.png)
+
+Blugento ist ein Verwaltungssystem für Docker-Anwendungen. Hiermit ist es möglich auf entfernten Server Docker-Images
+starten, konfigurieren, anpassen, starten, aktualisieren und stoppen. Durch die eingebaute Web-Console ist es auch
+Möglich das System aus der Ferne zu debuggen.
+
+Environments können durch die Nutzer verwaltet werden. Die Server können in der Cloud oder lokal auf dem Server
+gestartet werden. Durch ein Benutzer-Rechte-System ist es möglich auch Kunden Zugriff auf die Anwendung zu gewähren.
+Durch _blugento_ können im Handumdrehen Demo-Instanzen hochgefahren werden, aber auch Systeme für den Live-Betrieb
+verwalten.
+
+| Technologische Highlights                                 |                                                                         |
+|-----------------------------------------------------------|-------------------------------------------------------------------------|
+| [Docker-API][docker]                                      | Zum Starten und Stoppen von Anwendungen auf Remote-Systemen             |
+| [Docker-Registry][docker-registry]                        | auf selbst-gehostetem GitLab                                            |
+| [Docker Compose][docker-compose]                          | für verschiedene Environments                                           |
+| [Concourse CI][concourse-ci]                              | als Pipeline tool für CI/CD                                             |
+| [GraphQL][graphql]                                        | Mit dem [Apollo.JS][apollojs] zur Bereitstellung nutzer-basierter Daten |
+| [Travis CI][travis-ci]                                    | als Pipeline tool für CI/CD                                             |
+| [Vue.JS][vue.js]                                          | Mobile App mit der Vuetify Komponenten-Bibliothek                       |
+| [Autopilot Marketing Automation][autopilot]               | Marketing-Automatisation und Nutzerunterstützung                        |
+| [Hubspot Marketing Automation][hubspot]                   | Marketing Funnel für Beta-Tester                                        |
+| [Sphinx][sphinx]                                          | Bereitstellung einer Dokumentation                                      |
+
+| Links                                                     |                            |
+|-----------------------------------------------------------|----------------------------|
+| Website                                                   | <https://blugento.com>     |
+| App                                                       | <https://app.blugento.com> |
+
+
+## DevOps
+
+### [[↑](#projektübersicht)] Universal Music – Shop Manager
+
+_2018-2019_
+
+![Universal Music](Media/Portfolio/umg.png)
+
+Mit der entwickelten Software ist es dem Kunden UMG möglich umgehend neue Magento Webshops für seine Klienten
+aufzusetzen und zu gestalten, ohne dazu auf Entwickler beauftragen zu müssen.
+
+Innerhalb eines internationalen Teams (Australien, USA, Indien) war ich für das Release-Management des von mir
+verwaltetet Docker-Basis-Images für die UMG Shops verantwortlich. Ich gab dem Kunden und dem Team eine eigene Version
+des Images mit einer eigenen Softwarebasis. Diese Software basiert auf
+der [Docker Compose](https://docs.docker.com/compose/overview/) und wurde mit einer eigenen Docker-Registry verwaltet.
+Die stetige Weiterentwicklung des dabei verwendeten Docker-Images gehörte zu meinen Aufgaben.
+
+Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Software.
+
+| Technologische Highlights          |                                    |
+|------------------------------------|------------------------------------|
+| [Docker-Registry][docker-registry] | auf GitLab                         |
+| [Docker Compose][docker-compose]   | für verschiedene Environments      |
+| [AWS ECS][aws-ecs]                 | für das Container-Deployment       |
+| [AWS EC2][aws-ec2]                 | für das Container-Deployment       |
+| [AWS EFS][aws-efs]                 | zum verteilten Speichern von Daten |
+| [AWS RDS][aws-rds]                 | zum Datenbank-Deployment           |
+| [Concourse CI][concourse-ci]       | als Pipeline tool für CI/CD        |
+
+| Links                              |                                  |
+|------------------------------------|----------------------------------|
+| Universal Music Group              | <https://www.universalmusic.com> |
+
+
+## [[↑](#projektübersicht)] Weitere Projekte
+
+… auf die ich stolz bin.
+
+| Projekt                                                                                |                                                   |
+|:---------------------------------------------------------------------------------------|:--------------------------------------------------|
 | [Node-RED mjml ↗](https://flows.nodered.org/node/@example/node-red-contrib-mjml) | Node-RED node zur Gestaltung von E-Mail templates |
 | [Node-RED say ↗](https://flows.nodered.org/node/@example/node-red-contrib-say)   | Node-RED node zur Ausgabe von Sprachnachrichten   |
+
 
 [apollojs]: https://www.apollographql.com/
 

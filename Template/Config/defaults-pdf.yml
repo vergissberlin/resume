@@ -9,13 +9,13 @@ columns: 2
 from: markdown
 to: pdf
 variables:
-  lang: en
+  lang: de
   titlepage: true
   titlepage-color: '7BDCB5'
-  titlepage-text-color: '66C3D2'
+  titlepage-text-color: 'ffffff'
   titlepage-rule-color: '8ED1FC'
-  titlepage-rule-height: 1
-  titlepage-background: 'Template/Backgrounds/background1.pdf'
+  titlepage-rule-height: 0
+  titlepage-background: 'Content/Media/Cover/Cover-pdf.jpg'
   page-background: 'Template/Backgrounds/background1.pdf'
   fontsize: 10pt
   logo-width: 64mm

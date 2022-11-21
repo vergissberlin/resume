@@ -2,22 +2,41 @@
 
 > [Introduction](./0-introduction.md) | [CV](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Contact](3-contact.md)
 
-![$REPLACE_NAME width=200](Media/avatar.svg)
-_REPLACE_NAME_
+![REPLACE_NAME](Media/andrelademann.png){ width=42% }
 
 A resume is like a [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction), you never know until you really inspect it!
 
-## About me
 
-I am a software developer with a passion for web development. I am currently working as a freelance developer and consultant. 
-I am also a member of the [Open Source Initiative](https://opensource.org/).
-My main focus is on the development of web applications and the integration of web technologies into existing systems.
-I am also interested in the development of mobile applications and the integration of web technologies into existing systems.
-I am also interested in the development of mobile applications and the integration of web technologies into existing systems.
+## Über mich
+
+Meine Interessen sind breit gestreut. Ich bin leidenschaftlicher **Software-Entwickler** mit einer Passion für Webentwicklung.
+In meiner Freizeit bastele ich mit **Mikrokontrollern** und experimentiere mit **IoT** und **DevOps**.
+In Meetups, Schulungen und Workshops teile ich meine Erfahrungen mit Anderen und helfe ihnen,
+ihre eigenen Projekte zu realisieren.
+**Es ist die Faszination für Software und Hardware, die mich immer wieder dazu bringt, mich in neue Technologien
+einzuarbeiten und mich mit anderen Menschen auszutauschen!** In meiner beruflichen Laufbahn hatte ich die Möglichkeit,
+mit internationalen Teams zu arbeiten und Projekte in verschiedenen Ländern zu realisieren.
+Im Bereich Marketing unterstütze ich dabei, Prozesse zu automatisieren und die Effizienz zu steigern und
+produziere auch selbst Inhalte in Bild, Text und Ton.
+
+**Meine Fähigkeiten sind:**
+1. Software-Entwicklung
+2. DevOps
+3. Consulting, Trainer, Speaker
+4. Marketing, SEO, Content-Produktion
+
+
+## Aufgabenschwerpunkte im Verlaufe der Zeit
+
+Im Verlaufe der Zeit haben sich meine Themenschwerpunkte des Öfteren verlagert.
+Die folgende Grafik visualisiert dies sehr gut.
+In letzter Zeit beschäftige ich mich mehr mit DevOps und App-Entwicklung.
+
+![Fokus-Schwerkunkte im Laufe der Zeit](Media/knowledge-focus-timeline.svg "Knowledge focus timeline"){ width=100% }
 
 ## Skills
 
-### Software development
+### Software Engineering
 
 - Web development
 - Web design
@@ -31,30 +50,22 @@ I am also interested in the development of mobile applications and the integrati
 - Web design
 - Web accessibility
 
-## Experience
+### Trainer & Speaker
 
-### Freelance developer and consultant
+- Software development
+- DevOps
 
-- 2019 - Present
-- [example.de](https://example.de)
-- [GitHub](https://github.com/example)
+### Marketing
 
-### Web developer
-
-- 2018 - 2019
-- [example.com](https://example.com)
-- [GitHub](https://github.com/example/example)
-
-## Main skills
-
-- Web development
-- Web design
-- Web accessibility
+- SEO
+- Analytics, BI
+- Content-Produktion
+- Automatisierung
 
 ## Buzzword bingo
 
-JavaScript, Load testing, Usability, Accessibility, VueJS, Docker, Node JS, Performance, ESI, Varnish reverse proxy, Extbase, Deployment, Google Chrome Extensions, Regressive testing, functional testing, acceptance testing, unit testing, bdd, Codeception, PWA, Ionic Framework, jQuery, jQueryUI, git, Continuous Integration, Concourse CI, socket.io, Firebase, TYPO3 CMS, Lighttpd, Nginx, Code Review, PHP, Internet of Things, Raspberry PI, NAS, Zanox,
-Semantic Web, RDF
+TypeScript, JavaScript, Usability, IaC, Accessibility, Vue.js, Docker, Node JS, Performance, ESI, Varnish reverse proxy, Extbase, Deployment, Google Chrome Extensions, Regressive testing, functional testing, acceptance testing, unit testing, bdd, Codeception, PWA, Ionic Framework, jQuery, jQueryUI, git, Continuous Integration, Concourse CI, Firebase, TYPO3 CMS, Nginx, PHP, IoT, Raspberry PI,
+Semantic Web, RDF, Looker, ETL, Load testing, Mobile App Development, Ansible, Vagrant, Crossplane
 
-> **⚠️ Please note** that this is not a complete list of all my skills.
-> Take a look at my [CV](./1-curriculum-vitae.md) and [portfolio](./2-portfolio.md) for more information.
+> **Mehr davon?** In meinem [CV](./1-curiculum-vitae.md) und [Portfolio](./2-portfolio.md) geh ich auf weitere Details ein.
+

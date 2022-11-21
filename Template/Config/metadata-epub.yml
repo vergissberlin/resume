@@ -3,17 +3,17 @@ title:
   - type: main
     text: Resume
   - type: subtitle
-    text: Johanna Doe
+    text: André Lademann
 creator:
   - role: author
-    text: Johanna Doe
+    text: André Lademann
 identifier:
   - scheme: DOI
     text: doi:10.234234.234/33
 belongs-to-collection: resume
 publisher: "Publisher: https://github.com/vergissberlin"
 lang: de
-rights: © 2022 Johanna Doe, CC BY-NC
+rights: © 2022 André Lademann, CC BY-NC
 ibooks:
   version: 1.0.0
   ipad-orientation-lock: portrait-only
