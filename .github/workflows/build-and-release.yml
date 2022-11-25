@@ -6,23 +6,97 @@ on:
       - '*'
 
 jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1 - Checkout sources
+        uses: actions/checkout@v2
+      - name: Step 2 - Read dotenv vars
+        uses: xom9ikk/dotenv@v2
+      - name: Step 3 - Create temporary folders
+        run: |
+          mkdir -p Results
+          mkdir -p Temp
+      - name: Step 3 - Generate the documents using Docker
+        run: |
+          ./Scripts/build.sh
+          ls -lisah Results
+
+      - name: Step 4.1 - Upload the single PDF Introduction artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-introduction
+          path: Results/${{ env.RESUME_FILENAME }}-introduction.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 4.2 - Upload the single PDF CV artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-curriculum-vitae
+          path: Results/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 4.3 - Upload the single PDF Portfolio artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf-portfolio
+          path: Results/${{ env.RESUME_FILENAME }}-portfolio.pdf
+          if-no-files-found: error
+          retention-days: 12
+
+      - name: Step 5.1 - Upload the PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-pdf
+          path: Results/resume-${{ env.RESUME_FILENAME }}.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 5.2 - Upload the EPUB artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: resume-epub
+          path: Results/resume-${{ env.RESUME_FILENAME }}.epub
+          if-no-files-found: error
+          retention-days: 12
+
   release:
     name: release – ${{ github.ref_name }}
     runs-on: ubuntu-latest
     needs:
       - build
     steps:
-      - name: Step 1.1 Download pdf artifact
+      - name: Step 1.1 - Checkout sources
+        uses: actions/checkout@v2
+      - name: Step 1.2 - Read dotenv vars
+        uses: xom9ikk/dotenv@v2
+
+      - name: Step 2.1 Download pdf artifact
         uses: actions/download-artifact@v2
         with:
           name: resume-pdf
           path: resume-pdf
-      - name: Step 1.2 Download epub artifact
+      - name: Step 2.2 Download epub artifact
         uses: actions/download-artifact@v2
         with:
           name: resume-epub
           path: resume-epub
-      - name: Step 2. Create Release
+      - name: Step 2.3 Download introduction artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume-pdf-introduction
+          path: ${{ env.RESUME_FILENAME }}-introduction
+      - name: Step 2.4 Download CV artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume-pdf-curriculum-vitae
+          path: ${{ env.RESUME_FILENAME }}-curriculum-vitae
+      - name: Step 2.5 Download portfolio artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: resume-pdf-portfolio
+          path: ${{ env.RESUME_FILENAME }}-portfolio
+      - name: Step 3. Create Release
         id: create_release
         uses: actions/create-release@v1
         env:
@@ -39,28 +113,29 @@ jobs:
 
             | PDF | EPUB |
             | --- | ---- |
-            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-andrelademann.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover for pdf" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-andrelademann.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover for epub" /></a> |
-            | [![Badge CV](https://img.shields.io/badge/Download_CV-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-andrelademann.pdf) | [![Badge Epub](https://img.shields.io/badge/Download_EPUB-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-andrelademann.epub) |
+            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover for pdf" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover for epub" /></a> |
+            | [![Badge CV](https://img.shields.io/badge/Download_CV-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.pdf) | [![Badge Epub](https://img.shields.io/badge/Download_EPUB-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.epub) |
             
             ##### Download single files
 
             | Document     | Download |
-            | ------------ | ---- |
-            | Introduction | [![Badge CV](https://img.shields.io/badge/Download_CV-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/andrelademann-introduction.pdf) | 
-            | CV | [![Badge CV](https://img.shields.io/badge/Download_CV-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/andrelademann-curriculum-vitae.pdf) | 
-            | Portfolio | [![Badge CV](https://img.shields.io/badge/Download_CV-100000?style=for-the-badge&logo=Adobe&logoColor=FFFFFF&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/andrelademann-portfolio.pdf) |
+            | ------------ | -------- |
+            | Introduction | [![Badge CV](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction.pdf) | 
+            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf) | 
+            | Portfolio    | [![Badge CV](https://img.shields.io/badge/DE-Portfoilo-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-portfolio.pdf) |
+
           draft: false
           prerelease: false
 
-      - name: Step 3.1 Upload Introduction PDF Release Asset
+      - name: Step 4.1 Upload Introduction PDF Release Asset
         id: upload-release-asset-pdf-introduction
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf-introduction/andrelademann-introduction.pdf
-          asset_name: andrelademann-introduction.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-introduction/${{ env.RESUME_FILENAME }}-introduction.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-introduction.pdf
           asset_content_type: application/pdf
       - name: Step 3.2 Upload CV PDF Release Asset
         id: upload-release-asset-pdf-cv
@@ -69,91 +144,37 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf-curriculum-vitae/andrelademann-curriculum-vitae.pdf
-          asset_name: andrelademann-curriculum-vitae.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-curriculum-vitae/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
           asset_content_type: application/pdf
-      - name: Step 3.3 Upload Portfolio PDF Release Asset
+      - name: Step 4.3 Upload Portfolio PDF Release Asset
         id: upload-release-asset-pdf-portfolio
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf-portfolio/andrelademann-portfolio.pdf
-          asset_name: andrelademann-portfolio.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-portfolio/${{ env.RESUME_FILENAME }}-portfolio.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-portfolio.pdf
           asset_content_type: application/pdf
 
-
-      - name: Step 4.1 Upload PDF Release Asset
+      - name: Step 5.1 Upload PDF Release Asset
         id: upload-release-asset-pdf
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf/resume-andrelademann.pdf
-          asset_name: resume-andrelademann.pdf
+          asset_path: ./resume-pdf/resume-${{ env.RESUME_FILENAME }}.pdf
+          asset_name: resume-${{ env.RESUME_FILENAME }}.pdf
           asset_content_type: application/pdf
-      - name: Step 4.2 Upload EPUB Release Asset
+      - name: Step 5.2 Upload EPUB Release Asset
         id: upload-release-asset-epub
         uses: actions/upload-release-asset@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-epub/resume-andrelademann.epub
-          asset_name: resume-andrelademann.epub
+          asset_path: ./resume-epub/resume-${{ env.RESUME_FILENAME }}.epub
+          asset_name: resume-${{ env.RESUME_FILENAME }}.epub
           asset_content_type: application/epub
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Step 1 - Checkout sources
-        uses: actions/checkout@v2
-      - name: Step 2 - Read dotenv vars
-        uses: xom9ikk/dotenv@v2
-      - name: Step 4 - Create temporary folders
-        run: |
-          mkdir -p Results
-          mkdir -p Temp
-      - name: Step 4 - Generate the documents using Docker
-        run: |
-          ./Scripts/build.sh
-          ls -lisah Results
-
-      - name: Step 5.1 - Upload the single PDF Introduction artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume-pdf-introduction
-          path: Results/andrelademann-introduction.pdf
-          if-no-files-found: error
-          retention-days: 12
-      - name: Step 5.2 - Upload the single PDF CV artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume-pdf-cv
-          path: Results/andrelademann-curriculum-vitae.pdf
-          if-no-files-found: error
-          retention-days: 12
-      - name: Step 5.3 - Upload the single PDF Portfolio artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume-pdf-portfolio
-          path: Results/andrelademann-portfolio.pdf
-          if-no-files-found: error
-          retention-days: 12
-
-      - name: Step 6.1 - Upload the PDF artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume-pdf
-          path: Results/resume-andrelademann.pdf
-          if-no-files-found: error
-          retention-days: 12
-      - name: Step 6.2 - Upload the EPUB artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: resume-epub
-          path: Results/resume-andrelademann.epub
-          if-no-files-found: error
-          retention-days: 12
