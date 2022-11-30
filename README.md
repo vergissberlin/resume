@@ -6,7 +6,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/vergissberlin/resume?style=for-the-badge)](https://github.com/vergissberlin/resume/releases/latest) 
 [![CV - Download](https://img.shields.io/badge/CV-Download-2ea44f?style=for-the-badge)](https://github.com/vergissberlin/resume/releases)
 
-![André Laserman CV](./Content/Media/Mock/Mock-1.png)
+[![André Laserman CV](./Content/Media/Mock/Mock-1.png)](Content/1-curriculum-vitae.md)
 
 ## Documents
 
