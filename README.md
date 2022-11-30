@@ -1,14 +1,16 @@
-# Pandoc with GitHub actions example
+# Resume - André Lademann
+
+
 
 [![GitHub all releases](https://img.shields.io/github/downloads/vergissberlin/resume/total?style=for-the-badge)](https://github.com/vergissberlin/resume/releases) 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/vergissberlin/resume?style=for-the-badge)](https://github.com/vergissberlin/resume/releases/latest) 
 [![CV - Download](https://img.shields.io/badge/CV-Download-2ea44f?style=for-the-badge)](https://github.com/vergissberlin/resume/releases)
 
-> This repository is a template to create your professional resume as PDF and EPUB with Pandoc, the Eisvogel template and a GitHub Actions.
-
-![My Example CV](./Content/Media/Mock/Mock-1.png)
+![André Laserman CV](./Content/Media/Mock/Mock-1.png)
 
 ## Documents
+
+You can view the documents directly here at GitHub, or download them as PDF/EBook.
 
 | View                                                 | Download                                                          | 
 |------------------------------------------------------|-------------------------------------------------------------------|
