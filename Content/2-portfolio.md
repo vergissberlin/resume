@@ -18,8 +18,9 @@
     - [dynamo-dresden.de](#-dynamo-dresdende) High Performance Web Application
     - [Blugento](#-blugento) Docker, Marketing Automation, AWS
 
-- **Desktop** (PWA)
+- **Desktop**
     - [KiTa Tagesplaner](#-KiTa-Tagesplaner) PWA App
+    - [EDEKA neue Kasse](#-edeka-neue-kasse) Kassen-Software für den Einzelhandel
 
 - **CICD**
     - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CICD, Cloud (AWS, Azure)
@@ -27,6 +28,7 @@
 
 - **[Weitere Projekte](#-Weitere-Projekte)**
     - [Bashlight](#-Bashlight) Commandline enhancer
+    - [EDEKA Distributed Tracing](#-edeka-distributed-tracing-mit-opentelemetry)
 
 ---
 
@@ -66,12 +68,35 @@ OpenAPI* erstellt. [fastify](https://www.fastify.io/) war meine Wahl für das Fr
 | Repositorie des Service            | <https://github.com/NULLzuEINS/kindergarten-day-planner-service> |
 
 
+
+### [[↑](#projektübersicht)] EDEKA Distributed Tracing mit OpenTelemetry
+
+_03/2023 – 10/2023​_, Projektleitung & Software Architect
+
+Der Kunde betreibt eine hohe Anzahl an verteilten Systemen durch die verschiedenste Fachprozesse laufen. Sei es in 
+der Warenwirtschaft, Personalverwaltung, oder dem Lagerbestand. Prozesse wie eine Preisänderung, oder eine Bestellung 
+nehmen einen langen Weg durch die Systeme. Ein Demo-Projekt aufzusetzen welches Innerhalb kürzester Zeit transparent 
+zu machen kann, wo es zu Problemen kommt, war Ziele dieses Projektes. Ermöglicht wird die durch Distributed Tracing. 
+Die implementierung OpenTelemetry hat sich hier zum Marktstandard entwickelt und ich konnte mit meiner Expertise dem 
+Kunden helfen diese Demo umzusetzen.​
+
+| Technik Highlights                 |                                                                                                                                              |
+|------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| [OpenTelementy][opentelemetry]     | OpenTelemetry ermöglicht verteiltes Tracing & Monitoring für Anwendungen.                                                                    |
+| [SAP ABAP][sap-abap]               | Programmiersprache für SAP-Systeme. Datenverarbeitung, Berichte, Schnittstellen.                                                             |
+| [SAP PI][sap-pi]                   | SAP PI (Process Integration): Integrierte Plattform für Daten- und Prozesskommunikation.                                                     |
+| [SAP RFC][sap-rfc]                 | RFC (Remote Function Call) in SAP: Kommunikationsmechanismus für den Aufruf von Funktionen zwischen verschiedenen SAP-Systemen.              |
+| [Java][java]                       | Ist auch eine Insel                                                                                                                          |
+| [Datadog][datadog]                 | Datadog: Cloud-Monitoring & Analyseplattform. Überwacht, alarmiert und optimiert die Leistung von Anwendungen.                               |
+| [Jaeger][jaeger]                   | Browserbasiertes Interface für die Visualisierung von Tracing-Daten. Erlaubt detaillierte Einblicke in Anwendungsperformance und -verhalten. |
+
+
 ## Projektleitung
 
 
 ### [[↑](#projektübersicht)] AIDA board portal
 
-_2013-2016_
+_2013-2016_, Projektleitung, Teamleiter
 
 ![AIDA Bordportal](Media/Portfolio/aida-bordportal.png)
 
@@ -124,6 +149,27 @@ Des Weiteren war ich verantwortlich für Lasttests und Leistungsverbesserungen.
 
 
 ## Software Developement
+
+
+### EDEKA Neue Kasse
+
+_03-2023 – 07-2024​_, Senior Software Engineer​ 
+
+Der Kunde ist verantwortlich für die Software von über 30.000 Kassen in Deutschland die nun eine völlig neue 
+Kassenanwendung bekommen sollen. Mit einer modernen Microservice-Architektur,  Usability Tests, Offlinefähigkeit 
+und Online-Services möchte der Kunde den Ansprüchen der Gegenwart entgegentreten. In einem großen Team, mit 
+verschiedenen Partnern wird eine neue Kassenlösung entwickelt und Schrittweise auf die Märkte ausgerollt. 
+Ich unterstützte dabei durch die Entwicklung das Userinterfaces, sowie bei der Weiterentwicklung der Micro-Services.​
+
+​| Technologische Highlights          |                                                                                                                                                            |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Dart][dart]                       | Programmiersprache von Google, für Web & Mobile. Kombiniert Klasse & Funktion, schnell & effizient. Entwicklerfreundlich, leicht lesbar, gute Performance. |
+| [Flutter][flutter]                 | Flutter, von Google entwickelt, ist ein UI-Toolkit für plattformübergreifende App-Entwicklung.                                                             |
+| [Java][java]                       | Ist auch eine Insel                                                                                                                                        |
+| [Datadog][datadog]                 | Datadog: Cloud-Monitoring & Analyseplattform. Überwacht, alarmiert und optimiert die Leistung von Anwendungen.                                             |
+| [OpenTelementy][opentelemetry]     | OpenTelemetry ermöglicht verteiltes Tracing & Monitoring für Anwendungen.                                                                                  |
+
+
 
 ### [[↑](#projektübersicht)] LEJ Nachbarn App
 
@@ -401,6 +447,8 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 [concourse-ci]: https://docs.concourse.ci/
 
+[datadog]: https://www.datadoghq.com/
+
 [docker]: https://www.docker.com/
 
 [docker-compose]: https://docs.docker.com/compose/
@@ -433,6 +481,10 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 [ionic-framework]: https://ionicframework.com/
 
+[jaeger]: https://www.jaegertracing.io/
+
+[java]: https://www.java.com/de/
+
 [jmeter]: https://jmeter.apache.org/
 
 [jspdf]: https://parall.ax/products/jspdf
@@ -443,11 +495,19 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 [openapi]: https://swagger.io/specification/
 
+[opentelemetry]: https://opentelemetry.io/
+
 [postman]: https://www.getpostman.com/
 
 [python]: https://www.python.org/
 
 [react-native]: https://reactnative.dev/
+
+[sap-abap]: https://learning.sap.com/learning-journeys/acquire-core-abap-skills/understanding-the-basics-of-abap_c0e5346f-a136-4b9f-a167-9031eca12932
+
+[sap-pi]: https://help.sap.com/doc/saphelp_nw75/7.5.5/de-DE/8e/995afa7a8d467f95a473afafafa07e/content.htm?no_cache=true
+
+[sap-rfc]: https://help.sap.com/doc/saphelp_em92/9.2/de-DE/48/9f1952a81417cee10000000a421937/content.htm?no_cache=true
 
 [sphinx]: https://www.sphinx-doc.org/
 
@@ -462,4 +522,3 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 [varnish]: https://www.varnish-cache.org/
 
 [vuetify]: https://vuetifyjs.com/
-
