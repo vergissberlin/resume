@@ -5,39 +5,38 @@
 ## Projektübersicht
 
 - **IoT**
-    - [CoffeeBin](#-CoffeeBin) Datenvisualisierung und Analytics
-    - [Digitaler Agenturkicker](#-Digitaler-Agenturkicker) IoT Multichannel
+  - [CoffeeBin](#-coffeebin) Datenvisualisierung und Analytics
+  - [Digitaler Agenturkicker](#-digitaler-agenturkicker) IoT Multichannel
 
 - **App development**
-    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
-    - [Tap!Tap!](#-tap-tap) App development
-    - [CamFight](#-CamFight) Mobile Web App
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
+  - [Tap!Tap!](#-tap-tap) App development
+  - [CamFight](#-camfight) Mobile Web App
 
 - **Web development**
-    - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
-    - [dynamo-dresden.de](#-dynamo-dresdende) High Performance Web Application
-    - [Blugento](#-blugento) Docker, Marketing Automation, AWS
+  - [AIDA board portal](#-aida-board-portal) Gästeportal für AIDA Cruises
+  - [dynamo-dresden.de](#-dynamo-dresdende) High Performance Web Application
+  - [Blugento](#-blugento) Docker, Marketing Automation, AWS
 
 - **Desktop**
-    - [KiTa Tagesplaner](#-KiTa-Tagesplaner) PWA App
-    - [EDEKA neue Kasse](#-edeka-neue-kasse) Kassen-Software für den Einzelhandel
+  - [KiTa Tagesplaner](#-kita-tagesplaner) PWA App
+  - [EDEKA neue Kasse](#-edeka-neue-kasse) Kassen-Software für den Einzelhandel
 
 - **CICD**
-    - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CICD, Cloud (AWS, Azure)
-    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
+  - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CICD, Cloud (AWS, Azure)
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App development
 
-- **[Weitere Projekte](#-Weitere-Projekte)**
-    - [Bashlight](#-Bashlight) Commandline enhancer
-    - [EDEKA Distributed Tracing](#-edeka-distributed-tracing-mit-opentelemetry)
+- **[Weitere Projekte](#-weitere-projekte)**
+  - [Bashlight](#-bashlight) Commandline enhancer
+  - [EDEKA Distributed Tracing](#-edeka-distributed-tracing-mit-opentelemetry)
 
 ---
 
 ## Consulting
 
-
 ### [[↑](#projektübersicht)] KiTa Tagesplaner
 
-_2020 - 2021_
+_2020 - 2021_, Fullstack
 
 ![KiTa Tagesplaner](Media/Portfolio/kita-tagesplaner.png)
 
@@ -45,10 +44,10 @@ Erzieherinnen und Erziehern soll ein Werkzeug an die Hand gegeben werden, um den
 beschreiben. Die Bilder können per Drag-and-Drop ausgewählt und sortiert werden. Zusätzliche Textfelder können eingefügt
 werden.
 
-Die **Technologie-Highlights** sind *Vue.js* im Frontend mit *jspdf* für die Erstellung von PDFs. Es handelt sich um
+Die **Technologie-Highlights** sind _Vue.js_ im Frontend mit _jspdf_ für die Erstellung von PDFs. Es handelt sich um
 eine einseitige Anwendung, die ohne Internetverbindung genutzt werden kann und auf Desktop-Geräten installierbar ist.
-Die Anwendung erkennt den bevorzugten Lichtmodus des Systems und ändert das Styling in den *Dunkelmodus*, wenn dieser
-aktiviert ist. Sie verwendet benutzerdefinierte Eigenschaften. Für das Backend habe ich auch eine *REST API* mit *
+Die Anwendung erkennt den bevorzugten Lichtmodus des Systems und ändert das Styling in den _Dunkelmodus_, wenn dieser
+aktiviert ist. Sie verwendet benutzerdefinierte Eigenschaften. Für das Backend habe ich auch eine _REST API_ mit *
 OpenAPI* erstellt. [fastify](https://www.fastify.io/) war meine Wahl für das Framework.
 
 **Meine Aufgaben:** Full-Stack-Entwicklung, Projektmanagement, Software-Architektur, Kundenbetreuung.
@@ -67,17 +66,15 @@ OpenAPI* erstellt. [fastify](https://www.fastify.io/) war meine Wahl für das Fr
 | Repository der App                 | <https://github.com/NULLzuEINS/kindergarten-day-planner-app>     |
 | Repositorie des Service            | <https://github.com/NULLzuEINS/kindergarten-day-planner-service> |
 
-
-
 ### [[↑](#projektübersicht)] EDEKA Distributed Tracing mit OpenTelemetry
 
 _03/2023 – 10/2023​_, Projektleitung & Software Architect
 
-Der Kunde betreibt eine hohe Anzahl an verteilten Systemen durch die verschiedenste Fachprozesse laufen. Sei es in 
-der Warenwirtschaft, Personalverwaltung, oder dem Lagerbestand. Prozesse wie eine Preisänderung, oder eine Bestellung 
-nehmen einen langen Weg durch die Systeme. Ein Demo-Projekt aufzusetzen welches Innerhalb kürzester Zeit transparent 
-zu machen kann, wo es zu Problemen kommt, war Ziele dieses Projektes. Ermöglicht wird die durch Distributed Tracing. 
-Die implementierung OpenTelemetry hat sich hier zum Marktstandard entwickelt und ich konnte mit meiner Expertise dem 
+Der Kunde betreibt eine hohe Anzahl an verteilten Systemen durch die verschiedenste Fachprozesse laufen. Sei es in
+der Warenwirtschaft, Personalverwaltung, oder dem Lagerbestand. Prozesse wie eine Preisänderung, oder eine Bestellung
+nehmen einen langen Weg durch die Systeme. Ein Demo-Projekt aufzusetzen welches Innerhalb kürzester Zeit transparent
+zu machen kann, wo es zu Problemen kommt, war Ziele dieses Projektes. Ermöglicht wird die durch Distributed Tracing.
+Die implementierung OpenTelemetry hat sich hier zum Marktstandard entwickelt und ich konnte mit meiner Expertise dem
 Kunden helfen diese Demo umzusetzen.​
 
 | Technik Highlights                 |                                                                                                                                              |
@@ -90,9 +87,7 @@ Kunden helfen diese Demo umzusetzen.​
 | [Datadog][datadog]                 | Datadog: Cloud-Monitoring & Analyseplattform. Überwacht, alarmiert und optimiert die Leistung von Anwendungen.                               |
 | [Jaeger][jaeger]                   | Browserbasiertes Interface für die Visualisierung von Tracing-Daten. Erlaubt detaillierte Einblicke in Anwendungsperformance und -verhalten. |
 
-
 ## Projektleitung
-
 
 ### [[↑](#projektübersicht)] AIDA board portal
 
@@ -106,8 +101,8 @@ von Ausflügen und Restaurantplätzen. Es ist optimiert für TV, Mobile und spez
 **Meine Aufgaben** waren die Team- und Projektleitung, die Installation der Software auf dem Schiff und die Erstellung
 eines Demosystems.
 
-Die **Technologie-Highlights** sind die Unterstützung von *Low-Power-Hardware* (LG TV), *Kartenleser* zum Einloggen in
-Benutzerkonten, Bedienung über *Fernbedienung*, Erstellung und Aktualisierung einer Chrome-Erweiterung aus der Ferne,
+Die **Technologie-Highlights** sind die Unterstützung von _Low-Power-Hardware_ (LG TV), _Kartenleser_ zum Einloggen in
+Benutzerkonten, Bedienung über _Fernbedienung_, Erstellung und Aktualisierung einer Chrome-Erweiterung aus der Ferne,
 *verschiedene APIs* auf dem Schiff (Restaurants, Ausflüge, Terminbuchungen …)
 
 | Technologische Highlights          |                                    |
@@ -124,11 +119,9 @@ Benutzerkonten, Bedienung über *Fernbedienung*, Erstellung und Aktualisierung e
 |-------|---------------------------------------------------------|
 | Demo  | <https://nr:reiseberater@reiseberater2go.herokuapp.com> |
 
-
-
 ### [[↑](#projektübersicht)] dynamo-dresden.de
 
-_2014 - 2015_
+_2014 - 2015_, Software Archtekt
 
 ![Dynamo Dresden Website](Media/Portfolio/dynamo-dresden.png)
 
@@ -147,33 +140,29 @@ Des Weiteren war ich verantwortlich für Lasttests und Leistungsverbesserungen.
 | Website                                                   | <https://www.dynamo-dresden.de>                              |
 | Chrome Extensions Dynamo                                  | <https://chrome.google.com/webstore/search/dynamo%20dresden> |
 
-
 ## Software Developement
 
+### [[↑](#projektübersicht)] EDEKA neue Kasse
 
-### EDEKA Neue Kasse
+_03-2023 – 07-2024​_, Senior Software Engineer​
 
-_03-2023 – 07-2024​_, Senior Software Engineer​ 
-
-Der Kunde ist verantwortlich für die Software von über 30.000 Kassen in Deutschland die nun eine völlig neue 
-Kassenanwendung bekommen sollen. Mit einer modernen Microservice-Architektur,  Usability Tests, Offlinefähigkeit 
-und Online-Services möchte der Kunde den Ansprüchen der Gegenwart entgegentreten. In einem großen Team, mit 
-verschiedenen Partnern wird eine neue Kassenlösung entwickelt und Schrittweise auf die Märkte ausgerollt. 
+Der Kunde ist verantwortlich für die Software von über 30.000 Kassen in Deutschland die nun eine völlig neue
+Kassenanwendung bekommen sollen. Mit einer modernen Microservice-Architektur,  Usability Tests, Offlinefähigkeit
+und Online-Services möchte der Kunde den Ansprüchen der Gegenwart entgegentreten. In einem großen Team, mit
+verschiedenen Partnern wird eine neue Kassenlösung entwickelt und Schrittweise auf die Märkte ausgerollt.
 Ich unterstützte dabei durch die Entwicklung das Userinterfaces, sowie bei der Weiterentwicklung der Micro-Services.​
 
-​| Technologische Highlights          |                                                                                                                                                            |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+​| Technologische Highlights          |                                                                                                                                                           |
+|------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Dart][dart]                       | Programmiersprache von Google, für Web & Mobile. Kombiniert Klasse & Funktion, schnell & effizient. Entwicklerfreundlich, leicht lesbar, gute Performance. |
-| [Flutter][flutter]                 | Flutter, von Google entwickelt, ist ein UI-Toolkit für plattformübergreifende App-Entwicklung.                                                             |
-| [Java][java]                       | Ist auch eine Insel                                                                                                                                        |
-| [Datadog][datadog]                 | Datadog: Cloud-Monitoring & Analyseplattform. Überwacht, alarmiert und optimiert die Leistung von Anwendungen.                                             |
-| [OpenTelementy][opentelemetry]     | OpenTelemetry ermöglicht verteiltes Tracing & Monitoring für Anwendungen.                                                                                  |
-
-
+| [Flutter][flutter]                  | Flutter, von Google entwickelt, ist ein UI-Toolkit für plattformübergreifende App-Entwicklung.                                                            |
+| [Java][java]                       | Ist auch eine Insel                                                                                                                                       |
+| [Datadog][datadog]                 | Datadog: Cloud-Monitoring & Analyseplattform. Überwacht, alarmiert und optimiert die Leistung von Anwendungen.                                            |
+| [OpenTelementy][opentelemetry]     | OpenTelemetry ermöglicht verteiltes Tracing & Monitoring für Anwendungen.                                                                                 |
 
 ### [[↑](#projektübersicht)] LEJ Nachbarn App
 
-_2022_
+_2022_, Software Engineer
 
 ![LEJ Nachbarn App](Media/Portfolio/lejn-store-ios.png)
 
@@ -184,8 +173,8 @@ iOS und Android entwickelt werden konnte und somit die Kosten für die Entwicklu
 Durch das Senden von Push-Benachrichtigungen können die Nutzer über neue Nachrichten informiert werden. Die App ist
 in der Lage, die Benachrichtigungen auch im Hintergrund zu empfangen und zu verarbeiten.
 
-Die **Technologie-Highlights** Ich habe *React-Native* mit *Expo* (https://expo.dev/) verwendet, um die App zu
-erstellen. Ich habe viel über die Richtlinien/Anforderungen des *Google Play Store* gelernt.
+Die **Technologie-Highlights** Ich habe _React-Native_ mit _Expo_ (<https://expo.dev/>) verwendet, um die App zu
+erstellen. Ich habe viel über die Richtlinien/Anforderungen des _Google Play Store_ gelernt.
 
 ![LEJN Pipeline](Media/Portfolio/lejn-pipeline.png)
 
@@ -197,7 +186,6 @@ Sie enthält die folgenden Schritte:
 3. Deployment der App auf Expo _(Bereitstellung einer Review-App bei Merge-Requests)_
 4. Deployment der App auf Google Play Store
 5. Deployment der App auf Apple App Store
-
 
 | Technologische Highlights              |                                  |
 |----------------------------------------|----------------------------------|
@@ -213,10 +201,9 @@ Sie enthält die folgenden Schritte:
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
 | Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
 
+### [[↑](#projektübersicht)] Tap! Tap
 
-### [[↑](#projektübersicht)] Tap! Tap!
-
-_2020_
+_2020_, Fullstack
 
 ![Tap! Tap! Play store](Media/Portfolio/tap-tap.png)
 
@@ -224,8 +211,8 @@ Dies ist ein **React-Native** Game-Experiment. Ein Bildschirm - zwei Spieler. Mi
 Button größer und der Button des Gegners kleiner. Man gewinnt, wenn der eigene Button die gesamte Spielfläche abdeckt.
 Inspiriert wurde ich von einem Spiel, das wir in der Schule auf unseren Taschenrechnern gespielt haben.
 
-Die **Technologie-Highlights** Ich habe *React-Native* mit *Expo* (https://expo.dev/) verwendet, um die App zu
-erstellen. Ich habe viel über die Richtlinien/Anforderungen des *Google Play Store* gelernt.
+Die **Technologie-Highlights** Ich habe _React-Native_ mit _Expo_ (<https://expo.dev/>) verwendet, um die App zu
+erstellen. Ich habe viel über die Richtlinien/Anforderungen des _Google Play Store_ gelernt.
 
 | Technologische Highlights              |                                |
 |----------------------------------------|--------------------------------|
@@ -256,10 +243,9 @@ archiviert.
 | Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
 | Repository    | <https://github.com/vergissberlin/bashlight> |
 
-
 ### [[↑](#projektübersicht)] CoffeeBin
 
-_2020_
+_2020_, Fullstacl
 
 ![img.png](Media/Portfolio/coffee-bin-nodered.png)
 
@@ -282,7 +268,7 @@ Visualiserung mit Grafana.
 
 ### [[↑](#projektübersicht)] CamFight
 
-_2017_
+_2017_, Fullstack
 
 ![Camp Fight Prototyp](Media/Portfolio/cam-fight.png)
 
@@ -317,12 +303,12 @@ Herausforderung.
 
 ### [[↑](#projektübersicht)] Digitaler Agenturkicker
 
-_2015 - 2016_
+_2015 - 2016_, Fullstack
 
-![](Media/Portfolio/piball-header.png)
-![](Media/Portfolio/piball.png)
+![Piball header](Media/Portfolio/piball-header.png)
+![The piball counter](Media/Portfolio/piball.png)
 
-Die Digitalisierung des Agentur-Kickers ist ein *Multichannel-Experiment* welches im Rahmen meiner Research &
+Die Digitalisierung des Agentur-Kickers ist ein _Multichannel-Experiment_ welches im Rahmen meiner Research &
 Development Zeit bei der [Netresearch DTT GmbH][netresearch] entstanden ist. Ziel war es möglichst viele Ausspielkanäle
 mit einer zentralen Datenbasis zu bedienen. Zusätzliche Herausforderungen waren hier die Hardwarekomponenten und das
 Flottenmanagement mit Belana für dockerisierte Anwendungen. Im Rahmen der Entwicklung habe ich mich mit vielen neuen
@@ -348,10 +334,9 @@ Entwicklung von Software und Hardware.
 | GitHub Repository                                         | <https://github.com/vergissberlin/piball>            |
 | Web interface                                             | <https://vivid-fire-2266.web.app>                    |
 
-
 ### [[↑](#projektübersicht)] Blugento
 
-_2017 - 2018_
+_2017 - 2018_, Software Engineer, Test Engineer
 
 ![blugento](Media/Portfolio/blugento.png)
 
@@ -382,12 +367,11 @@ verwalten.
 | Website                                                   | <https://blugento.com>     |
 | App                                                       | <https://app.blugento.com> |
 
-
 ## DevOps
 
 ### [[↑](#projektübersicht)] Universal Music – Shop Manager
 
-_2018-2019_
+_2018-2019_, Software Engineer, DevOps Engineer, Consultant
 
 ![Universal Music](Media/Portfolio/umg.png)
 
@@ -416,7 +400,6 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 |------------------------------------|----------------------------------|
 | Universal Music Group              | <https://www.universalmusic.com> |
 
-
 ## [[↑](#projektübersicht)] Weitere Projekte
 
 … auf die ich stolz bin.
@@ -425,7 +408,6 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 |:---------------------------------------------------------------------------------------|:--------------------------------------------------|
 | [Node-RED mjml ↗](https://flows.nodered.org/node/@example/node-red-contrib-mjml) | Node-RED node zur Gestaltung von E-Mail templates |
 | [Node-RED say ↗](https://flows.nodered.org/node/@example/node-red-contrib-say)   | Node-RED node zur Ausgabe von Sprachnachrichten   |
-
 
 [apollojs]: https://www.apollographql.com/
 
@@ -447,6 +429,8 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 [concourse-ci]: https://docs.concourse.ci/
 
+[dart]: https://dart.dev/
+
 [datadog]: https://www.datadoghq.com/
 
 [docker]: https://www.docker.com/
@@ -461,9 +445,7 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 [fastify]: https://www.fastify.io/
 
-[google-chrome-extension]: https://chrome.google.com/webstore/detail/google-chrome-extension-for-t/nmmhkkegccagdldgiimedpiccmgmiednk
-
-[google-chrome-extension-dynamo]: https://chrome.google.com/webstore/search/dynamo
+[flutter]: https://flutter.dev/
 
 [google-firebase]: https://firebase.google.com/
 
