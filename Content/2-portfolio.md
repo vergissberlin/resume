@@ -191,7 +191,7 @@ Sie enthält die folgenden Schritte:
 |----------------------------------------|----------------------------------|
 | [React Native][react-native]           | auf GitLab                       |
 | [Expo][expo]                           | Zur Appentwicklung im Browser    |
-| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung   |
+| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung    |
 | Push Benachrichtigungen                | Push Benachrichtigungen mit Expo |
 
 | Links             |                                                                        |
@@ -263,7 +263,7 @@ Visualiserung mit Grafana.
 |-----------------------------------|------------------------------------------------------------------------------------------------------|
 | [Tasmota][tasmota]                | C++ zur Erfassung der Daten                                                                          |
 | [NodeRED][node-red]               | zur Steuerung von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat. |
-| [InfluxDB][influxdb]              | zeitbasierende Speicherung der Daten                                                                 |
+| [InfluxDB][influxdb]                | zeitbasierende Speicherung der Daten                                                                 |
 | [Grafana][grafana]                | zur Visualisierung der Daten                                                                         |
 
 ### [[↑](#projektübersicht)] CamFight
@@ -320,8 +320,8 @@ Entwicklung von Software und Hardware.
 | [Docker][docker]                                          | auf einer ARM Architektur                                                                                                                                          |
 | [Vue.JS][vue.js]                                          | Mobile App mit der Vuetify Komponenten-Bibliothek                                                                                                                  |
 | [Python][python]                                          | zum Ansprechen von Hardware-Komponenten                                                                                                                            |
-| [Google Firebase][google-firebase]                        | zur Authentifizierung und Nutzung der Echtzeit-Datenbank                                                                                                           |
-| [Google Chrome Extension][google-chrome-extension-piball] | zur Anzeige der Ergebnisse direkt im Browser und zum Auslösen von Notifications. Verfügbar im [Chrome Web Store][google-chrome-extension-piball].                  |
+| [Google Firebase][google-firebase]                        | zur Authentifizierung und Nutzung der Echtzeit-Datenbank                                                                                                             |
+| [Google Chrome Extension][google-chrome-extension-piball] | zur Anzeige der Ergebnisse direkt im Browser und zum Auslösen von Notifications. Verfügbar im [Chrome Web Store][google-chrome-extension-piball].                   |
 | [Ionic Framework][ionic-framework]                        | zur Erstellung einer Native App fpr iOS und Androidm                                                                                                               |
 | [Belana.io][belana.io]                                    | zum Flottenmanagement der dockerisierten Anwendung und Node-RED zum Steuern von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat. |
 | [NodeRED][node-red]                                       | zur Steuerung von Events und versenden von Nachrichten an Twitter und den Firmeninternen Slack-Chat.                                                               |
@@ -332,7 +332,7 @@ Entwicklung von Software und Hardware.
 |-----------------------------------------------------------|------------------------------------------------------|
 | Präsentation                                              | <https://prezi.com/khpva--2yv25/foosball/?present=1> |
 | GitHub Repository                                         | <https://github.com/vergissberlin/piball>            |
-| Web interface                                             | <https://vivid-fire-2266.web.app>                    |
+| Web interface                                             | <https://vivid-fire-2266.web.app>                     |
 
 ### [[↑](#projektübersicht)] Blugento
 
@@ -404,8 +404,8 @@ Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten Softw
 
 … auf die ich stolz bin.
 
-| Projekt                                                                                |                                                   |
-|:---------------------------------------------------------------------------------------|:--------------------------------------------------|
+| Projekt                                                                         |                                                   |
+|:--------------------------------------------------------------------------------|:--------------------------------------------------|
 | [Node-RED mjml ↗](https://flows.nodered.org/node/@example/node-red-contrib-mjml) | Node-RED node zur Gestaltung von E-Mail templates |
 | [Node-RED say ↗](https://flows.nodered.org/node/@example/node-red-contrib-say)   | Node-RED node zur Ausgabe von Sprachnachrichten   |
 
