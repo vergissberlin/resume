@@ -1,7 +1,5 @@
 # Resume - André Lademann
 
-
-
 [![GitHub all releases](https://img.shields.io/github/downloads/vergissberlin/resume/total?style=for-the-badge)](https://github.com/vergissberlin/resume/releases) 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/vergissberlin/resume?style=for-the-badge)](https://github.com/vergissberlin/resume/releases/latest) 
 [![CV - Download](https://img.shields.io/badge/CV-Download-2ea44f?style=for-the-badge)](https://github.com/vergissberlin/resume/releases)
