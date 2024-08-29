@@ -178,3 +178,17 @@ jobs:
           asset_path: ./resume-epub/resume-${{ env.RESUME_FILENAME }}.epub
           asset_name: resume-${{ env.RESUME_FILENAME }}.epub
           asset_content_type: application/epub
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: arcxp/datadog-service-catalog-metadata-provider@v2
+        with:
+          schema-version: v2.1
+          datadog-hostname: api.us5.datadoghq.com
+          datadog-key: ${{ secrets.DATADOG_KEY }}
+          datadog-app-key: ${{ secrets.DATADOG_APP_KEY }}
+          service-name: andrelademann-resume
+          team: vergissberlin
+          email: vergissberlin@gmail.com
