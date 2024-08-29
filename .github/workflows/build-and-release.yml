@@ -189,6 +189,6 @@ jobs:
           datadog-hostname: api.us5.datadoghq.com
           datadog-key: ${{ secrets.DATADOG_KEY }}
           datadog-app-key: ${{ secrets.DATADOG_APP_KEY }}
-          service-name: andrelademann-resume
+          service-name: vergissberlin-resume
           team: vergissberlin
           email: vergissberlin@gmail.com
