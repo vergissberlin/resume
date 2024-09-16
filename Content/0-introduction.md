@@ -9,30 +9,33 @@ A resume is like a [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Docume
 
 ## Über mich
 
-Meine Interessen sind breit gestreut. Ich bin leidenschaftlicher **Software-
-Entwickler** mit einer Passion für Webentwicklung. In meiner Freizeit bastele
-ich mit **Mikrokontrollern** und experimentiere mit **IoT** und **DevOps**. In
-Meetups, Schulungen und Workshops teile ich meine Erfahrungen mit Anderen und
-helfe ihnen, ihre eigenen Projekte zu realisieren. **Es ist die Faszination für
-Software und Hardware, die mich immer wieder dazu bringt, mich in neue
-Technologien einzuarbeiten und mich mit anderen Menschen auszutauschen!** In
-meiner beruflichen Laufbahn hatte ich die Möglichkeit, mit internationalen
-Teams zu arbeiten und Projekte in verschiedenen Ländern zu realisieren. Im
-Bereich Marketing unterstütze ich dabei, Prozesse zu automatisieren und die
-Effizienz zu steigern und produziere auch selbst Inhalte in Bild, Text und Ton.
+Ich bin leidenschaftlicher **Software-Engineer**, **Cloud-Engineer** mit einer 
+Passion für Webentwicklung. In meiner Freizeit experimentiere ich mit 
+**Mikrokontrollern** und **Autonomes Fahren** von Fahrzeugen. In 
+[Meetups][meetup-lorawan], Schulungen und Workshops teile ich meine 
+Erfahrungen mit Anderen und helfe ihnen, ihre eigenen Projekte zu 
+realisieren. **Es ist die Faszination für Software und Hardware, die mich 
+immer wieder dazu bringt, mich in neue Technologien einzuarbeiten und mich 
+mit anderen Menschen auszutauschen!** In meiner beruflichen Laufbahn hatte 
+ich die Möglichkeit, mit internationalen Teams zu arbeiten und Projekte in 
+verschiedenen Ländern zu realisieren. Im Bereich Marketing unterstütze ich 
+dabei, Prozesse zu automatisieren und die Effizienz zu steigern und 
+produziere auch selbst Inhalte in Bild, Text und Ton.
 
 **Meine Fähigkeiten sind:**
 1. Software-Entwicklung
-2. DevOps
-3. Consulting, Trainer, Speaker
-4. Marketing, SEO, Content-Produktion
+2. Cloud Engineering
+3. Software-Architektur
+4. Consulting, Trainer, Speaker
+5. Marketing, SEO, Content-Produktion
 
 
 ## Aufgabenschwerpunkte im Verlaufe der Zeit
 
 Im Verlaufe der Zeit haben sich meine Themenschwerpunkte des Öfteren verlagert.
-Die folgende Grafik visualisiert dies sehr gut.
-In letzter Zeit beschäftige ich mich mehr mit DevOps und App-Entwicklung.
+Die folgende Grafik visualisiert dies sehr gut. 2023 geb es einen starken
+Fokus auf Software-Entwicklung und Cloud-Engineering. Im Jahr 2024 habe ich
+mich zusätzlich auf Observability spezialisiert.
 
 ![Fokus-Schwerkunkte im Laufe der Zeit](Media/knowledge-focus-timeline.svg "Knowledge focus timeline"){ width=100% }
 
@@ -65,7 +68,7 @@ In letzter Zeit beschäftige ich mich mehr mit DevOps und App-Entwicklung.
 ## Buzzword bingo
 
 Flutter, Dart, OpenTelemetry, IIoT, TypeScript, JavaScript, Usability, IaC, 
-Accessibility, Vue.js, Docker, NodeJS, Performance, ESI, Varnish reverse proxy,
+Accessibility, Vue.js, Docker, Node.js, Performance, ESI, Varnish reverse proxy,
 Deployment, Google Chrome Extensions, Regressive testing, functional testing, 
 acceptance testing, unit testing, bdd, PWA, git, Continuous Integration, 
 Concourse CI, Firebase, TYPO3 CMS, Nginx, PHP, IoT, Raspberry PI, Semantic 
@@ -75,3 +78,5 @@ Crossplane
 > **Mehr davon?** In meinem [CV](./1-curriculum-vitae.md) und 
 > [Portfolio](./2-portfolio.md) gehe ich auf weitere Details ein.
 
+
+- [meetup-lorawan]: https://www.meetup.com/de-DE/lorawan-leipzig-usergroup
