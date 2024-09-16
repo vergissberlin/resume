@@ -27,21 +27,21 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf-introduction
-          path: Results/${{ env.RESUME_FILENAME }}-introduction.pdf
+          path: Results/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf
           if-no-files-found: error
           retention-days: 12
       - name: Step 4.2 - Upload the single PDF CV artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf-curriculum-vitae
-          path: Results/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
+          path: Results/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ github.ref_name }}.pdf
           if-no-files-found: error
           retention-days: 12
       - name: Step 4.3 - Upload the single PDF Portfolio artifact
         uses: actions/upload-artifact@v4
         with:
           name: resume-pdf-portfolio
-          path: Results/${{ env.RESUME_FILENAME }}-portfolio.pdf
+          path: Results/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf
           if-no-files-found: error
           retention-days: 12
 
@@ -56,7 +56,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: resume-epub
-          path: Results/resume-${{ env.RESUME_FILENAME }}.epub
+          path: Results/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
           if-no-files-found: error
           retention-days: 12
 
@@ -113,16 +113,16 @@ jobs:
 
             | PDF | EPUB |
             | --- | ---- |
-            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover for pdf" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover for epub" /></a> |
+            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover for pdf" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover for epub" /></a> |
             | [![Badge PDF](https://img.shields.io/badge/PDF-resume-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf) | [![Badge Epub](https://img.shields.io/badge/EPUB-resume-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}.epub) |
             
             ##### Download single files
 
             | Document     | Download |
             | ------------ | -------- |
-            | Introduction | [![Badge CV](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction.pdf) | 
-            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf) | 
-            | Portfolio    | [![Badge CV](https://img.shields.io/badge/DE-Portfoilo-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-portfolio.pdf) |
+            | Introduction | [![Badge CV](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf) | 
+            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae.-${{ github.ref_name }}pdf) | 
+            | Portfolio    | [![Badge CV](https://img.shields.io/badge/DE-Portfoilo-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf) |
 
           draft: false
           prerelease: false
@@ -134,8 +134,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./${{ env.RESUME_FILENAME }}-introduction/${{ env.RESUME_FILENAME }}-introduction.pdf
-          asset_name: ${{ env.RESUME_FILENAME }}-introduction.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-introduction/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf
           asset_content_type: application/pdf
       - name: Step 3.2 Upload CV PDF Release Asset
         id: upload-release-asset-pdf-cv
@@ -144,8 +144,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./${{ env.RESUME_FILENAME }}-curriculum-vitae/${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
-          asset_name: ${{ env.RESUME_FILENAME }}-curriculum-vitae.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-curriculum-vitae/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ github.ref_name }}.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ github.ref_name }}.pdf
           asset_content_type: application/pdf
       - name: Step 4.3 Upload Portfolio PDF Release Asset
         id: upload-release-asset-pdf-portfolio
@@ -154,8 +154,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./${{ env.RESUME_FILENAME }}-portfolio/${{ env.RESUME_FILENAME }}-portfolio.pdf
-          asset_name: ${{ env.RESUME_FILENAME }}-portfolio.pdf
+          asset_path: ./${{ env.RESUME_FILENAME }}-portfolio/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf
+          asset_name: ${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf
           asset_content_type: application/pdf
 
       - name: Step 5.1 Upload PDF Release Asset
@@ -165,8 +165,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-pdf/resume-${{ env.RESUME_FILENAME }}.pdf
-          asset_name: resume-${{ env.RESUME_FILENAME }}.pdf
+          asset_path: ./resume-pdf/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf
+          asset_name: resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf
           asset_content_type: application/pdf
       - name: Step 5.2 Upload EPUB Release Asset
         id: upload-release-asset-epub
@@ -175,6 +175,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./resume-epub/resume-${{ env.RESUME_FILENAME }}.epub
-          asset_name: resume-${{ env.RESUME_FILENAME }}.epub
+          asset_path: ./resume-epub/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
+          asset_name: resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
           asset_content_type: application/epub
