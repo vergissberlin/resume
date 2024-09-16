@@ -36,7 +36,7 @@
 |-------------|---------------|
 | Deutsch     | Muttersprache |
 | Englisch    | C1            |
-| Französisch | A2            |
+| Französisch | B1            |
 
 ### Programmiersprachen
 
