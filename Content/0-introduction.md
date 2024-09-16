@@ -9,8 +9,8 @@ A resume is like a [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Docume
 
 ## Über mich
 
-Ich bin leidenschaftlicher **Software-Engineer**, **Cloud-Engineer** mit einer 
-Passion für Webentwicklung. In meiner Freizeit experimentiere ich mit 
+Ich bin leidenschaftlicher **Software-Engineer** und **Cloud-Engineer** mit 
+einer Passion für Observability. In meiner Freizeit experimentiere ich mit 
 **Mikrokontrollern** und **Autonomes Fahren** von Fahrzeugen. In 
 [Meetups][meetup-lorawan], Schulungen und Workshops teile ich meine 
 Erfahrungen mit Anderen und helfe ihnen, ihre eigenen Projekte zu 
