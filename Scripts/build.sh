@@ -122,7 +122,7 @@ for file in Temp/*.md; do
 
     echo "👉\tBuild single PDF for \"${title}\""
     docker run -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de ${file} \
-      -o Results/${RESUME_FILENAME}-${filename}.pdf \
+      -o Results/${RESUME_FILENAME}-${filename}-${document_git_tag}.pdf \
       --defaults Template/Config/defaults-pdf-single.yml \
       --metadata-file Template/Config/metadata-pdf.yml \
       -V title="${title}" \
@@ -157,7 +157,7 @@ sh Scripts/replace.sh Temp/combined.md
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
 docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
-  -o Results/resume-${RESUME_FILENAME}.pdf \
+  -o Results/resume-${RESUME_FILENAME}-${document_git_tag}.pdf \
   --defaults Template/Config/defaults-pdf.yml \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
