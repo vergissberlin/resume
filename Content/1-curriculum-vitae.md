@@ -8,15 +8,16 @@
 
 | Zeitraum                  | Position                           | Unternehmen                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------|------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **2007**/03 → **heute**   | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Hinter NULLzuEINS verbirgt sich ein Einzelunternehmen. Ich arbeite nebenberuflich im BereichWebDevelopment. Das Spektrum reicht der Microsite bis zu einem komplexen, datenbankbasierenden Communitysystemen. <br>**Technologien:** Vue.js,TYPO3, OpenAPI, CMS-SaaS                | 
-| **2018**/10 → **heute**   | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Ich arbeite als Senior Softwareentwickler bei Netresearch DTT GmbH. Hier arbeite ich mit dem Entwicklungsprozess von Netresearch und der Integration von Netresearch in die Produktentwicklung.                                                                      | 
-| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Applicationen <br>**Aufgaben:** Pipelines, Updates, Release-Mamagement. Schulung beim Kunden (UMG), Schulungen intern, Abstimmung int. Teams <br>**Technologien:** Docker, Concourse CI,Vue.js, Magento, Marketing Automatization (Autopilot), Prototyping. | 
-| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**Technologien:** TYPO3, VUE.js, Docker, Concourse CI                                                                                                                                                                                                                               | 
-| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**AIDA Bordportal**<br>**Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportales <br>**Technologien:** TV App, Digital Signage, Mobile App, Open API, TYPO3                                                                                                         | 
-| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (Augelöst)_ <br>**Aufgaben:** Anwendungsentwicklung<br>**Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                       | 
-| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert] <br>**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Last-Tests mit jMeter <br>**Aufgaben:** Teamleiter für die Entwicklung von Webanwendungen und Schnittstellen                                                                                                                       | 
-| **2009**/07 → **2009**/08 | Teacher                            | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig] <br>**Aufgaben:** Dozent für Webtechnologien_CMS, MVC, Framework, Joomla!                                                                                                                                                                                                             | 
-| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig] <br>**Technologien:** TYPO3, PHP, JavaScript, Action Script                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                   
+| **2007**/03 → `jetzt()`   | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Hinter NULLzuEINS verbirgt sich ein Einzelunternehmen. Ich arbeite nebenberuflich im Bereich Web-Development. **Technologien:** Vue.js,TYPO3, OpenAPI, CMS-SaaS                                                                                                                    |
+| **2023**/03 → `jetzt()`   | Senior Cloud Engineer              | [Thinkport GmbH][thinkport] <br>**Technologien:** Azure, Ansible, Terraform, Dart & Flutter, Java, OpenTelemetry, **Themen** Observability, Cloud Engineering, Software Architect, Software Development, POS                                                                                                                        |
+| **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Ich arbeite als Senior Softwareentwickler bei Netresearch DTT GmbH. Hier arbeite ich mit dem Entwicklungsprozess von Netresearch und der Integration von Netresearch in die Produktentwicklung.                                                                      |
+| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Applicationen <br>**Aufgaben:** Pipelines, Updates, Release-Mamagement. Schulung beim Kunden (UMG), Schulungen intern, Abstimmung int. Teams <br>**Technologien:** Docker, Concourse CI,Vue.js, Magento, Marketing Automatization (Autopilot), Prototyping. |
+| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**Technologien:** TYPO3, VUE.js, Docker, Concourse CI                                                                                                                                                                                                                               |
+| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**AIDA Bordportal**<br>**Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportales <br>**Technologien:** TV App, Digital Signage, Mobile App, Open API, TYPO3                                                                                                         |
+| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (Augelöst)_ <br>**Aufgaben:** Anwendungsentwicklung<br>**Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                       |
+| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert] <br>**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Last-Tests mit jMeter <br>**Aufgaben:** Teamleiter für die Entwicklung von Webanwendungen und Schnittstellen                                                                                                                       |
+| **2009**/07 → **2009**/08 | Teacher                            | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig] <br>**Aufgaben:** Dozent für Webtechnologien_CMS, MVC, Framework, Joomla!                                                                                                                                                                                                             |
+| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig] <br>**Technologien:** TYPO3, PHP, JavaScript, Action Script                                                                                                                                                                                                                                   |
 
 ## Ausbildung
 
@@ -35,7 +36,7 @@
 |-------------|---------------|
 | Deutsch     | Muttersprache |
 | Englisch    | C1            |
-| Französisch | A1            |
+| Französisch | A2            |
 
 ### Programmiersprachen
 
@@ -43,6 +44,7 @@
 |--------------------------|--------|
 | [TypeScript][typescript] | C1     |
 | [JavaScript][javascript] | C1     |
+| [Dart][dart]             | C1     |
 | [PHP][php]               | C1     |
 | [Java][java]             | B1     |
 | [Groovy][groovy]         | B1     |
@@ -54,16 +56,17 @@ _… countless more with A2 or less_.
 
 ### Frameworks & Software
 
-| Framework                     | Niveau |
-|-------------------------------|--------|
-| [Vue.js][vue.js]              | C1     |
-| [React Native ][react-native] | C1     |
-| [Extbase][extbase]            | B2     |
-| [Symfony][symfony]            | B2     |
-| [Ansible][ansible]            | B2     |
-| [GraphQL][graphql]            | B2     |
-| [Docker][docker]              | B2     |
-| [Git][git]                    | B2     |
+| Framework                    | Niveau |
+|------------------------------|--------|
+| [Vue.js][vue.js]             | C1     |
+| [React Native][react-native] | C1     |
+| [Flutter][flutter]           | C1     |
+| [Extbase][extbase]           | B2     |
+| [Symfony][symfony]           | B2     |
+| [Ansible][ansible]           | B2     |
+| [GraphQL][graphql]           | B2     |
+| [Docker][docker]             | B2     |
+| [Git][git]                   | B2     |
 
 ### Databases
 
@@ -129,6 +132,8 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [nullzueins]: https://www.nullzueins.com/
 
+[thinkport]: https://thinkport.digital/
+
 [torpedoleipzig]: https://torpedo-motor.com/agentur/history/
 
 
@@ -164,6 +169,8 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [confluence]: https://www.atlassian.com/software/confluence
 
+[dart]: https://dart.dev/
+
 [docker]: https://www.docker.com/
 
 [docker-compose]: https://docs.docker.com/compose/
@@ -179,6 +186,8 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 [extbase]: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/Extbase/Index.html
 
 [fastify]: https://www.fastify.io/
+
+[flutter]: https://flutter.dev/
 
 [git]: https://git-scm.com/
 
