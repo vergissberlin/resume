@@ -78,5 +78,4 @@ Crossplane
 > **Mehr davon?** In meinem [CV](./1-curriculum-vitae.md) und 
 > [Portfolio](./2-portfolio.md) gehe ich auf weitere Details ein.
 
-
 - [meetup-lorawan]: https://www.meetup.com/de-DE/lorawan-leipzig-usergroup
