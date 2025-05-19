@@ -4,7 +4,7 @@
 
 ## Projektübersicht
 
-- **POS & Oberservabilty**
+- **POS & Observability**
   - [EDEKA - Observability PoC](#-EDEKA-Observability-PoC) 
     Integration der Gebit Kassenlösung für Edeka
   - [EDEKA - Kassensoftware Integration](#-EDEKA-POS-Integration) 
