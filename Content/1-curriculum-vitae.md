@@ -1,29 +1,29 @@
-# Curriculum vitae
+# Lebenslauf
 
-> [Introduction](./0-introduction.md) | [CV](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Contact](3-contact.md)
+> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
 
-[![PDF Download CV](https://img.shields.io/github/downloads/vergissberlin/resume/total?label=PDF%20download%20Curriculum%20Vitae%20&logo=Curriculum%20vitae%20download&style=flat-square)](https://github.com/vergissberlin/resume/releases/latest/)
+[![PDF Download Lebenslauf](https://img.shields.io/github/downloads/vergissberlin/resume/total?label=PDF%20Download%20Lebenslauf&style=flat-square)](https://github.com/vergissberlin/resume/releases/latest/)
 
 ## Berufliche Laufbahn
 
 | Zeitraum                  | Position                           | Unternehmen                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------|------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **2007**/03 → `now()`     | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Hinter NULLzuEINS verbirgt sich ein Einzelunternehmen. Ich arbeite nebenberuflich im Bereich Web-Development. **Technologien:** Vue.js,TYPO3, OpenAPI, CMS-SaaS                                                                                                                    |
-| **2023**/03 → `now()`     | Senior Cloud Engineer              | [Thinkport GmbH][thinkport] <br>**Technologien:** Azure, Ansible, Terraform, Dart & Flutter, Java, OpenTelemetry, **Themen** Observability, Cloud Engineering, Software Architect, Software Development, POS                                                                                                                        |
-| **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Ich arbeite als Senior Softwareentwickler bei Netresearch DTT GmbH. Hier arbeite ich mit dem Entwicklungsprozess von Netresearch und der Integration von Netresearch in die Produktentwicklung.                                                                      |
-| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Applicationen <br>**Aufgaben:** Pipelines, Updates, Release-Mamagement. Schulung beim Kunden (UMG), Schulungen intern, Abstimmung int. Teams <br>**Technologien:** Docker, Concourse CI,Vue.js, Magento, Marketing Automatization (Autopilot), Prototyping. |
-| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**Technologien:** TYPO3, VUE.js, Docker, Concourse CI                                                                                                                                                                                                                               |
-| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**AIDA Bordportal**<br>**Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportales <br>**Technologien:** TV App, Digital Signage, Mobile App, Open API, TYPO3                                                                                                         |
-| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (Augelöst)_ <br>**Aufgaben:** Anwendungsentwicklung<br>**Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                       |
-| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert] <br>**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Last-Tests mit jMeter <br>**Aufgaben:** Teamleiter für die Entwicklung von Webanwendungen und Schnittstellen                                                                                                                       |
-| **2009**/07 → **2009**/08 | Teacher                            | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig] <br>**Aufgaben:** Dozent für Webtechnologien_CMS, MVC, Framework, Joomla!                                                                                                                                                                                                             |
-| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig] <br>**Technologien:** TYPO3, PHP, JavaScript, Action Script                                                                                                                                                                                                                                   |
+| **2007**/03 → `now()`     | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Einzelunternehmen; nebenberuflich in der Webentwicklung tätig. **Technologien:** Vue.js, TYPO3, OpenAPI, CMS-SaaS                                                                                                                            |
+| **2023**/03 → `now()`     | Senior Cloud Engineer              | [Thinkport GmbH][thinkport] <br>**Technologien:** Azure, Ansible, Terraform, Dart & Flutter, Java, OpenTelemetry. **Themen:** Observability, Cloud Engineering, Softwarearchitektur, Softwareentwicklung, POS                                                                                |
+| **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Senior Softwareentwickler; Mitarbeit an Entwicklungsprozessen und Integration in die Produktentwicklung.                                                                                                                       |
+| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Anwendungen. <br>**Aufgaben:** Pipelines, Updates, Release-Management; Schulungen beim Kunden (UMG) und intern; Abstimmung mit internationalen Teams. <br>**Technologien:** Docker, Concourse CI, Vue.js, Magento, Marketing-Automatisierung (Autopilot), Prototyping. |
+| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**Technologien:** TYPO3, Vue.js, Docker, Concourse CI                                                                                                                                                                                                                                  |
+| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**AIDA Bordportal**<br>**Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportals. <br>**Technologien:** TV-App, Digital Signage, Mobile App, OpenAPI, TYPO3                                                                                                        |
+| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (aufgelöst)_ <br>**Aufgaben:** Anwendungsentwicklung. <br>**Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                     |
+| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert] <br>**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Lasttests mit JMeter. <br>**Aufgaben:** Teamleitung für die Entwicklung von Webanwendungen und Schnittstellen                                                                                |
+| **2009**/07 → **2009**/08 | Dozent                             | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig] <br>**Aufgaben:** Dozent für Webtechnologien: CMS, MVC, Frameworks, Joomla!                                                                                                                                                                                                           |
+| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig] <br>**Technologien:** TYPO3, PHP, JavaScript, ActionScript                                                                                                                                                                                                                                    |
 
 ## Ausbildung
 
 | Zeitraum  | Ausbildung                                                                           | Ort                                                 |
-|-----------|--------------------------------------------------------------------------------------|-----------------------------------------------------|
-| 2007-2009 | [Medieninformatik](https://www.medien-studieren.net/studiengaenge/medieninformatik/) | [Beuth Hoschule Berlin](https://www.bht-berlin.de/) |
+|-----------|----------------------------------------------------------------------------------------|-----------------------------------------------------|
+| 2007-2009 | [Medieninformatik](https://www.medien-studieren.net/studiengaenge/medieninformatik/) | [Beuth Hochschule Berlin](https://www.bht-berlin.de/) |
 | 2006-2007 | [Medieninformatik](https://www.medien-studieren.net/studiengaenge/medieninformatik/) | [TH Brandenburg](https://www.th-brandenburg.de/)    |
 | 2003-2006 | Staatlich geprüfter Assistent für Multimedia                                         | [Lehmbaugruppe Leipzig](https://lehmbaugruppe.de/)  |
 | 1998-2001 | Allgemeine Hochschulreife                                                            | Friedrichsgymnasium Frankfurt (Oder)                |
@@ -52,7 +52,7 @@
 | [C++][c++]               | B2     |
 | [SQL][sql]               | B2     |
 
-_… countless more with A2 or less_.
+_… viele weitere mit A2 oder weniger._
 
 ### Frameworks & Software
 
@@ -68,19 +68,19 @@ _… countless more with A2 or less_.
 | [Docker][docker]             | B2     |
 | [Git][git]                   | B2     |
 
-### Databases
+### Datenbanken
 
-| Database                       | Niveau |
+| Datenbank                      | Niveau |
 |--------------------------------|--------|
 | [MySQL][mysql]                 | C1     |
 | [PostgreSQL][postgresql]       | B2     |
 | [MongoDB][mongodb]             | B2     |
 | [Redis][redis]                 | B2     |
-| [ElasticSearch][elasticsearch] | B2     |
+| [Elasticsearch][elasticsearch] | B2     |
 
-### Tools
+### Werkzeuge
 
-| Tool                     | Niveau |
+| Werkzeug                 | Niveau |
 |--------------------------|--------|
 | [Ansible][ansible]       | B2     |
 | [GraphQL][graphql]       | B2     |
@@ -99,15 +99,15 @@ _… countless more with A2 or less_.
 
 ### Weitere Kenntnisse
 
-Agile, Scrum, Kanban, Visual Studio, Visual Studio Code, WebStorm, IoT, Marketing Automation
+Agil, Scrum, Kanban, Visual Studio, Visual Studio Code, WebStorm, IoT, Marketing‑Automatisierung
 
-## Interests
+## Interessen
 
-- Programming
-- Music
-- Sports
-- Traveling
-- Learning new things
+- Programmieren
+- Musik
+- Sport
+- Reisen
+- Neues lernen
 
 ## Referenzen
 
@@ -116,9 +116,9 @@ Meine Referenzen habe ich in meinem [Portfolio](2-portfolio.md) zusammengefasst.
 ## Kontakt
 
 Zu erreichen bin ich unter folgenden Kontaktdaten:
-[E-Mail](mailto:vergissberlin@gmail.com), [Addresse](https://goo.gl/maps/9UaM21T2JXA6CAPB9)
-, [Blog](https://blog.andrelademann.de), [GitHub](https://github.com/vergissberlin)
-, [LinkedIn](https://www.linkedin.com/in/andre-lademann/), [Xing](https://www.xing.com/profile/Andre_Lademann/cv)
+[E‑Mail](mailto:vergissberlin@gmail.com), [Adresse](https://goo.gl/maps/9UaM21T2JXA6CAPB9),
+[Blog](https://blog.andrelademann.de), [GitHub](https://github.com/vergissberlin),
+[LinkedIn](https://www.linkedin.com/in/andre-lademann/), [Xing](https://www.xing.com/profile/Andre_Lademann/cv)
 
 [blugento-www]: https://www.blugento.com/
 
