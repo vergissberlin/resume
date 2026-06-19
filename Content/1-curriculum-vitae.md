@@ -9,6 +9,7 @@
 | Zeitraum                  | Position                           | Unternehmen                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------|------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **2007**/03 → `now()`     | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Einzelunternehmen; nebenberuflich in der Webentwicklung tätig. **Technologien:** Vue.js, TYPO3, OpenAPI, CMS-SaaS                                                                                                                            |
+| **2025**/01 → `now()`     | Mitgründer                         | [kieks.me GbR][kieksme] <br>Consulting- und Freelance-GbR für Web-Entwicklung, SaaS-Websites und Corporate Design. **Technologien:** TypeScript, Vue.js, Node.js                                                                                                                              |
 | **2023**/03 → `now()`     | Senior Cloud Engineer              | [Thinkport GmbH][thinkport] <br>**Technologien:** Azure, Ansible, Terraform, Dart & Flutter, Java, OpenTelemetry. **Themen:** Observability, Cloud Engineering, Softwarearchitektur, Softwareentwicklung, POS                                                                                |
 | **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Senior Softwareentwickler; Mitarbeit an Entwicklungsprozessen und Integration in die Produktentwicklung.                                                                                                                       |
 | **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Anwendungen. <br>**Aufgaben:** Pipelines, Updates, Release-Management; Schulungen beim Kunden (UMG) und intern; Abstimmung mit internationalen Teams. <br>**Technologien:** Docker, Concourse CI, Vue.js, Magento, Marketing-Automatisierung (Autopilot), Prototyping. |
@@ -27,6 +28,14 @@
 | 2006-2007 | [Medieninformatik](https://www.medien-studieren.net/studiengaenge/medieninformatik/) | [TH Brandenburg](https://www.th-brandenburg.de/)    |
 | 2003-2006 | Staatlich geprüfter Assistent für Multimedia                                         | [Lehmbaugruppe Leipzig](https://lehmbaugruppe.de/)  |
 | 1998-2001 | Allgemeine Hochschulreife                                                            | Friedrichsgymnasium Frankfurt (Oder)                |
+
+## Zertifizierungen
+
+| Zertifikat | Aussteller | Ausgestellt | Gültig bis |
+|---|---|---|---|
+| [OpenTelemetry Certified Associate (OTCA)][credly] | Linux Foundation / CNCF | 01/2026 | 01/2028 |
+| [Kubernetes and Cloud Native Associate (KCNA)][credly] | Linux Foundation / CNCF | 01/2025 | 01/2027 |
+| [Linux Foundation Certified Associate (LFCA)][credly] | Linux Foundation / CNCF | 01/2025 | 01/2027 |
 
 ## Skills
 
@@ -63,10 +72,6 @@ _… viele weitere mit A2 oder weniger._
 | [Flutter][flutter]           | C1     |
 | [Extbase][extbase]           | B2     |
 | [Symfony][symfony]           | B2     |
-| [Ansible][ansible]           | B2     |
-| [GraphQL][graphql]           | B2     |
-| [Docker][docker]             | B2     |
-| [Git][git]                   | B2     |
 
 ### Datenbanken
 
@@ -80,22 +85,24 @@ _… viele weitere mit A2 oder weniger._
 
 ### Werkzeuge
 
-| Werkzeug                 | Niveau |
-|--------------------------|--------|
-| [Ansible][ansible]       | B2     |
-| [GraphQL][graphql]       | B2     |
-| [Docker][docker]         | B2     |
-| [Git][git]               | B2     |
-| [GitHub Actions][github] | B2     |
-| [GitLab][gitlab]         | B2     |
-| [AWS][aws]               | B2     |
-| [Azure][azure]           | A2     |
-| [Jenkins][jenkins]       | A2     |
-| [Jira][jira]             | C2     |
-| [Confluence][confluence] | C2     |
-| [Kubernetes][kubernetes] | A2     |
-| [Grafana][grafana]       | B2     |
-| [TICK Stack][tick]       | B2     |
+| Werkzeug                         | Niveau |
+|----------------------------------|--------|
+| [Ansible][ansible]               | B2     |
+| [GraphQL][graphql]               | B2     |
+| [Docker][docker]                 | B2     |
+| [Git][git]                       | B2     |
+| [GitHub Actions][github]         | B2     |
+| [GitLab][gitlab]                 | B2     |
+| [AWS][aws]                       | B2     |
+| [Azure][azure]                   | B2     |
+| [Terraform][terraform]           | B2     |
+| [OpenTelemetry][opentelemetry]   | C1     |
+| [Kubernetes][kubernetes]         | B2     |
+| [Jenkins][jenkins]               | A2     |
+| [Jira][jira]                     | C2     |
+| [Confluence][confluence]         | C2     |
+| [Grafana][grafana]               | B2     |
+| [TICK Stack][tick]               | B2     |
 
 ### Weitere Kenntnisse
 
@@ -103,11 +110,10 @@ Agil, Scrum, Kanban, Visual Studio, Visual Studio Code, WebStorm, IoT, Marketing
 
 ## Interessen
 
-- Programmieren
+- [LoRaWAN Leipzig Usergroup][meetup-lorawan] (Organisator)
+- IoT & autonomes Fahren mit Mikrocontrollern
 - Musik
-- Sport
-- Reisen
-- Neues lernen
+- Sport & Reisen
 
 ## Referenzen
 
@@ -116,9 +122,10 @@ Meine Referenzen habe ich in meinem [Portfolio](2-portfolio.md) zusammengefasst.
 ## Kontakt
 
 Zu erreichen bin ich unter folgenden Kontaktdaten:
-[E‑Mail](mailto:vergissberlin@gmail.com), [Adresse](https://goo.gl/maps/9UaM21T2JXA6CAPB9),
+[E‑Mail](mailto:vergissberlin@gmail.com),
 [Blog](https://blog.andrelademann.de), [GitHub](https://github.com/vergissberlin),
-[LinkedIn](https://www.linkedin.com/in/andre-lademann/), [Xing](https://www.xing.com/profile/Andre_Lademann/cv)
+[LinkedIn](https://www.linkedin.com/in/andre-lademann/), [Xing](https://www.xing.com/profile/Andre_Lademann/cv),
+[Credly](https://www.credly.com/users/andre-lademann/)
 
 [blugento-www]: https://www.blugento.com/
 
@@ -129,6 +136,8 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 [netresearch-dtt-gmbh]: https://www.netresearch.de/
 
 [netresearch-kg]: https://www.netresearch.de/
+
+[kieksme]: https://kieks.me/
 
 [nullzueins]: https://www.nullzueins.com/
 
@@ -264,6 +273,12 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 [tasmota]: https://tasmota.github.io/docs/
 
 [terraform]: https://www.terraform.io/
+
+[opentelemetry]: https://opentelemetry.io/
+
+[credly]: https://www.credly.com/users/andre-lademann/
+
+[meetup-lorawan]: https://www.meetup.com/de-DE/lorawan-leipzig-usergroup
 
 [tick]: https://www.influxdata.com/blog/introduction-to-influxdatas-influxdb-and-tick-stack/
 
