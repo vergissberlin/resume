@@ -119,7 +119,7 @@ die ich 2025 mitgegründet habe.
 |---------------------------|---------------------------|
 | [TypeScript][typescript]  | Frontend & Backend        |
 | [Vue.js][vue.js]          | Frontend-Entwicklung      |
-| [Node.js][node-red]       | Backend-Entwicklung       |
+| [Node.js][nodejs]         | Backend-Entwicklung       |
 
 | Links   |                         |
 |---------|-------------------------|
@@ -244,8 +244,6 @@ ich mit GitLab CI erstellt. Sie enthält die folgenden Schritte:
 
 | Links             |                                                                        |
 |-------------------|------------------------------------------------------------------------|
-| Website           | <https://taptap.andrelademann.de>                                      |
-| Repository        | <https://github.com/vergissberlin/tap-tap->                            |
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
 | Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
 
@@ -605,4 +603,6 @@ Software.
 [kieksme]: https://kieks.me/
 
 [typescript]: https://www.typescriptlang.org/
+
+[nodejs]: https://nodejs.org/
 
