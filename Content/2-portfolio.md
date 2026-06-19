@@ -11,6 +11,7 @@
     Integration der Gebit-Kassenlösung für EDEKA
 
 - **IoT**
+    - [regenfass.eu](#-regenfasseu) IoT Smart-Home-Eigenprodukt
     - [CoffeeBin](#-CoffeeBin) Datenvisualisierung und Analytics
     - [Digitaler Agenturkicker](#-Digitaler-Agenturkicker) IoT Multichannel
 
@@ -20,6 +21,7 @@
     - [CamFight](#-CamFight) Mobile Web App
 
 - **Webentwicklung**
+    - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
     - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
     - [dynamo-dresden.de](#-dynamo-dresdende) High-Performance-Webanwendung
     - [Blugento](#-blugento) Docker, Marketing-Automation, AWS
@@ -103,6 +105,28 @@ in [DataDog][datadog].
 | [Prometheus][prometheus]           | Monitoring     |
 | [DataDog][datadog]                 | Observability  |
 
+### [[↑](#projektübersicht)] kieks.me
+
+_2025 – heute_
+
+**[kieks.me][kieksme]** ist eine Consulting- und Freelance-GbR für
+Web-Entwicklung, SaaS-Websites, Corporate Design und Landing Pages,
+die ich 2025 mitgegründet habe.
+
+**Meine Aufgaben:** Mitgründer, Softwarearchitektur, Full-Stack-Entwicklung.
+
+| Technologische Highlights |                           |
+|---------------------------|---------------------------|
+| [TypeScript][typescript]  | Frontend & Backend        |
+| [Vue.js][vue.js]          | Frontend-Entwicklung      |
+| [Node.js][nodejs]         | Backend-Entwicklung       |
+
+| Links   |                         |
+|---------|-------------------------|
+| Website | <https://kieks.me/>     |
+
+---
+
 ### [[↑](#projektübersicht)] AIDA board portal
 
 _2013-2016_
@@ -132,9 +156,9 @@ Terminbuchungen …)
 | [AWS RDS][aws-rds]                 | zum Datenbank‑Deployment           |
 | [Concourse CI][concourse-ci]       | als Pipeline‑Tool für CI/CD        |
 
-| Links |                                                         |
-|-------|---------------------------------------------------------|
-| Demo  | <https://nr:reiseberater@reiseberater2go.herokuapp.com> |
+| Links |                                    |
+|-------|------------------------------------|
+| Demo  | (nicht öffentlich verfügbar)       |
 
 
 ### [[↑](#projektübersicht)] dynamo-dresden.de
@@ -180,13 +204,6 @@ Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 | [Kubernetes][kubernetes]       | Bereitstellung der Anwendung |
 | [OpenTelemetry][opentelemetry] | Observability                |
 
-| Links             |                                                                        |
-|-------------------|------------------------------------------------------------------------|
-| Website           | <https://taptap.andrelademann.de>                                      |
-| Repository        | <https://github.com/vergissberlin/tap-tap->                            |
-| Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
-| Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
-
 ### [[↑](#projektübersicht)] LEJ Nachbarn App
 
 _2022_
@@ -227,8 +244,6 @@ ich mit GitLab CI erstellt. Sie enthält die folgenden Schritte:
 
 | Links             |                                                                        |
 |-------------------|------------------------------------------------------------------------|
-| Website           | <https://taptap.andrelademann.de>                                      |
-| Repository        | <https://github.com/vergissberlin/tap-tap->                            |
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
 | Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
 
@@ -279,6 +294,28 @@ Projekt archiviert.
 | Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
 | Repository    | <https://github.com/vergissberlin/bashlight> |
 
+
+### [[↑](#projektübersicht)] regenfass.eu
+
+_2024 – heute_
+
+**regenfass.eu** ist ein IoT-Eigenprodukt für Smart-Home-Anwendungen. Das
+Produkt verbindet Hardware-Sensoren mit einer Cloud-basierten Datenplattform
+zur Überwachung und Steuerung von Smart-Home-Komponenten.
+
+**Meine Aufgaben:** Produktentwicklung, Softwarearchitektur, IoT-Integration,
+Dokumentation.
+
+| Technologische Highlights      |                              |
+|--------------------------------|------------------------------|
+| IoT / Mikrocontroller          | Hardware-Integration         |
+| [OpenTelemetry][opentelemetry] | Observability                |
+
+| Links         |                              |
+|---------------|------------------------------|
+| Dokumentation | <https://docs.regenfass.eu/> |
+
+---
 
 ### [[↑](#projektübersicht)] CoffeeBin
 
@@ -463,10 +500,10 @@ Software.
 
 … auf die ich stolz bin.
 
-| Projekt                                                                          |                                                    |
-|:---------------------------------------------------------------------------------|:---------------------------------------------------|
-| [Node‑RED mjml ↗](https://flows.nodered.org/node/@example/node-red-contrib-mjml) | Node‑RED‑Node zur Gestaltung von E‑Mail‑Templates  |
-| [Node‑RED say ↗](https://flows.nodered.org/node/@example/node-red-contrib-say)   | Node‑RED‑Node zur Ausgabe von Sprachnachrichten    |
+| Projekt                  |                                                   |
+|:-------------------------|:--------------------------------------------------|
+| Node‑RED mjml            | Node‑RED‑Node zur Gestaltung von E‑Mail‑Templates |
+| Node‑RED say             | Node‑RED‑Node zur Ausgabe von Sprachnachrichten   |
 
 
 [apollojs]: https://www.apollographql.com/
@@ -554,4 +591,18 @@ Software.
 [varnish]: https://www.varnish-cache.org/
 
 [vuetify]: https://vuetifyjs.com/
+
+[datadog]: https://www.datadoghq.com/
+
+[opentelemetry]: https://opentelemetry.io/
+
+[jaeger]: https://www.jaegertracing.io/
+
+[prometheus]: https://prometheus.io/
+
+[kieksme]: https://kieks.me/
+
+[typescript]: https://www.typescriptlang.org/
+
+[nodejs]: https://nodejs.org/
 
