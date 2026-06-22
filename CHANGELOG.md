@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/vergissberlin/resume/compare/1.3.1...1.3.2) (2026-06-22)
+
+
+### Fehlerbehebungen
+
+* **defaults-pdf-iot.yml:** correct titlepage-background path casing ([#16](https://github.com/vergissberlin/resume/issues/16)) ([b134def](https://github.com/vergissberlin/resume/commit/b134def789e9464f0295d9d223189c634a25f30d))
+
 ## [1.3.1](https://github.com/vergissberlin/resume/compare/1.3.0...1.3.1) (2026-06-22)
 
 
