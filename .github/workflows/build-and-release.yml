@@ -1,21 +1,31 @@
 name: Build resume and publish it on GitHub releases
 
 on:
-  push:
-    tags:
-      - '*'
+  workflow_call:
+    inputs:
+      tag:
+        description: Release tag to build and attach assets to.
+        required: true
+        type: string
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing release tag to (re)build assets for.
+        required: true
+        type: string
 
 permissions:
   contents: write
 
 jobs:
   build-and-release:
-    name: build & release – ${{ github.ref_name }}
+    name: build & release – ${{ inputs.tag }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout sources
+      - name: Checkout sources at tag
         uses: actions/checkout@v4
         with:
+          ref: ${{ inputs.tag }}
           fetch-depth: 0
           fetch-tags: true
 
@@ -25,54 +35,69 @@ jobs:
       - name: Create temporary folders
         run: mkdir -p Results Temp
 
-      - name: Build documents (default + IoT profile)
+      - name: Build documents (Standard + IoT-Profil)
+        # build.sh leert Results/* zu Beginn jedes Laufs, daher Standard-Ergebnisse
+        # zwischen den Profilen wegsichern und am Ende wieder zusammenführen.
         run: |
           ./Scripts/build.sh
+          mkdir -p Results-standard
+          mv Results/* Results-standard/
           ./Scripts/build.sh --profile=iot
+          mv Results-standard/* Results/
+          rmdir Results-standard
           ls -lisah Results
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: resume-${{ github.ref_name }}
+          name: resume-${{ inputs.tag }}
           path: Results/*
           if-no-files-found: error
           retention-days: 30
 
-      - name: Publish to GitHub Release
+      - name: Append German download section & attach assets to release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: Release ${{ github.ref_name }}
+          tag_name: ${{ inputs.tag }}
           fail_on_unmatched_files: true
           files: |
-            Results/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf
-            Results/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
-            Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf
-            Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub
-            Results/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf
-            Results/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ github.ref_name }}.pdf
-            Results/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf
+            Results/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.pdf
+            Results/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.epub
+            Results/${{ env.RESUME_FILENAME }}-introduction-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-portfolio-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-contact-${{ inputs.tag }}.pdf
+            Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ inputs.tag }}.pdf
+            Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ inputs.tag }}.epub
+            Results/${{ env.RESUME_FILENAME }}-iot-introduction-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-iot-curriculum-vitae-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-iot-portfolio-${{ inputs.tag }}.pdf
+            Results/${{ env.RESUME_FILENAME }}-iot-contact-${{ inputs.tag }}.pdf
           append_body: true
           body: |
             #### Download
 
             | PDF | EPUB |
             | --- | ---- |
-            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover for pdf" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover for epub" /></a> |
-            | [![Badge PDF](https://img.shields.io/badge/PDF-resume-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.pdf) | [![Badge Epub](https://img.shields.io/badge/EPUB-resume-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub) |
+            | <a href="https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.pdf"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-pdf.png" alt="Cover PDF" /></a> | <a href="https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.epub"><img width="144" src="https://cdn.githubraw.com/${{ github.repository }}/main/Content/Media/Cover/Cover-epub.png" alt="Cover EPUB" /></a> |
+            | [![Badge PDF](https://img.shields.io/badge/PDF-Lebenslauf-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.pdf) | [![Badge EPUB](https://img.shields.io/badge/EPUB-Lebenslauf-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-${{ inputs.tag }}.epub) |
 
-            ##### Download single files
+            ##### Einzeldokumente (Standard)
 
-            | Document     | Download |
+            | Dokument     | Download |
             | ------------ | -------- |
-            | Introduction | [![Badge Introduction](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf) |
-            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ github.ref_name }}.pdf) |
-            | Portfolio    | [![Badge Portfolio](https://img.shields.io/badge/DE-Portfolio-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf) |
+            | Einleitung   | [![Badge Einleitung](https://img.shields.io/badge/DE-Einleitung-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-introduction-${{ inputs.tag }}.pdf) |
+            | Lebenslauf   | [![Badge Lebenslauf](https://img.shields.io/badge/DE-Lebenslauf-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-curriculum-vitae-${{ inputs.tag }}.pdf) |
+            | Portfolio    | [![Badge Portfolio](https://img.shields.io/badge/DE-Portfolio-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-portfolio-${{ inputs.tag }}.pdf) |
+            | Kontakt      | [![Badge Kontakt](https://img.shields.io/badge/DE-Kontakt-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-contact-${{ inputs.tag }}.pdf) |
 
-            ##### IoT Focus
+            ##### IoT-Fokus
 
-            | Format | Download |
-            | ------ | -------- |
-            | PDF    | [![Badge IoT PDF](https://img.shields.io/badge/PDF-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf) |
-            | EPUB   | [![Badge IoT EPUB](https://img.shields.io/badge/EPUB-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub) |
+            | Dokument         | Download |
+            | ---------------- | -------- |
+            | Lebenslauf PDF   | [![Badge IoT PDF](https://img.shields.io/badge/PDF-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ inputs.tag }}.pdf) |
+            | Lebenslauf EPUB  | [![Badge IoT EPUB](https://img.shields.io/badge/EPUB-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ inputs.tag }}.epub) |
+            | Einleitung       | [![Badge IoT Einleitung](https://img.shields.io/badge/DE-IoT_Einleitung-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-iot-introduction-${{ inputs.tag }}.pdf) |
+            | Lebenslauf (CV)  | [![Badge IoT CV](https://img.shields.io/badge/DE-IoT_Lebenslauf-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-iot-curriculum-vitae-${{ inputs.tag }}.pdf) |
+            | Portfolio        | [![Badge IoT Portfolio](https://img.shields.io/badge/DE-IoT_Portfolio-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-iot-portfolio-${{ inputs.tag }}.pdf) |
+            | Kontakt          | [![Badge IoT Kontakt](https://img.shields.io/badge/DE-IoT_Kontakt-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ inputs.tag }}/${{ env.RESUME_FILENAME }}-iot-contact-${{ inputs.tag }}.pdf) |
