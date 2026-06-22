@@ -219,7 +219,7 @@ docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
   -V subtitle="Resume ${document_git_tag}" \
   -V subject="${RESUME_SUBJECT}" \
   -V author="Author: ${RESUME_AUTHOR}" \
-  -V titlepage-logo="Content/Media/andrelademann.png" \
+  -V titlepage-logo="Content/Media/Cover/Cover-IOT.png" \
   -V description="Resume by ${RESUME_AUTHOR}" \
   -V rights="© ${document_date_year} ${RESUME_NAME}, ${RESUME_LICENSE}" \
   -V ibooks.version="$document_git_tag" \
