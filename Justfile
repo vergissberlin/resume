@@ -34,28 +34,29 @@ _msg label color:
     X=$'\033[1m' Z=$'\033[0m'
     printf '\n%s%s▶ %s%s\n\n' "$X" "$C" '{{label}}' "$Z"
 
-[private]
-_done label hint="":
+# Build default resume (PDF + EPUB)
+build: (_msg "Building default resume…" "cyan")
     #!/usr/bin/env bash
     set -euo pipefail
-    G=$'\033[32m' D=$'\033[2m' Z=$'\033[0m'
-    printf '\n%s✓%s %s' "$G" "$Z" '{{label}}'
-    if [ -n '{{hint}}' ]; then
-      printf ' %s%s%s' "$D" '{{hint}}' "$Z"
-    fi
-    printf '\n\n'
-
-# Build default resume (PDF + EPUB)
-build: (_msg "Building default resume…" cyan) (_done "Default build complete." "just ls")
     ./Scripts/build.sh
+    G=$'\033[32m' D=$'\033[2m' Z=$'\033[0m'
+    printf '\n%s✓%s Default build complete. %sjust ls%s\n\n' "$G" "$Z" "$D" "$Z"
 
 # Build resume with profile override (e.g. `just build-profile iot`)
-build-profile profile: (_msg "Building profile: {{profile}}" magenta) (_done "Profile {{profile}} complete." "just ls")
+build-profile profile: (_msg "Building profile: {{profile}}" "magenta")
+    #!/usr/bin/env bash
+    set -euo pipefail
     ./Scripts/build.sh --profile={{profile}}
+    G=$'\033[32m' D=$'\033[2m' Z=$'\033[0m'
+    printf '\n%s✓%s Profile {{profile}} complete. %sjust ls%s\n\n' "$G" "$Z" "$D" "$Z"
 
 # Build IoT-focused resume variant
-build-iot: (_msg "Building IoT profile…" magenta) (_done "IoT build complete." "just ls")
+build-iot: (_msg "Building IoT profile…" "magenta")
+    #!/usr/bin/env bash
+    set -euo pipefail
     ./Scripts/build.sh --profile=iot
+    G=$'\033[32m' D=$'\033[2m' Z=$'\033[0m'
+    printf '\n%s✓%s IoT build complete. %sjust ls%s\n\n' "$G" "$Z" "$D" "$Z"
 
 # Build all variants (same as CI)
 build-all:
