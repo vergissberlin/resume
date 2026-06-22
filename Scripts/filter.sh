@@ -20,9 +20,6 @@ fi
 ################################################################################
 
 
-# Remove header navigation
-$sedcmd 's/>\ \[Introduction\].*//g' $1
-
 # Remove name from title
 $sedcmd 's/–\ \André\ Lademann//g' $1
 

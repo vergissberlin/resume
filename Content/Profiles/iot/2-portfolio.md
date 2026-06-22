@@ -1,7 +1,5 @@
 # Portfolio
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 ## Projektübersicht
 
 - **IoT & Embedded Systems**

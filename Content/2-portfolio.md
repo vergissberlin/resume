@@ -1,40 +1,38 @@
 # Portfolio
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 ## Projektübersicht
 
 - **POS & Observability**
-  - [EDEKA - Observability PoC](#-EDEKA-Observability-PoC) 
+  - [EDEKA - Observability PoC](#-observability-edeka-poc)
     Integration der Gebit-Kassenlösung für EDEKA
-  - [EDEKA - Kassensoftware Integration](#-EDEKA-POS-Integration) 
+  - [EDEKA - Kassensoftware Integration](#-edeka-pos-integration)
     Integration der Gebit-Kassenlösung für EDEKA
 
 - **IoT**
-    - [regenfass.eu](#-regenfasseu) IoT Smart-Home-Eigenprodukt
-    - [CoffeeBin](#-CoffeeBin) Datenvisualisierung und Analytics
-    - [Digitaler Agenturkicker](#-Digitaler-Agenturkicker) IoT Multichannel
+  - [regenfass.eu](#-regenfasseu) IoT Smart-Home-Eigenprodukt
+    - [CoffeeBin](#-coffeebin) Datenvisualisierung und Analytics
+    - [Digitaler Agenturkicker](#-digitaler-agenturkicker) IoT Multichannel
 
 - **App-Entwicklung**
-    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
-    - [Tap!Tap!](#-tap-tap) App-Entwicklung
-    - [CamFight](#-CamFight) Mobile Web App
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
+  - [Tap!Tap!](#-tap-tap) App-Entwicklung
+  - [CamFight](#-camfight) Mobile Web App
 
 - **Webentwicklung**
-    - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
-    - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
-    - [dynamo-dresden.de](#-dynamo-dresdende) High-Performance-Webanwendung
-    - [Blugento](#-blugento) Docker, Marketing-Automation, AWS
+  - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
+  - [AIDA board portal](#-aida-board-portal) Gästeportal für AIDA Cruises
+  - [dynamo-dresden.de](#-dynamo-dresdende) High-Performance-Webanwendung
+  - [Blugento](#-blugento) Docker, Marketing-Automation, AWS
 
 - **Desktop** (PWA)
-    - [KiTa Tagesplaner](#-KiTa-Tagesplaner) PWA-App
+  - [KiTa Tagesplaner](#-kita-tagesplaner) PWA-App
 
 - **CI/CD**
-    - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
-    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
+  - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
 
-- **[Weitere Projekte](#-Weitere-Projekte)**
-    - [Bashlight](#-Bashlight) Kommandozeilen-Erweiterung
+- **[Weitere Projekte](#-weitere-projekte)**
+  - [Bashlight](#-bashlight) Kommandozeilen-Erweiterung
 
 ---
 
@@ -42,7 +40,7 @@
 
 ### [[↑](#projektübersicht)] KiTa Tagesplaner
 
-_2020 - 2021_
+#### 2020 - 2021
 
 ![KiTa Tagesplaner](Media/Portfolio/kita-tagesplaner.png)
 
@@ -51,16 +49,16 @@ den Tagesablauf in der Kita mit Bildern zu beschreiben. Die Bilder können per
 Drag-and-Drop ausgewählt und sortiert werden. Zusätzliche Textfelder können
 eingefügt werden.
 
-Die **Technologie-Highlights** sind *Vue.js* im Frontend mit *jspdf* für die
+Die **Technologie-Highlights** sind _Vue.js_ im Frontend mit _jspdf_ für die
 Erstellung von PDFs. Es handelt sich um eine einseitige Anwendung, die ohne
 Internetverbindung genutzt werden kann und auf Desktop-Geräten installierbar
 ist. Die Anwendung erkennt den bevorzugten Lichtmodus des Systems und ändert
-das Styling in den *Dunkelmodus*, wenn dieser aktiviert ist. Sie verwendet
-benutzerdefinierte Eigenschaften. Für das Backend habe ich auch eine *REST-API*
-mit *OpenAPI* erstellt. [fastify](https://www.fastify.io/) war meine Wahl für
+das Styling in den _Dunkelmodus_, wenn dieser aktiviert ist. Sie verwendet
+benutzerdefinierte Eigenschaften. Für das Backend habe ich auch eine _REST-API_
+mit _OpenAPI_ erstellt. [fastify](https://www.fastify.io/) war meine Wahl für
 das Framework.
 
-**Meine Aufgaben:** Full-Stack-Entwicklung, Projektmanagement, 
+**Meine Aufgaben:** Full-Stack-Entwicklung, Projektmanagement,
 Softwarearchitektur, Kundenbetreuung.
 
 | Technik-Highlights                 |                                              |
@@ -81,7 +79,7 @@ Softwarearchitektur, Kundenbetreuung.
 
 ### [[↑](#projektübersicht)] Observability EDEKA PoC
 
-_2023_
+#### 2023
 
 EDEKA möchte mehr Transparenz in seine Prozesse bringen. Viele Microservices
 laufen in einem Orchester ohne Dirigenten. Mit der Observability-Plattform
@@ -89,12 +87,12 @@ wird es möglich, die Prozesse zu überwachen und bei Bedarf zu
 intervenieren. In diesem PoC galt es, den Nachweis der Machbarkeit zu liefern,
 dass OpenTelemetry im SAP‑Kontext eingesetzt werden kann.
 
-**Meine Aufgaben** waren die Team- und Projektleitung. Ich habe die 
+**Meine Aufgaben** waren die Team- und Projektleitung. Ich habe die
 Softwarearchitektur entwickelt und die Installation der Software auf den
 Demonstrationsservern durchgeführt.
 
-Die **Technologie-Highlights** sind *OpenTelemetry* zur Überwachung der
-Prozesse, *Jaeger* zur Visualisierung der Traces und *Prometheus* zur
+Die **Technologie-Highlights** sind _OpenTelemetry_ zur Überwachung der
+Prozesse, _Jaeger_ zur Visualisierung der Traces und _Prometheus_ zur
 Überwachung der Systeme sowie die Visualisierung von Traces, Metriken und Logs
 in [DataDog][datadog].
 
@@ -107,7 +105,7 @@ in [DataDog][datadog].
 
 ### [[↑](#projektübersicht)] kieks.me
 
-_2025 – heute_
+#### 2025 – heute
 
 **[kieks.me][kieksme]** ist eine Consulting- und Freelance-GbR für
 Web-Entwicklung, SaaS-Websites, Corporate Design und Landing Pages,
@@ -129,7 +127,7 @@ die ich 2025 mitgegründet habe.
 
 ### [[↑](#projektübersicht)] AIDA board portal
 
-_2013-2016_
+#### 2013-2016
 
 ![AIDA Bordportal](Media/Portfolio/aida-bordportal.png)
 
@@ -140,10 +138,10 @@ Es ist optimiert für TV, Mobile und spezielle Displays in den Gängen.
 **Meine Aufgaben** waren die Team- und Projektleitung, die Installation der
 Software auf dem Schiff und die Erstellung eines Demosystems.
 
-Die **Technologie-Highlights** sind die Unterstützung von *Low‑Power‑Hardware*
-(LG TV), *Kartenleser* zum Einloggen in Benutzerkonten, Bedienung über
-*Fernbedienung*, Erstellung und Aktualisierung einer Chrome‑Erweiterung aus der
-Ferne, *verschiedene APIs* auf dem Schiff (Restaurants, Ausflüge,
+Die **Technologie-Highlights** sind die Unterstützung von _Low‑Power‑Hardware_
+(LG TV), _Kartenleser_ zum Einloggen in Benutzerkonten, Bedienung über
+_Fernbedienung_, Erstellung und Aktualisierung einer Chrome‑Erweiterung aus der
+Ferne, _verschiedene APIs_ auf dem Schiff (Restaurants, Ausflüge,
 Terminbuchungen …)
 
 | Technologische Highlights          |                                    |
@@ -160,10 +158,9 @@ Terminbuchungen …)
 |-------|------------------------------------|
 | Demo  | (nicht öffentlich verfügbar)       |
 
-
 ### [[↑](#projektübersicht)] dynamo-dresden.de
 
-_2014 - 2015_
+#### 2014 - 2015
 
 ![Dynamo Dresden Website](Media/Portfolio/dynamo-dresden.png)
 
@@ -183,17 +180,16 @@ Leistungsverbesserungen.
 | Website                                                   | <https://www.dynamo-dresden.de>                              |
 | Chrome Extensions Dynamo                                  | <https://chrome.google.com/webstore/search/dynamo%20dresden> |
 
-
 ## Softwareentwicklung
 
 ### [[↑](#projektübersicht)] EDEKA POS Integration
 
-_2023_ - `now()`
+#### 2023 - `now()`
 
-Der Kunde beauftragte die Gebit mit der Integration der Kassenlösung in die 
+Der Kunde beauftragte die Gebit mit der Integration der Kassenlösung in die
 EDEKA‑Infrastruktur und beauftragte Thinkport als technischen Dienstleister.
 
-Die **Technologie-Highlights** sind **Flutter** für die App‑Entwicklung, 
+Die **Technologie-Highlights** sind **Flutter** für die App‑Entwicklung,
 **Java** für die Backend‑Entwicklung und **Docker** für die Bereitstellung der
 Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 
@@ -206,7 +202,7 @@ Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 
 ### [[↑](#projektübersicht)] LEJ Nachbarn App
 
-_2022_
+#### 2022
 
 ![LEJ Nachbarn App](Media/Portfolio/lejn-store-ios.png)
 
@@ -220,9 +216,9 @@ Durch das Senden von Push‑Benachrichtigungen können die Nutzer über neue
 Nachrichten informiert werden. Die App ist in der Lage, die Benachrichtigungen
 auch im Hintergrund zu empfangen und zu verarbeiten.
 
-**Technologie-Highlights:** Ich habe *React Native* mit [Expo][expo]
+**Technologie-Highlights:** Ich habe _React Native_ mit [Expo][expo]
 verwendet, um die App zu erstellen. Ich habe viel über die Richtlinien und
-Anforderungen des *Google Play Store* gelernt.
+Anforderungen des _Google Play Store_ gelernt.
 
 ![LEJN Pipeline](Media/Portfolio/lejn-pipeline.png)
 
@@ -247,22 +243,21 @@ ich mit GitLab CI erstellt. Sie enthält die folgenden Schritte:
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
 | Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
 
+### [[↑](#projektübersicht)] Tap! Tap
 
-### [[↑](#projektübersicht)] Tap! Tap!
-
-_2020_
+#### 2020
 
 ![Tap! Tap! Play store](Media/Portfolio/tap-tap.png)
 
-Dies ist ein **React Native** Game‑Experiment. Ein Bildschirm – zwei Spieler. 
-Mit jedem Klick auf den Button wird der Button größer und der Button des 
-Gegners kleiner. Man gewinnt, wenn der eigene Button die gesamte Spielfläche 
-abdeckt. Inspiriert wurde ich von einem Spiel, das wir in der Schule auf 
+Dies ist ein **React Native** Game‑Experiment. Ein Bildschirm – zwei Spieler.
+Mit jedem Klick auf den Button wird der Button größer und der Button des
+Gegners kleiner. Man gewinnt, wenn der eigene Button die gesamte Spielfläche
+abdeckt. Inspiriert wurde ich von einem Spiel, das wir in der Schule auf
 unseren Taschenrechnern gespielt haben.
 
-**Technologie-Highlights:** Ich habe *React Native* mit [Expo][expo] 
-verwendet, um die App zu erstellen. Ich habe viel über die 
-Richtlinien/Anforderungen des *Google Play Store* gelernt.
+**Technologie-Highlights:** Ich habe _React Native_ mit [Expo][expo]
+verwendet, um die App zu erstellen. Ich habe viel über die
+Richtlinien/Anforderungen des _Google Play Store_ gelernt.
 
 | Technologische Highlights              |                                |
 |----------------------------------------|--------------------------------|
@@ -280,9 +275,9 @@ Richtlinien/Anforderungen des *Google Play Store* gelernt.
 
 ![Bashlight](Media/Portfolio/bashlight.png)
 
-Eine Erweiterung der Kommandozeilen‑Eingabeaufforderung, die unter anderem den 
-Git‑Zweig und den Git‑Status anzeigt. Inzwischen gibt es andere, 
-bessere Open‑Source‑Projekte zu diesem Thema. Aus diesem Grund habe ich das 
+Eine Erweiterung der Kommandozeilen‑Eingabeaufforderung, die unter anderem den
+Git‑Zweig und den Git‑Status anzeigt. Inzwischen gibt es andere,
+bessere Open‑Source‑Projekte zu diesem Thema. Aus diesem Grund habe ich das
 Projekt archiviert.
 
 | Technologische Highlights |                                    |
@@ -294,10 +289,9 @@ Projekt archiviert.
 | Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
 | Repository    | <https://github.com/vergissberlin/bashlight> |
 
-
 ### [[↑](#projektübersicht)] regenfass.eu
 
-_2024 – heute_
+#### 2024 – heute
 
 **regenfass.eu** ist ein IoT-Eigenprodukt für Smart-Home-Anwendungen. Das
 Produkt verbindet Hardware-Sensoren mit einer Cloud-basierten Datenplattform
@@ -319,22 +313,22 @@ Dokumentation.
 
 ### [[↑](#projektübersicht)] CoffeeBin
 
-_2020_
+#### 2020
 
 ![img.png](Media/Portfolio/coffee-bin-nodered.png)
 
-Big‑Data‑Applikation zur Erfassung von Kaffee‑Trink‑Daten bei 
-[Netresearch DTT GmbH][netresearch]. Die Daten werden in einer zeitbasierten 
+Big‑Data‑Applikation zur Erfassung von Kaffee‑Trink‑Daten bei
+[Netresearch DTT GmbH][netresearch]. Die Daten werden in einer zeitbasierten
 Datenbank gespeichert.
-Das Interessante daran ist, welche Schlüsse man aus den zunächst banal 
-erscheinenden Daten ziehen kann. Setzt man die Daten in Beziehung zu anderen 
-Daten wie der Anzahl der Tickets in JIRA, lässt sich so eventuell ein 
-Stresslevel ablesen. Mit dem Fachgebiet der Datenanalyse beschäftige ich mich 
+Das Interessante daran ist, welche Schlüsse man aus den zunächst banal
+erscheinenden Daten ziehen kann. Setzt man die Daten in Beziehung zu anderen
+Daten wie der Anzahl der Tickets in JIRA, lässt sich so eventuell ein
+Stresslevel ablesen. Mit dem Fachgebiet der Datenanalyse beschäftige ich mich
 vor allem in meiner Freizeit.
 
-**Technologische Highlights:** Neben der Entwicklung in C++ zur Erfassung der 
-Daten kam hier Node‑RED zur Steuerung und Verarbeitung der Datenströme zum 
-Einsatz. Die Speicherung erfolgt in der zeitbasierten Datenbank InfluxDB und 
+**Technologische Highlights:** Neben der Entwicklung in C++ zur Erfassung der
+Daten kam hier Node‑RED zur Steuerung und Verarbeitung der Datenströme zum
+Einsatz. Die Speicherung erfolgt in der zeitbasierten Datenbank InfluxDB und
 die Visualisierung mit Grafana.
 
 ![Camp Fight Prototyp](Media/Portfolio/coffee-bin.png)
@@ -348,7 +342,7 @@ die Visualisierung mit Grafana.
 
 ### [[↑](#projektübersicht)] CamFight
 
-_2017_
+#### 2017
 
 ![Camp Fight Prototyp](Media/Portfolio/cam-fight.png)
 
@@ -387,12 +381,13 @@ mobilen Geräten installierbar. Derzeit wird sie nicht aktiv weiterentwickelt.
 
 ### [[↑](#projektübersicht)] Digitaler Agenturkicker
 
-_2015 - 2016_
+#### 2015 - 2016
 
-![](Media/Portfolio/piball-header.png)
-![](Media/Portfolio/piball.png)
+![Digitaler Agenturkicker PiBall Header](Media/Portfolio/piball-header.png)
 
-Die Digitalisierung des Agentur‑Kickers ist ein *Multichannel‑Experiment*,
+![Digitaler Agenturkicker PiBall](Media/Portfolio/piball.png)
+
+Die Digitalisierung des Agentur‑Kickers ist ein _Multichannel‑Experiment_,
 das im Rahmen meiner Research‑&‑Development‑Zeit bei der [Netresearch DTT
 GmbH][netresearch] entstanden ist. Ziel war es, möglichst viele Ausspielkanäle
 mit einer zentralen Datenbasis zu bedienen. Zusätzliche Herausforderungen waren
@@ -421,22 +416,21 @@ Hardware.
 | GitHub Repository                                         | <https://github.com/vergissberlin/piball>            |
 | Web interface                                             | <https://vivid-fire-2266.web.app>                    |
 
-
 ### [[↑](#projektübersicht)] Blugento
 
-_2017 - 2018_
+#### 2017 - 2018
 
 ![blugento](Media/Portfolio/blugento.png)
 
-Blugento ist ein Verwaltungssystem für Docker‑Anwendungen. Hiermit ist es 
-möglich, auf entfernten Servern Docker‑Images zu starten, zu konfigurieren, 
-anzupassen, zu aktualisieren und zu stoppen. Durch die eingebaute Web‑Konsole 
+Blugento ist ein Verwaltungssystem für Docker‑Anwendungen. Hiermit ist es
+möglich, auf entfernten Servern Docker‑Images zu starten, zu konfigurieren,
+anzupassen, zu aktualisieren und zu stoppen. Durch die eingebaute Web‑Konsole
 ist es auch möglich, das System aus der Ferne zu debuggen.
 
-Environments können durch die Nutzer verwaltet werden. Die Server können in der 
-Cloud oder lokal aufgesetzt werden. Durch ein 
-Benutzer‑Rechte‑System ist es möglich, auch Kunden Zugriff auf die Anwendung zu 
-gewähren. Mit _blugento_ können im Handumdrehen Demo‑Instanzen 
+Environments können durch die Nutzer verwaltet werden. Die Server können in der
+Cloud oder lokal aufgesetzt werden. Durch ein
+Benutzer‑Rechte‑System ist es möglich, auch Kunden Zugriff auf die Anwendung zu
+gewähren. Mit _blugento_ können im Handumdrehen Demo‑Instanzen
 hochgefahren sowie Systeme für den Live‑Betrieb verwaltet werden.
 
 | Technologische Highlights                                 |                                                                         |
@@ -457,28 +451,27 @@ hochgefahren sowie Systeme für den Live‑Betrieb verwaltet werden.
 | Website                                                   | <https://blugento.com>     |
 | App                                                       | <https://app.blugento.com> |
 
-
 ## DevOps
 
 ### [[↑](#projektübersicht)] Universal Music – Shop Manager
 
-_2018-2019_
+#### 2018-2019
 
 ![Universal Music](Media/Portfolio/umg.png)
 
-Mit der entwickelten Software ist es dem Kunden UMG möglich, umgehend neue 
-Magento‑Webshops für seine Klienten aufzusetzen und zu gestalten, ohne dafür 
+Mit der entwickelten Software ist es dem Kunden UMG möglich, umgehend neue
+Magento‑Webshops für seine Klienten aufzusetzen und zu gestalten, ohne dafür
 Entwickler beauftragen zu müssen.
 
-Innerhalb eines internationalen Teams (Australien, USA, Indien) war ich für das 
-Release‑Management des von mir verwalteten Docker‑Basis‑Images für die 
-[UMG][umg]‑Shops verantwortlich. Ich stellte dem Kunden und dem Team eine 
-eigene Version des Images mit einer eigenen Softwarebasis bereit. Diese Software 
-basiert auf [Docker Compose][docker-compose] und wurde mit einer eigenen 
-Docker‑Registry verwaltet. Die stetige Weiterentwicklung des dabei verwendeten 
+Innerhalb eines internationalen Teams (Australien, USA, Indien) war ich für das
+Release‑Management des von mir verwalteten Docker‑Basis‑Images für die
+[UMG][umg]‑Shops verantwortlich. Ich stellte dem Kunden und dem Team eine
+eigene Version des Images mit einer eigenen Softwarebasis bereit. Diese Software
+basiert auf [Docker Compose][docker-compose] und wurde mit einer eigenen
+Docker‑Registry verwaltet. Die stetige Weiterentwicklung des dabei verwendeten
 Docker‑Images gehörte zu meinen Aufgaben.
 
-Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten 
+Ich gab dem Team und dem Kunden Schulungen zur Verwendung der entwickelten
 Software.
 
 | Technologische Highlights          |                                    |
@@ -495,7 +488,6 @@ Software.
 |------------------------------------|----------------------------------|
 | Universal Music Group              | <https://www.universalmusic.com> |
 
-
 ## [[↑](#projektübersicht)] Weitere Projekte
 
 … auf die ich stolz bin.
@@ -504,7 +496,6 @@ Software.
 |:-------------------------|:--------------------------------------------------|
 | Node‑RED mjml            | Node‑RED‑Node zur Gestaltung von E‑Mail‑Templates |
 | Node‑RED say             | Node‑RED‑Node zur Ausgabe von Sprachnachrichten   |
-
 
 [apollojs]: https://www.apollographql.com/
 
@@ -537,10 +528,6 @@ Software.
 [expo]: https://expo.dev/
 
 [fastify]: https://www.fastify.io/
-
-[google-chrome-extension]: https://chrome.google.com/webstore/detail/google-chrome-extension-for-t/nmmhkkegccagdldgiimedpiccmgmiednk
-
-[google-chrome-extension-dynamo]: https://chrome.google.com/webstore/search/dynamo
 
 [google-firebase]: https://firebase.google.com/
 
@@ -605,4 +592,3 @@ Software.
 [typescript]: https://www.typescriptlang.org/
 
 [nodejs]: https://nodejs.org/
-

@@ -1,8 +1,6 @@
 # Kontakt
 
-> [Einführung](0-introduction.md) | [Lebenslauf](1-curriculum-vitae.md) | [Portfolio](2-portfolio.md) | [Kontakt](3-contact.md)
-
-## Kontakt
+## Kontaktdaten
 
 Zu erreichen bin ich unter folgenden Kontaktdaten:
 

@@ -1,11 +1,6 @@
 # Einführung
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 ![REPLACE_NAME](Media/andrelademann.png){ width=42% }
-
-Ein Lebenslauf ist wie ein [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) – man versteht ihn erst richtig, wenn man genau hinschaut.
-
 
 ## Über mich
 
@@ -29,12 +24,12 @@ Smart-Home-Anwendungen. Seit 2025 bin ich Mitgründer der
 Web-Entwicklung und SaaS-Lösungen.
 
 **Meine Fähigkeiten sind:**
+
 1. Softwareentwicklung
 2. Cloud-Engineering
 3. Softwarearchitektur
 4. Beratung, Trainer, Vortragender
 5. Marketing, SEO, Content-Produktion
-
 
 ## Aufgabenschwerpunkte im Verlauf der Zeit
 

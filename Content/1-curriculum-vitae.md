@@ -1,7 +1,5 @@
 # Lebenslauf
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 [![PDF Download Lebenslauf](https://img.shields.io/github/downloads/vergissberlin/resume/total?label=PDF%20Download%20Lebenslauf&style=flat-square)](https://github.com/vergissberlin/resume/releases/latest/)
 
 ## Berufliche Laufbahn
@@ -148,33 +146,22 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [ansible]: https://www.ansible.com/
 
-[apollojs]: https://www.apollographql.com/
 
-[autopilot]: https://www.autopilot.io/
 
 [aws]: https://docs.aws.amazon.com
 
-[aws-ecs]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Basics.html
 
-[aws-ec2]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-types.html
 
-[aws-efs]: https://docs.aws.amazon.com/efs/latest/ug/
 
-[aws-rds]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html
 
-[aws-s3]: https://aws.amazon.com/s3/
 
 [azure]: https://docs.microsoft.com/en-us/azure/
 
-[bash]: https://www.gnu.org/software/bash/
 
-[belana.io]: https://belana.io/
 
-[bitbucket]: https://bitbucket.org/
 
 [c++]: https://isocpp.org/
 
-[concourse-ci]: https://docs.concourse.ci/
 
 [confluence]: https://www.atlassian.com/software/confluence
 
@@ -182,19 +169,10 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [docker]: https://www.docker.com/
 
-[docker-compose]: https://docs.docker.com/compose/
-
-[docker-registry]: https://docs.docker.com/registry/
-
-[edge-side-includes]: https://en.wikipedia.org/wiki/Edge_Side_Includes
-
 [elasticsearch]: https://www.elastic.co/
-
-[expo]: https://expo.io/
 
 [extbase]: https://docs.typo3.org/m/typo3/reference-coreapi/master/en-us/ApiOverview/Extbase/Index.html
 
-[fastify]: https://www.fastify.io/
 
 [flutter]: https://flutter.dev/
 
@@ -204,11 +182,8 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [gitlab]: https://about.gitlab.com/
 
-[google-chrome-extension]: https://chrome.google.com/webstore/detail/google-chrome-extension-for-t/nmmhkkegccagdldgiimedpiccmgmiednk
 
-[google-chrome-extension-dynamo]: https://chrome.google.com/webstore/search/dynamo
 
-[google-firebase]: https://firebase.google.com/
 
 [graphql]: https://graphql.org/
 
@@ -216,13 +191,9 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [groovy]: https://groovy-lang.org/
 
-[heroku]: https://dashboard.heroku.com/apps/camfight-app
 
-[hubspot]: https://www.hubspot.com/
 
-[influxdb]: https://influxdb.com/
 
-[ionic-framework]: https://ionicframework.com/
 
 [java]: https://www.java.com/
 
@@ -232,9 +203,7 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [jira]: https://www.atlassian.com/software/jira
 
-[jmeter]: https://jmeter.apache.org/
 
-[jspdf]: https://parall.ax/products/jspdf
 
 [kubernetes]: https://kubernetes.io/
 
@@ -242,15 +211,11 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [mysql]: https://www.mysql.com/
 
-[netresearch]: https://www.netresearch.de/
 
-[node-red]: https://nodered.org/
 
-[openapi]: https://swagger.io/specification/
 
 [php]: https://www.php.net/
 
-[postman]: https://www.getpostman.com/
 
 [postgresql]: https://www.postgresql.org/
 
@@ -260,17 +225,13 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [redis]: https://redis.io/
 
-[sphinx]: https://www.sphinx-doc.org/
 
-[swagger]: https://swagger.io/
 
-[swagger-ui]: https://swagger.io/tools/swagger-ui/
 
 [symfony]: https://symfony.com/
 
 [sql]: https://www.w3schools.com/sql/
 
-[tasmota]: https://tasmota.github.io/docs/
 
 [terraform]: https://www.terraform.io/
 
@@ -282,14 +243,10 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 
 [tick]: https://www.influxdata.com/blog/introduction-to-influxdatas-influxdb-and-tick-stack/
 
-[travis-ci]: https://travis-ci.org/
 
-[typo3]: https://typo3.org/
 
 [typescript]: https://www.typescriptlang.org/
 
 [vue.js]: https://vuejs.org/
 
-[varnish]: https://www.varnish-cache.org/
 
-[vuetify]: https://vuetifyjs.com/

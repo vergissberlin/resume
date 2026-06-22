@@ -1,7 +1,5 @@
 # Einführung
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 ![REPLACE_NAME](Media/andrelademann.png){ width=42% }
 
 Ein Lebenslauf ist wie ein [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) – man versteht ihn erst richtig, wenn man genau hinschaut.
