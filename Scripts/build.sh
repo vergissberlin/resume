@@ -186,11 +186,17 @@ sh Scripts/filter.sh Temp/combined.md
 echo "👉\tReplace characters in single Markdown file"
 sh Scripts/replace.sh Temp/combined.md
 
+# Use profile-specific PDF defaults if available, else fall back to default
+DEFAULTS_PDF="Template/Config/defaults-pdf.yml"
+if [ -n "$PROFILE" ] && [ -f "Template/Config/defaults-pdf-${PROFILE}.yml" ]; then
+  DEFAULTS_PDF="Template/Config/defaults-pdf-${PROFILE}.yml"
+fi
+
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
 docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
   -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.pdf \
-  --defaults Template/Config/defaults-pdf.yml \
+  --defaults ${DEFAULTS_PDF} \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
   -V subtitle="Resume" \

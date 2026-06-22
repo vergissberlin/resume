@@ -15,11 +15,6 @@
   - [EDEKA - Kassensoftware Integration](#-EDEKA-POS-Integration)
     Integration der Gebit-Kassenlösung für EDEKA
 
-- **App-Entwicklung**
-    - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
-    - [Tap!Tap!](#-tap-tap) App-Entwicklung
-    - [CamFight](#-CamFight) Mobile Web App
-
 - **Webentwicklung**
     - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
     - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
@@ -241,55 +236,6 @@ Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 | [Kubernetes][kubernetes]       | Bereitstellung der Anwendung |
 | [OpenTelemetry][opentelemetry] | Observability                |
 
-### [[↑](#projektübersicht)] LEJ Nachbarn App
-
-_2022_
-
-![LEJ Nachbarn App](Media/Portfolio/lejn-store-ios.png)
-
-Der Kunde Flughafen Leipzig/Halle suchte eine Möglichkeit, mit seinen direkten
-Nachbarn auf digitalem Weg ins Gespräch zu kommen. Mein Part war die Umsetzung
-der App-Variante. **React Native** zeigt hier seine Stärken, da die App für
-iOS und Android entwickelt werden konnte und somit die Kosten für die
-Entwicklung deutlich gesenkt werden konnten.
-
-![LEJN Pipeline](Media/Portfolio/lejn-pipeline.png)
-
-Teil des Projektes war die Erstellung einer CI/CD-Pipeline mit GitLab CI.
-
-| Technologische Highlights              |                                  |
-|----------------------------------------|----------------------------------|
-| [React Native][react-native]           | auf GitLab                       |
-| [Expo][expo]                           | zur App-Entwicklung im Browser   |
-| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung   |
-| Push-Benachrichtigungen                | Push-Benachrichtigungen mit Expo |
-
-| Links             |                                                                        |
-|-------------------|------------------------------------------------------------------------|
-| Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
-| Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
-
-
-### [[↑](#projektübersicht)] Tap! Tap!
-
-_2020_
-
-![Tap! Tap! Play store](Media/Portfolio/tap-tap.png)
-
-Dies ist ein **React Native** Game-Experiment.
-
-| Technologische Highlights              |                                |
-|----------------------------------------|--------------------------------|
-| [React Native][react-native]           | auf GitLab                     |
-| [Expo][expo]                           | zur App-Entwicklung im Browser |
-| [Google Play Store][google-play-store] | Veröffentlichung der Anwendung |
-
-| Links             |                                                                          |
-|-------------------|--------------------------------------------------------------------------|
-| Website           | <https://taptap.andrelademann.de>                                        |
-| Repository        | <https://github.com/vergissberlin/tap-tap->                              |
-| Google Play Store | <https://play.google.com/store/apps/details?id=com.vergissberlin.taptap> |
-
 ### [[↑](#projektübersicht)] Bashlight
 
 ![Bashlight](Media/Portfolio/bashlight.png)
@@ -328,27 +274,6 @@ Blugento ist ein Verwaltungssystem für Docker-Anwendungen auf entfernten Server
 | Website                                                   | <https://blugento.com>     |
 
 
-### [[↑](#projektübersicht)] CamFight
-
-_2017_
-
-![Camp Fight Prototyp](Media/Portfolio/cam-fight.png)
-
-Web-App für ein Team-Event – eine digitalisierte Fotorallye. Rapid Prototyping
-mit Papierprototypen und Figma direkt mit dem Kunden.
-
-| Technologische Highlights        |                                                   |
-|----------------------------------|---------------------------------------------------|
-| [Vue.js][vue.js]                 | Mobile App mit der Vuetify-Komponentenbibliothek  |
-| [AWS S3][aws-s3]                 | Zum Upload der Fotos durch die Nutzer             |
-| [Travis CI][travis-ci]           | als Pipeline-Tool für CI/CD                       |
-
-| Links                            |                                              |
-|----------------------------------|----------------------------------------------|
-| App                              | <https://cam-fight.surge.sh>                 |
-| Repository                       | <https://github.com/vergissberlin/cam-fight> |
-
-
 ## DevOps
 
 ### [[↑](#projektübersicht)] Universal Music – Shop Manager
@@ -370,28 +295,6 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 | Links                              |                                  |
 |------------------------------------|----------------------------------|
 | Universal Music Group              | <https://www.universalmusic.com> |
-
-## Consulting
-
-### [[↑](#projektübersicht)] KiTa Tagesplaner
-
-_2020 - 2021_
-
-![KiTa Tagesplaner](Media/Portfolio/kita-tagesplaner.png)
-
-Full-Stack-Entwicklung einer PWA für Erzieherinnen und Erzieher zur Beschreibung
-des Tagesablaufs mit Bildern (Drag-and-Drop, Offline-fähig, Dark Mode).
-
-| Technik-Highlights                 |                                              |
-|------------------------------------|----------------------------------------------|
-| [Vue.js][vue.js]                   | Mobile App mit der Vuetify-Komponentenbibliothek |
-| [fastify][fastify]                 | Backend-Framework für Node.js                |
-| [OpenAPI][openapi]                 | REST-API-Generierung und Dokumentation       |
-
-| Links                              |                                                                  |
-|------------------------------------|------------------------------------------------------------------|
-| App                                | <https://kita-tagesplaner.onrender.com>                          |
-| Repository der App                 | <https://github.com/NULLzuEINS/kindergarten-day-planner-app>     |
 
 
 ## [[↑](#projektübersicht)] Weitere Projekte
@@ -432,10 +335,6 @@ des Tagesablaufs mit Bildern (Drag-and-Drop, Offline-fähig, Dark Mode).
 
 [edge-side-includes]: https://en.wikipedia.org/wiki/Edge_Side_Includes
 
-[expo]: https://expo.dev/
-
-[fastify]: https://www.fastify.io/
-
 [flutter]: https://flutter.dev/
 
 [google-chrome-extension]: https://chrome.google.com/webstore/detail/google-chrome-extension-for-t/nmmhkkegccagdldgiimedpiccmgmiednk
@@ -444,15 +343,9 @@ des Tagesablaufs mit Bildern (Drag-and-Drop, Offline-fähig, Dark Mode).
 
 [google-firebase]: https://firebase.google.com/
 
-[google-play-store]: https://play.google.com/store/apps/details?id=com.example.taptap
-
 [graphql]: https://graphql.org/
 
 [grafana]: https://grafana.com/
-
-[heroku]: https://dashboard.heroku.com/apps/camfight-app
-
-[hubspot]: https://www.hubspot.com/
 
 [java]: https://www.java.com/
 
@@ -464,21 +357,13 @@ des Tagesablaufs mit Bildern (Drag-and-Drop, Offline-fähig, Dark Mode).
 
 [jmeter]: https://jmeter.apache.org/
 
-[jspdf]: https://parall.ax/products/jspdf
-
 [netresearch]: https://www.netresearch.de/
 
 [node-red]: https://nodered.org/
 
 [openapi]: https://swagger.io/specification/
 
-[postman]: https://www.getpostman.com/
-
 [python]: https://www.python.org/
-
-[react-native]: https://reactnative.dev/
-
-[sphinx]: https://www.sphinx-doc.org/
 
 [tasmota]: https://tasmota.github.io/docs/
 
