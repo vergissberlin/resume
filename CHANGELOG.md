@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/vergissberlin/resume/compare/1.3.0...1.3.1) (2026-06-22)
+
+
+### Fehlerbehebungen
+
+* **build.sh, defaults-pdf-iot.yml:** update titlepage logo and background paths to new location for consistency and accuracy ([ac767f0](https://github.com/vergissberlin/resume/commit/ac767f0d22a985c3c4ce04299aa1f4a595b1cf5d))
+
 ## [1.3.0](https://github.com/vergissberlin/resume/compare/1.2.1...1.3.0) (2026-06-22)
 
 
