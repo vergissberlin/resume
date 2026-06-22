@@ -15,7 +15,7 @@ variables:
   titlepage-text-color: 'ffffff'
   titlepage-rule-color: 'A5D6A7'
   titlepage-rule-height: 0
-  titlepage-background: 'Content/Media/cover/Cover-IOT.png'
+  titlepage-background: 'Content/Media/Cover/Cover-IOT.png'
   page-background: 'Template/Backgrounds/background1.pdf'
   fontsize: 10pt
   logo-width: 64mm
