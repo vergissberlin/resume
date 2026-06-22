@@ -10,6 +10,18 @@
 
 
 ################################################################################
+## Parse arguments
+################################################################################
+
+PROFILE=""
+for arg in "$@"; do
+  case $arg in
+    --profile=*) PROFILE="${arg#*=}" ;;
+  esac
+done
+
+
+################################################################################
 ## Variables
 ################################################################################
 
@@ -29,6 +41,19 @@ else
   set -a
   source .env
   set +a
+fi
+
+# Load profile-specific env overrides if a profile is set
+if [ -n "$PROFILE" ] && [ -f ".env.${PROFILE}" ]; then
+  set -a
+  source ".env.${PROFILE}"
+  set +a
+fi
+
+# Profile suffix for output filenames (empty for default profile)
+PROFILE_SUFFIX=""
+if [ -n "$PROFILE" ]; then
+  PROFILE_SUFFIX="-${PROFILE}"
 fi
 
 ################################################################################
@@ -77,8 +102,18 @@ fi
 # Create temporary directory
 mkdir -p Temp
 
-# Copy all Markdown files from the content directory to the temporary directory
-cp -R Content/* Temp
+# Copy non-markdown assets (Media, etc.) from the content directory
+cp -R Content/Media Temp/ 2>/dev/null || true
+
+# Copy markdown files: use profile override if available, else default
+for file in Content/*.md; do
+  fname=$(basename "$file")
+  if [ -n "$PROFILE" ] && [ -f "Content/Profiles/${PROFILE}/${fname}" ]; then
+    cp "Content/Profiles/${PROFILE}/${fname}" Temp/
+  else
+    cp "$file" Temp/
+  fi
+done
 
 # Create the output directory if it doesn't exist and delete all files in it
 mkdir -p Results
@@ -122,7 +157,7 @@ for file in Temp/*.md; do
 
     echo "👉\tBuild single PDF for \"${title}\""
     docker run -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de ${file} \
-      -o Results/${RESUME_FILENAME}-${filename}-${document_git_tag}.pdf \
+      -o Results/${RESUME_FILENAME}${PROFILE_SUFFIX}-${filename}-${document_git_tag}.pdf \
       --defaults Template/Config/defaults-pdf-single.yml \
       --metadata-file Template/Config/metadata-pdf.yml \
       -V title="${title}" \
@@ -139,12 +174,9 @@ done
 
 echo "\n✅\tGenerate PDF with combined content"
 
-# Remove the temporary directory containing the Markdown files
-# rm -rf "Temp/*.md*"
-
-# Combine all Markdown files in the content directory into a single Markdown file
+# Combine all Markdown files from Temp into a single Markdown file
 echo "👉\tCombine all Markdown files into a single Markdown file"
-cat Content/*.md > Temp/combined.md
+cat Temp/*.md > Temp/combined.md
 
 # Filter and replace characters in the single Markdown file
 echo "👉\tFilter and replace characters in single Markdown file"
@@ -157,7 +189,7 @@ sh Scripts/replace.sh Temp/combined.md
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
 docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
-  -o Results/resume-${RESUME_FILENAME}-${document_git_tag}.pdf \
+  -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.pdf \
   --defaults Template/Config/defaults-pdf.yml \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
@@ -174,7 +206,7 @@ docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
 # Generate a singe epub file from all Markdown files in the content directory
 echo "👉\tGenerate EPUB for all files"
 docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
-  -o Results/resume-${RESUME_FILENAME}-${document_git_tag}.epub \
+  -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.epub \
   --defaults Template/Config/defaults-epub.yml \
   --metadata-file Template/Config/metadata-epub.yml \
   -V title="${RESUME_NAME}" \

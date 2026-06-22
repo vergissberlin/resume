@@ -21,6 +21,7 @@ jobs:
       - name: Step 3 - Generate the documents using Docker
         run: |
           ./Scripts/build.sh
+          ./Scripts/build.sh --profile=iot
           ls -lisah Results
 
       - name: Step 4.1 - Upload the single PDF Introduction artifact
@@ -60,6 +61,21 @@ jobs:
           if-no-files-found: error
           retention-days: 12
 
+      - name: Step 6.1 - Upload the IoT PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-pdf-iot
+          path: Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf
+          if-no-files-found: error
+          retention-days: 12
+      - name: Step 6.2 - Upload the IoT EPUB artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: resume-epub-iot
+          path: Results/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub
+          if-no-files-found: error
+          retention-days: 12
+
   release:
     name: release – ${{ github.ref_name }}
     runs-on: ubuntu-latest
@@ -96,6 +112,16 @@ jobs:
         with:
           name: resume-pdf-portfolio
           path: ${{ env.RESUME_FILENAME }}-portfolio
+      - name: Step 2.6 Download IoT PDF artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: resume-pdf-iot
+          path: resume-pdf-iot
+      - name: Step 2.7 Download IoT EPUB artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: resume-epub-iot
+          path: resume-epub-iot
       - name: Step 3. Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -120,9 +146,16 @@ jobs:
 
             | Document     | Download |
             | ------------ | -------- |
-            | Introduction | [![Badge CV](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf) | 
-            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae.-${{ github.ref_name }}pdf) | 
+            | Introduction | [![Badge CV](https://img.shields.io/badge/DE-Introduction-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-introduction-${{ github.ref_name }}.pdf) |
+            | CV           | [![Badge CV](https://img.shields.io/badge/DE-CV-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-curriculum-vitae.-${{ github.ref_name }}pdf) |
             | Portfolio    | [![Badge CV](https://img.shields.io/badge/DE-Portfoilo-100000?style=for-the-badge&labelColor=4E4796&color=DBD7FF)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/${{ env.RESUME_FILENAME }}-portfolio-${{ github.ref_name }}.pdf) |
+
+            ##### IoT Focus
+
+            | Format | Download |
+            | ------ | -------- |
+            | PDF    | [![Badge IoT PDF](https://img.shields.io/badge/PDF-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf) |
+            | EPUB   | [![Badge IoT EPUB](https://img.shields.io/badge/EPUB-IoT-100000?style=for-the-badge&labelColor=2E7D32&color=A5D6A7)](https://github.com/${{ github.repository }}/releases/download/${{ github.ref_name }}/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub) |
 
           draft: false
           prerelease: false
@@ -177,4 +210,24 @@ jobs:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./resume-epub/resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
           asset_name: resume-${{ env.RESUME_FILENAME }}-${{ github.ref_name }}.epub
+          asset_content_type: application/epub
+      - name: Step 6.1 Upload IoT PDF Release Asset
+        id: upload-release-asset-pdf-iot
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume-pdf-iot/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf
+          asset_name: resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.pdf
+          asset_content_type: application/pdf
+      - name: Step 6.2 Upload IoT EPUB Release Asset
+        id: upload-release-asset-epub-iot
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./resume-epub-iot/resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub
+          asset_name: resume-${{ env.RESUME_FILENAME }}-iot-${{ github.ref_name }}.epub
           asset_content_type: application/epub
