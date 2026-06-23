@@ -30,12 +30,6 @@ $sedcmd '/\[\!\[PDF\ Download/d' $1
 $sedcmd 's/## Download//g' $1
 $sedcmd 's/\-\ \Lebenslauf\ \[PDF\ CV//g' $1
 
-# Remove top links from headers
-$sedcmd 's/\[\[↑\]\(\#.*\)\]\ //g' $1
-
-# Remove top links from headers
-$sedcmd 's/\#\-/#/g' $1
-
 # Remove crosses from headers
 $sedcmd 's/\[x\]\ //g' $1
 $sedcmd 's/\[\ \]\ //g' $1

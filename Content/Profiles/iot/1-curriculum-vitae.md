@@ -1,7 +1,5 @@
 # Lebenslauf
 
-> [Einführung](./0-introduction.md) | [Lebenslauf](./1-curriculum-vitae.md) | [Portfolio](./2-portfolio.md) | [Kontakt](3-contact.md)
-
 [![PDF Download Lebenslauf](https://img.shields.io/github/downloads/vergissberlin/resume/total?label=PDF%20Download%20Lebenslauf&style=flat-square)](https://github.com/vergissberlin/resume/releases/latest/)
 
 ## Berufliche Laufbahn

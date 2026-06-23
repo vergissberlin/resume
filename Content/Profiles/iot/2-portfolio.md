@@ -3,33 +3,33 @@
 ## Projektübersicht
 
 - **IoT & Embedded Systems**
-    - [regenfass.eu](#-regenfasseu) IoT Smart-Home-Eigenprodukt
-    - [CoffeeBin](#-CoffeeBin) Sensor-Datenerfassung und Analytics
-    - [Digitaler Agenturkicker](#-Digitaler-Agenturkicker) IoT Multichannel-Experiment
+  - [regenfass.eu](#regenfasseu) IoT Smart-Home-Eigenprodukt
+  - [CoffeeBin](#coffeebin) Sensor-Datenerfassung und Analytics
+  - [Digitaler Agenturkicker](#digitaler-agenturkicker) IoT Multichannel-Experiment
 
 - **Cloud & Observability**
-  - [EDEKA - Observability PoC](#-EDEKA-Observability-PoC)
+  - [EDEKA - Observability PoC](#EDEKA-Observability-PoC)
     OpenTelemetry im SAP-Kontext
-  - [EDEKA - Kassensoftware Integration](#-EDEKA-POS-Integration)
+  - [EDEKA - Kassensoftware Integration](#edeka-pos-integration)
     Integration der Gebit-Kassenlösung für EDEKA
 
 - **Webentwicklung**
-    - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
-    - [AIDA board portal](#-AIDA-board-portal) Gästeportal für AIDA Cruises
-    - [dynamo-dresden.de](#-dynamo-dresdende) High-Performance-Webanwendung
-    - [Blugento](#-blugento) Docker, Marketing-Automation, AWS
+  - [kieks.me](#kieksme) Consulting- und Freelance-GbR
+  - [AIDA board portal](#aida-board-portal) Gästeportal für AIDA Cruises
+  - [dynamo-dresden.de](#dynamo-dresdende) High-Performance-Webanwendung
+  - [Blugento](#blugento) Docker, Marketing-Automation, AWS
 
 - **CI/CD**
-    - [Universal Music - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
+  - [Universal Music - Shop-Manager](#universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
 
-- **[Weitere Projekte](#-Weitere-Projekte)**
-    - [Bashlight](#-Bashlight) Kommandozeilen-Erweiterung
+- **[Weitere Projekte](#weitere-projekte)**
+  - [Bashlight](#bashlight) Kommandozeilen-Erweiterung
 
 ---
 
 ## IoT & Embedded Systems
 
-### [[↑](#projektübersicht)] regenfass.eu
+### regenfass.eu
 
 _2024 – heute_
 
@@ -57,7 +57,7 @@ IoT-Integration, Dokumentation.
 
 ---
 
-### [[↑](#projektübersicht)] CoffeeBin
+### CoffeeBin
 
 _2020_
 
@@ -83,14 +83,14 @@ Zeitreihendatenbank, Grafana zur Visualisierung.
 | [InfluxDB][influxdb]              | zeitbasierte Speicherung der Daten                                                                   |
 | [Grafana][grafana]                | zur Visualisierung der Daten                                                                         |
 
-### [[↑](#projektübersicht)] Digitaler Agenturkicker
+### Digitaler Agenturkicker
 
 _2015 - 2016_
 
 ![](Media/Portfolio/piball-header.png)
 ![](Media/Portfolio/piball.png)
 
-Die Digitalisierung des Agentur-Kickers ist ein *Multichannel-Experiment*,
+Die Digitalisierung des Agentur-Kickers ist ein _Multichannel-Experiment_,
 das im Rahmen meiner Research-&-Development-Zeit bei der [Netresearch DTT
 GmbH][netresearch] entstanden ist. Ziel war es, möglichst viele Ausspielkanäle
 mit einer zentralen Datenbasis zu bedienen. Besondere Herausforderung: die
@@ -120,7 +120,7 @@ das Flottenmanagement von dockerisierten Anwendungen auf ARM-Architektur.
 
 ## Cloud & Observability
 
-### [[↑](#projektübersicht)] Observability EDEKA PoC
+### Observability EDEKA PoC
 
 _2023_
 
@@ -141,7 +141,7 @@ Demonstrationsservern durchgeführt.
 | [Prometheus][prometheus]           | Monitoring     |
 | [DataDog][datadog]                 | Observability  |
 
-### [[↑](#projektübersicht)] kieks.me
+### kieks.me
 
 _2025 – heute_
 
@@ -163,7 +163,7 @@ die ich 2025 mitgegründet habe.
 
 ---
 
-### [[↑](#projektübersicht)] AIDA board portal
+### AIDA board portal
 
 _2013-2016_
 
@@ -190,8 +190,7 @@ Software auf dem Schiff und die Erstellung eines Demosystems.
 |-------|------------------------------------|
 | Demo  | (nicht öffentlich verfügbar)       |
 
-
-### [[↑](#projektübersicht)] dynamo-dresden.de
+### dynamo-dresden.de
 
 _2014 - 2015_
 
@@ -213,10 +212,9 @@ Leistungsverbesserungen.
 | Website                                                   | <https://www.dynamo-dresden.de>                              |
 | Chrome Extensions Dynamo                                  | <https://chrome.google.com/webstore/search/dynamo%20dresden> |
 
-
 ## Softwareentwicklung
 
-### [[↑](#projektübersicht)] EDEKA POS Integration
+### EDEKA POS Integration
 
 _2023_ - `now()`
 
@@ -234,7 +232,7 @@ Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 | [Kubernetes][kubernetes]       | Bereitstellung der Anwendung |
 | [OpenTelemetry][opentelemetry] | Observability                |
 
-### [[↑](#projektübersicht)] Bashlight
+### Bashlight
 
 ![Bashlight](Media/Portfolio/bashlight.png)
 
@@ -250,8 +248,7 @@ Git-Zweig und den Git-Status anzeigt.
 | Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
 | Repository    | <https://github.com/vergissberlin/bashlight> |
 
-
-### [[↑](#projektübersicht)] Blugento
+### Blugento
 
 _2017 - 2018_
 
@@ -271,10 +268,9 @@ Blugento ist ein Verwaltungssystem für Docker-Anwendungen auf entfernten Server
 |-----------------------------------------------------------|----------------------------|
 | Website                                                   | <https://blugento.com>     |
 
-
 ## DevOps
 
-### [[↑](#projektübersicht)] Universal Music – Shop Manager
+### Universal Music – Shop Manager
 
 _2018-2019_
 
@@ -294,8 +290,7 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 |------------------------------------|----------------------------------|
 | Universal Music Group              | <https://www.universalmusic.com> |
 
-
-## [[↑](#projektübersicht)] Weitere Projekte
+## Weitere Projekte
 
 … auf die ich stolz bin.
 
@@ -304,10 +299,8 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 | Node-RED mjml            | Node-RED-Node zur Gestaltung von E-Mail-Templates |
 | Node-RED say             | Node-RED-Node zur Ausgabe von Sprachnachrichten   |
 
-
 [apollojs]: https://www.apollographql.com/
 
-[autopilot]: https://www.autopilot.io/
 
 [aws-ecs]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Basics.html
 
@@ -317,7 +310,6 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 
 [aws-rds]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html
 
-[aws-s3]: https://aws.amazon.com/s3/
 
 [bash]: https://www.gnu.org/software/bash/
 
@@ -335,9 +327,7 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 
 [flutter]: https://flutter.dev/
 
-[google-chrome-extension]: https://chrome.google.com/webstore/detail/google-chrome-extension-for-t/nmmhkkegccagdldgiimedpiccmgmiednk
 
-[google-chrome-extension-dynamo]: https://chrome.google.com/webstore/search/dynamo
 
 [google-firebase]: https://firebase.google.com/
 
@@ -359,23 +349,19 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 
 [node-red]: https://nodered.org/
 
-[openapi]: https://swagger.io/specification/
 
 [python]: https://www.python.org/
 
 [tasmota]: https://tasmota.github.io/docs/
 
-[travis-ci]: https://travis-ci.org/
 
 [typo3]: https://typo3.org/
 
-[umg]: https://www.universalmusic.com/
 
 [vue.js]: https://vuejs.org/
 
 [varnish]: https://www.varnish-cache.org/
 
-[vuetify]: https://vuetifyjs.com/
 
 [datadog]: https://www.datadoghq.com/
 

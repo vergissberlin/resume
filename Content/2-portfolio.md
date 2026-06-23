@@ -3,42 +3,42 @@
 ## Projektübersicht
 
 - **POS & Observability**
-  - [EDEKA - Observability PoC](#-observability-edeka-poc)
+  - [EDEKA - Observability PoC](#observability-edeka-poc)
     Integration der Gebit-Kassenlösung für EDEKA
-  - [EDEKA - Kassensoftware Integration](#-edeka-pos-integration)
+  - [EDEKA - Kassensoftware Integration](#edeka-pos-integration)
     Integration der Gebit-Kassenlösung für EDEKA
 
 - **IoT**
-  - [regenfass.eu](#-regenfasseu) IoT Smart-Home-Eigenprodukt
-    - [CoffeeBin](#-coffeebin) Datenvisualisierung und Analytics
-    - [Digitaler Agenturkicker](#-digitaler-agenturkicker) IoT Multichannel
+  - [regenfass.eu](#regenfasseu) IoT Smart-Home-Eigenprodukt
+    - [CoffeeBin](#coffeebin) Datenvisualisierung und Analytics
+    - [Digitaler Agenturkicker](#digitaler-agenturkicker) IoT Multichannel
 
 - **App-Entwicklung**
-  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
-  - [Tap!Tap!](#-tap-tap) App-Entwicklung
-  - [CamFight](#-camfight) Mobile Web App
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#lej-nachbarn-app) App-Entwicklung
+  - [Tap!Tap!](#tap-tap) App-Entwicklung
+  - [CamFight](#camfight) Mobile Web App
 
 - **Webentwicklung**
-  - [kieks.me](#-kieksme) Consulting- und Freelance-GbR
-  - [AIDA board portal](#-aida-board-portal) Gästeportal für AIDA Cruises
-  - [dynamo-dresden.de](#-dynamo-dresdende) High-Performance-Webanwendung
-  - [Blugento](#-blugento) Docker, Marketing-Automation, AWS
+  - [kieks.me](#kieksme) Consulting- und Freelance-GbR
+  - [AIDA board portal](#aida-board-portal) Gästeportal für AIDA Cruises
+  - [dynamo-dresden.de](#dynamo-dresdende) High-Performance-Webanwendung
+  - [Blugento](#blugento) Docker, Marketing-Automation, AWS
 
 - **Desktop** (PWA)
-  - [KiTa Tagesplaner](#-kita-tagesplaner) PWA-App
+  - [KiTa Tagesplaner](#kita-tagesplaner) PWA-App
 
 - **CI/CD**
-  - [Universal Mucis - Shop-Manager](#-universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
-  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#-lej-nachbarn-app) App-Entwicklung
+  - [Universal Mucis - Shop-Manager](#universal-music--shop-manager) Schulungen, Docker, CI/CD, Cloud (AWS, Azure)
+  - [Flughafen Leipzig/Halle Nachbarschaftsportal](#lej-nachbarn-app) App-Entwicklung
 
-- **[Weitere Projekte](#-weitere-projekte)**
-  - [Bashlight](#-bashlight) Kommandozeilen-Erweiterung
+- **[Weitere Projekte](#weitere-projekte)**
+  - [Bashlight](#bashlight) Kommandozeilen-Erweiterung
 
 ---
 
 ## Consulting
 
-### [[↑](#projektübersicht)] KiTa Tagesplaner
+### KiTa Tagesplaner
 
 #### 2020 - 2021
 
@@ -77,7 +77,7 @@ Softwarearchitektur, Kundenbetreuung.
 
 ## Projektleitung
 
-### [[↑](#projektübersicht)] Observability EDEKA PoC
+### Observability EDEKA PoC
 
 #### 2023
 
@@ -103,7 +103,7 @@ in [DataDog][datadog].
 | [Prometheus][prometheus]           | Monitoring     |
 | [DataDog][datadog]                 | Observability  |
 
-### [[↑](#projektübersicht)] kieks.me
+### kieks.me
 
 #### 2025 – heute
 
@@ -125,7 +125,7 @@ die ich 2025 mitgegründet habe.
 
 ---
 
-### [[↑](#projektübersicht)] AIDA board portal
+### AIDA board portal
 
 #### 2013-2016
 
@@ -158,7 +158,7 @@ Terminbuchungen …)
 |-------|------------------------------------|
 | Demo  | (nicht öffentlich verfügbar)       |
 
-### [[↑](#projektübersicht)] dynamo-dresden.de
+### dynamo-dresden.de
 
 #### 2014 - 2015
 
@@ -182,7 +182,7 @@ Leistungsverbesserungen.
 
 ## Softwareentwicklung
 
-### [[↑](#projektübersicht)] EDEKA POS Integration
+### EDEKA POS Integration
 
 #### 2023 - `now()`
 
@@ -200,7 +200,7 @@ Anwendung. **OpenTelemetry** wird für die Observability eingesetzt.
 | [Kubernetes][kubernetes]       | Bereitstellung der Anwendung |
 | [OpenTelemetry][opentelemetry] | Observability                |
 
-### [[↑](#projektübersicht)] LEJ Nachbarn App
+### LEJ Nachbarn App
 
 #### 2022
 
@@ -243,7 +243,7 @@ ich mit GitLab CI erstellt. Sie enthält die folgenden Schritte:
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.netresearch.portal> |
 | Apple AppStore    | <https://apps.apple.com/de/app/lej-nachbarn/id1620877158?uo=4>         |
 
-### [[↑](#projektübersicht)] Tap! Tap
+### Tap! Tap
 
 #### 2020
 
@@ -271,7 +271,7 @@ Richtlinien/Anforderungen des _Google Play Store_ gelernt.
 | Repository        | <https://github.com/vergissberlin/tap-tap->                              |
 | Google Play Store | <https://play.google.com/store/apps/details?id=com.vergissberlin.taptap> |
 
-### [[↑](#projektübersicht)] Bashlight
+### Bashlight
 
 ![Bashlight](Media/Portfolio/bashlight.png)
 
@@ -289,7 +289,7 @@ Projekt archiviert.
 | Dokumentation | <http://vergissberlin.github.io/bashlight/>  |
 | Repository    | <https://github.com/vergissberlin/bashlight> |
 
-### [[↑](#projektübersicht)] regenfass.eu
+### regenfass.eu
 
 #### 2024 – heute
 
@@ -311,7 +311,7 @@ Dokumentation.
 
 ---
 
-### [[↑](#projektübersicht)] CoffeeBin
+### CoffeeBin
 
 #### 2020
 
@@ -340,7 +340,7 @@ die Visualisierung mit Grafana.
 | [InfluxDB][influxdb]              | zeitbasierte Speicherung der Daten                                                                   |
 | [Grafana][grafana]                | zur Visualisierung der Daten                                                                         |
 
-### [[↑](#projektübersicht)] CamFight
+### CamFight
 
 #### 2017
 
@@ -379,7 +379,7 @@ mobilen Geräten installierbar. Derzeit wird sie nicht aktiv weiterentwickelt.
 | Repository                       | <https://github.com/vergissberlin/cam-fight> |
 | Prototype                        | <https://marvelapp.com/prototype/ahg35jj>    |
 
-### [[↑](#projektübersicht)] Digitaler Agenturkicker
+### Digitaler Agenturkicker
 
 #### 2015 - 2016
 
@@ -416,7 +416,7 @@ Hardware.
 | GitHub Repository                                         | <https://github.com/vergissberlin/piball>            |
 | Web interface                                             | <https://vivid-fire-2266.web.app>                    |
 
-### [[↑](#projektübersicht)] Blugento
+### Blugento
 
 #### 2017 - 2018
 
@@ -453,7 +453,7 @@ hochgefahren sowie Systeme für den Live‑Betrieb verwaltet werden.
 
 ## DevOps
 
-### [[↑](#projektübersicht)] Universal Music – Shop Manager
+### Universal Music – Shop Manager
 
 #### 2018-2019
 
@@ -488,7 +488,7 @@ Software.
 |------------------------------------|----------------------------------|
 | Universal Music Group              | <https://www.universalmusic.com> |
 
-## [[↑](#projektübersicht)] Weitere Projekte
+## Weitere Projekte
 
 … auf die ich stolz bin.
 
