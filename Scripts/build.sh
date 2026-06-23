@@ -81,6 +81,8 @@ if [ -n "$COVER_LETTER" ]; then
   fi
 fi
 
+RESUME_SUBJECT_LATEX=$(escape_latex_var "$RESUME_SUBJECT")
+
 ################################################################################
 ## Environment specific replacements commands
 ################################################################################
@@ -198,7 +200,7 @@ for file in Temp/[0-9]*.md; do
       --metadata-file Template/Config/metadata-pdf.yml \
       -V title="${title}" \
       -V author="${RESUME_AUTHOR}" \
-      -V subject="${RESUME_SUBJECT}" \
+      -V subject="${RESUME_SUBJECT_LATEX}" \
       -V footer-center="v$document_git_tag" \
       -V date="$document_date";
   fi
@@ -267,11 +269,11 @@ docker_pandoc_run -i \
   ${PDF_DEFAULTS_EXTRA} \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
-  -V subtitle="Resume" \
-  -V subject="${RESUME_SUBJECT}" \
-  -V lang="en" \
+  -V subtitle="${RESUME_SUBJECT_LATEX}" \
+  -V subject="${RESUME_SUBJECT_LATEX}" \
+  -V lang="de" \
   -V author="${RESUME_AUTHOR}" \
-  -V description="Resume by ${RESUME_AUTHOR}" \
+  -V description="Bewerbungsunterlagen von ${RESUME_AUTHOR}" \
   -V footer-center="v$document_git_tag" \
   -V rights="© ${document_date_year} ${RESUME_NAME}, ${RESUME_LICENSE}" \
   -V date="$document_date" \

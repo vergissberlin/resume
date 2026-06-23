@@ -85,6 +85,19 @@ verify_docker_pandoc() {
 	exit 1
 }
 
+# Escape characters that break LaTeX when passed via pandoc -V
+escape_latex_var() {
+	printf '%s' "$1" | sed \
+		-e 's/\\/\\textbackslash{}/g' \
+		-e 's/&/\\&/g' \
+		-e 's/%/\\%/g' \
+		-e 's/\$/\\$/g' \
+		-e 's/#/\\#/g' \
+		-e 's/_/\\_/g' \
+		-e 's/{/\\{/g' \
+		-e 's/}/\\}/g'
+}
+
 ################################################################################
 ## REPLACERS
 ################################################################################
