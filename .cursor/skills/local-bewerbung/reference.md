@@ -80,7 +80,7 @@ flowchart LR
   merge --> out[Results/resume-*.pdf]
 ```
 
-PDF page order: **title page → cover letter → TOC → resume content**.
+PDF page order: **title page → cover letter → resume content** (no table of contents).
 
 EPUB: letter body (without YAML) prepended as `# Anschreiben` before combined content; cover image unchanged.
 

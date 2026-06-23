@@ -117,7 +117,7 @@ Main outputs in `Results/`:
 
 | File | Content |
 |------|---------|
-| `resume-<RESUME_FILENAME>[-<profile>]-<company>-<tag>.pdf` | Title page → cover letter → TOC → resume |
+| `resume-<RESUME_FILENAME>[-<profile>]-<company>-<tag>.pdf` | Title page → cover letter → resume (no TOC) |
 | `resume-<RESUME_FILENAME>[-<profile>]-<company>-<tag>.epub` | Cover → chapter "Anschreiben" → resume |
 | `<RESUME_FILENAME>[-<profile>]-<section>-<tag>.pdf` | Single sections (no cover letter) |
 

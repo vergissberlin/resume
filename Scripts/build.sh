@@ -238,6 +238,13 @@ fi
 RESUME_PDF_OUTPUT="Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}${LETTER_SUFFIX}-${document_git_tag}.pdf"
 RESUME_PDF_TEMP="Temp/resume-full.pdf"
 
+# Application builds with a cover letter skip the PDF table of contents
+PDF_DEFAULTS_EXTRA=""
+if [ "$LETTER_ACTIVE" -eq 1 ]; then
+  printf '%s\n' 'toc: false' > Temp/defaults-no-toc.yml
+  PDF_DEFAULTS_EXTRA="--defaults Temp/defaults-no-toc.yml"
+fi
+
 # EPUB source: optionally prepend cover letter body after the cover image
 EPUB_SOURCE="Temp/combined.md"
 if [ "$LETTER_ACTIVE" -eq 1 ]; then
@@ -250,9 +257,14 @@ fi
 
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
+if [ "$LETTER_ACTIVE" -eq 1 ]; then
+  echo "👉\tOmit table of contents (cover letter build)"
+fi
+# shellcheck disable=SC2086
 docker_pandoc_run -i \
   -o ${RESUME_PDF_TEMP} \
   --defaults ${DEFAULTS_PDF} \
+  ${PDF_DEFAULTS_EXTRA} \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
   -V subtitle="Resume" \
