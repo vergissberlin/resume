@@ -14,9 +14,11 @@
 ################################################################################
 
 PROFILE=""
+COVER_LETTER=""
 for arg in "$@"; do
   case $arg in
     --profile=*) PROFILE="${arg#*=}" ;;
+    --letter=*) COVER_LETTER="${arg#*=}" ;;
   esac
 done
 
@@ -50,10 +52,30 @@ if [ -n "$PROFILE" ] && [ -f ".env.${PROFILE}" ]; then
   set +a
 fi
 
+# Load local application settings (gitignored)
+if [ -f "Bewerbung/.env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  source Bewerbung/.env
+  set +a
+fi
+
 # Profile suffix for output filenames (empty for default profile)
 PROFILE_SUFFIX=""
 if [ -n "$PROFILE" ]; then
   PROFILE_SUFFIX="-${PROFILE}"
+fi
+
+# Cover letter (local only, optional)
+LETTER_ACTIVE=0
+LETTER_FILE=""
+if [ -n "$COVER_LETTER" ]; then
+  LETTER_FILE="Bewerbung/Anschreiben/${COVER_LETTER}.md"
+  if [ -f "$LETTER_FILE" ]; then
+    LETTER_ACTIVE=1
+  else
+    echo "⚠️\tCover letter \"${COVER_LETTER}\" not found at ${LETTER_FILE} – building without letter"
+  fi
 fi
 
 ################################################################################
@@ -135,6 +157,14 @@ done
 # Delete files in temporary directory which are not Markdown files
 find Temp -type f -name '*.md"' -delete
 
+# Prepare optional cover letter (local Bewerbung/ folder)
+if [ "$LETTER_ACTIVE" -eq 1 ]; then
+  echo "✅\tPrepare cover letter \"${COVER_LETTER}\""
+  cp "$LETTER_FILE" Temp/letter.md
+  sh Scripts/filter.sh Temp/letter.md
+  sh Scripts/replace.sh Temp/letter.md
+fi
+
 ################################################################################
 ## Generate Multiple Documents
 ################################################################################
@@ -142,8 +172,8 @@ find Temp -type f -name '*.md"' -delete
 ## Generate separate PDF files for each Markdown file in the content directory
 echo "\n✅\tGenerate PDF for each file"
 
-# Generate PDF files
-for file in Temp/*.md; do
+# Generate PDF files (content sections only, not cover letter)
+for file in Temp/[0-9]*.md; do
   # Check if $file is a file
   if [ -f "$file" ]; then
     # Get the filename without the extension
@@ -174,9 +204,9 @@ done
 
 echo "\n✅\tGenerate PDF with combined content"
 
-# Combine all Markdown files from Temp into a single Markdown file
+# Combine content Markdown files into a single file (exclude cover letter)
 echo "👉\tCombine all Markdown files into a single Markdown file"
-cat Temp/*.md > Temp/combined.md
+cat Temp/[0-9]*.md > Temp/combined.md
 
 # Filter and replace characters in the single Markdown file
 echo "👉\tFilter and replace characters in single Markdown file"
@@ -192,10 +222,23 @@ if [ -n "$PROFILE" ] && [ -f "Template/Config/defaults-pdf-${PROFILE}.yml" ]; th
   DEFAULTS_PDF="Template/Config/defaults-pdf-${PROFILE}.yml"
 fi
 
+RESUME_PDF_OUTPUT="Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.pdf"
+RESUME_PDF_TEMP="Temp/resume-full.pdf"
+
+# EPUB source: optionally prepend cover letter body after the cover image
+EPUB_SOURCE="Temp/combined.md"
+if [ "$LETTER_ACTIVE" -eq 1 ]; then
+  awk 'BEGIN{fm=0} /^---$/{fm++; next} fm>=2{print}' Temp/letter.md > Temp/letter-body.md
+  printf '%s\n\n' "# Anschreiben" > Temp/letter-epub.md
+  cat Temp/letter-body.md >> Temp/letter-epub.md
+  cat Temp/letter-epub.md Temp/combined.md > Temp/combined-with-letter.md
+  EPUB_SOURCE="Temp/combined-with-letter.md"
+fi
+
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
 docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
-  -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.pdf \
+  -o ${RESUME_PDF_TEMP} \
   --defaults ${DEFAULTS_PDF} \
   --metadata-file Template/Config/metadata-pdf.yml \
   -V title="${RESUME_NAME}" \
@@ -208,6 +251,24 @@ docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
   -V rights="© ${document_date_year} ${RESUME_NAME}, ${RESUME_LICENSE}" \
   -V date="$document_date" \
   Temp/combined.md;
+
+if [ "$LETTER_ACTIVE" -eq 1 ]; then
+  echo "👉\tGenerate cover letter PDF (DIN 5008)"
+  docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
+    -o Temp/letter.pdf \
+    --defaults Template/Config/defaults-letter-pdf.yml \
+    Temp/letter.md;
+
+  if [ ! -f Temp/letter.pdf ] || [ ! -f "${RESUME_PDF_TEMP}" ]; then
+    echo "🚨\tPDF generation failed – cannot merge cover letter"
+    exit 1
+  fi
+
+  echo "👉\tMerge cover letter after title page"
+  sh Scripts/merge-letter-pdf.sh Temp/resume-full.pdf Temp/letter.pdf "${RESUME_PDF_OUTPUT}"
+else
+  mv "${RESUME_PDF_TEMP}" "${RESUME_PDF_OUTPUT}"
+fi
 
 # Generate a singe epub file from all Markdown files in the content directory
 echo "👉\tGenerate EPUB for all files"
@@ -224,7 +285,7 @@ docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
   -V rights="© ${document_date_year} ${RESUME_NAME}, ${RESUME_LICENSE}" \
   -V ibooks.version="$document_git_tag" \
   -V date="$document_date" \
-  Temp/combined.md;
+  ${EPUB_SOURCE};
 
 
 ################################################################################

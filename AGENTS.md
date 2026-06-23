@@ -20,10 +20,14 @@ A resume/CV generator. Markdown sources in `Content/` are rendered to PDF and EP
 | `Content/Profiles/<profile>/*.md` | Profile-specific overrides (e.g. `iot`) – override files with the same name |
 | `Content/Media/` | Images, cover art, mockups |
 | `Template/Config/*.yml` | Pandoc `defaults`/`metadata` files for PDF & EPUB |
+| `Template/letter-din5008.latex` | DIN 5008 Form B cover letter (KOMA-Script `scrlttr2`) |
 | `Template/*.html` | HTML/EPUB templates |
 | `Template/Backgrounds/` | PDF cover/background images |
 | `Scripts/build.sh` | Main build entrypoint |
+| `Scripts/merge-letter-pdf.sh` | Merges cover letter PDF after title page |
 | `Scripts/filter.sh`, `replace.sh`, `functions.sh` | Pandoc preprocessing helpers |
+| `Bewerbung/` | **Local only** (gitignored) – cover letters for job applications |
+| `Bewerbung.example/` | Committed example cover letter to copy into `Bewerbung/` |
 | `.env`, `.env.<profile>` | Profile-specific variables (`RESUME_FILENAME`, `RESUME_AUTHOR`, …) |
 | `.github/workflows/build-and-release.yml` | Tag-triggered build + GitHub Release |
 | `.github/workflows/release-please.yml` | Automated version bumps + release PRs |
@@ -37,9 +41,25 @@ A resume/CV generator. Markdown sources in `Content/` are rendered to PDF and EP
 
 # IoT profile (uses .env.iot + Content/Profiles/iot/* overrides)
 ./Scripts/build.sh --profile=iot
+
+# With a local cover letter (Bewerbung/ is gitignored – not used in CI)
+./Scripts/build.sh --letter=example-gmbh
+./Scripts/build.sh --profile=iot --letter=acme-gmbh
 ```
 
 Outputs land in `Results/`. The script requires Docker to be running and a git tag to exist (`git describe --tags --abbrev=0`).
+
+### Cover letters (local only)
+
+Cover letters live under `Bewerbung/Anschreiben/<slug>.md` and are **never committed** (`Bewerbung/` is in `.gitignore`). Copy the example from `Bewerbung.example/Anschreiben/example-gmbh.md` to get started.
+
+- Select via CLI: `--letter=<slug>`
+- Or set `COVER_LETTER=<slug>` in `Bewerbung/.env` (also gitignored)
+- **PDF:** DIN 5008 Form B via `scrlttr2`, merged after the title page (`Scripts/merge-letter-pdf.sh`)
+- **EPUB:** letter body prepended as first chapter after the cover image
+- CI builds are unchanged (no `--letter`, no `Bewerbung/` folder)
+
+Letter metadata is YAML under a `letter:` key (recipient, subject, date, etc.); the Markdown body is the letter text. Use YAML lists for multi-line addresses (`to`, `fromaddress`).
 
 There is **no test suite, linter, or type checker**. "Verification" means: the build succeeds, the resulting PDF/EPUB renders correctly. Do not invent test commands.
 

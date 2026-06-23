@@ -1,0 +1,6 @@
+template: Template/letter-din5008.latex
+pdf-engine: lualatex
+from: markdown
+to: pdf
+variables:
+  lang: de
