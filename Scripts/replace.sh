@@ -35,8 +35,10 @@ $sedcmd "s/REPLACE_DATE/$document_date/g" $1
 # Document version
 $sedcmd "s/REPLACE_VERSION/v$CI_COMMIT_REF_NAME/g" $1
 
-# Replace path to images
-$sedcmd 's/Media\//Temp\/Media\//g' $1
+# Replace path to images (idempotent — avoid Temp/Temp/Media/ on re-run)
+$sedcmd -E 's|Temp/Temp/Media/|Temp/Media/|g' $1
+$sedcmd 's|Media/|Temp/Media/|g' $1
+$sedcmd -E 's|Temp/Temp/Media/|Temp/Media/|g' $1
 
 # Replace RESUME_NAME and escape spaces
 $sedcmd "s/REPLACE_NAME/$(echo $RESUME_NAME | sed 's/ /\\ /g')/g" $1

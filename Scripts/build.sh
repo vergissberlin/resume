@@ -210,13 +210,20 @@ echo "\n✅\tGenerate PDF with combined content"
 echo "👉\tCombine all Markdown files into a single Markdown file"
 cat Temp/[0-9]*.md > Temp/combined.md
 
-# Filter and replace characters in the single Markdown file
-echo "👉\tFilter and replace characters in single Markdown file"
-sh Scripts/filter.sh Temp/combined.md
+# Deduplicate reference link definitions (e.g. [kieksme]: … repeated per section)
+awk '/^\[[^]]+\]: / {
+  key = $0
+  sub(/^\[/, "", key)
+  sub(/\]:.*/, "", key)
+  if (key in seen) next
+  seen[key] = 1
+}
+{ print }' Temp/combined.md > Temp/combined-deduped.md
+mv Temp/combined-deduped.md Temp/combined.md
 
-## Replace some characters in the single Markdown file which are not supported by Pandoc
-echo "👉\tReplace characters in single Markdown file"
-sh Scripts/replace.sh Temp/combined.md
+# Filter only — per-file replace.sh already ran (re-running would double-prefix Media paths)
+echo "👉\tFilter characters in single Markdown file"
+sh Scripts/filter.sh Temp/combined.md
 
 # Use profile-specific PDF defaults if available, else fall back to default
 DEFAULTS_PDF="Template/Config/defaults-pdf.yml"

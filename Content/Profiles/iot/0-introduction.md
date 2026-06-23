@@ -4,7 +4,6 @@
 
 Ein Lebenslauf ist wie ein [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction) – man versteht ihn erst richtig, wenn man genau hinschaut.
 
-
 ## Über mich
 
 Ich bin leidenschaftlicher **IoT-Engineer** und **Cloud-Engineer** mit
@@ -30,15 +29,15 @@ beobachtbare Backend-Systeme um, die auch in IoT-Kontexten eingesetzt werden.
 Seit 2025 bin ich Mitgründer der **[kieks.me GbR][kieksme]**, einer Consulting-
 und Freelance-GbR für Web-Entwicklung und SaaS-Lösungen.
 
-**Meine Schwerpunkte:**
+### Meine Schwerpunkte
+
 1. IoT-Systemarchitektur (Firmware → Gateway → Cloud)
 2. Embedded-Entwicklung & Mikrocontroller (ESP32, Raspberry Pi, LoRa)
 3. Cloud-Engineering & Edge Computing
 4. Observability für vernetzte Systeme
 5. Softwarearchitektur & Beratung
 
-
-## Aufgabenschwerpunkte im Verlauf der Zeit
+### Aufgabenschwerpunkte im Verlauf der Zeit
 
 Im Verlauf der Zeit haben sich meine Themenschwerpunkte mehrfach verlagert.
 Die folgende Grafik veranschaulicht dies gut. 2023 gab es einen starken
