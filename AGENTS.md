@@ -61,6 +61,8 @@ Cover letters live under `Bewerbung/Anschreiben/<slug>.md` and are **never commi
 
 Letter metadata is YAML under a `letter:` key (recipient, subject, date, etc.); the Markdown body is the letter text. Use YAML lists for multi-line addresses (`to`, `fromaddress`).
 
+**Agent workflow:** `.cursor/skills/local-bewerbung/` — interactive build with profile and cover letter selection.
+
 There is **no test suite, linter, or type checker**. "Verification" means: the build succeeds, the resulting PDF/EPUB renders correctly. Do not invent test commands.
 
 ## Conventions
