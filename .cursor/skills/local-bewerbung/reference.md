@@ -46,7 +46,8 @@ Body paragraph two.
 |-------|----------|-------------------------|
 | `fromname` | recommended | `\setkomavar{fromname}` |
 | `fromaddress` | recommended | `\setkomavar{fromaddress}` (back address) |
-| `to` | yes | Recipient in `\begin{letter}{…}` |
+| `to` | yes | Recipient in `\begin{letter}{…}` (first line = company name for output filename) |
+| `company` | optional | Explicit company name for output filename (overrides first `to` line) |
 | `place` | recommended | `\setkomavar{place}` |
 | `date` | recommended | `\setkomavar{date}` |
 | `yourref` | optional | `\setkomavar{yourref}` |
@@ -89,9 +90,12 @@ Merge tool fallback: `qpdf` → `pdfunite`/`pdfseparate` → Docker `minidocks/q
 
 With `RESUME_FILENAME=andrelademann` and tag `v1.2.3`:
 
-- `Results/resume-andrelademann-v1.2.3.pdf` (standard + letter)
-- `Results/resume-andrelademann-iot-v1.2.3.pdf` (iot + letter)
-- `Results/resume-andrelademann-v1.2.3.epub`
+- `Results/resume-andrelademann-v1.2.3.pdf` (standard, no letter)
+- `Results/resume-andrelademann-example-gmbh-v1.2.3.pdf` (standard + letter to Example GmbH)
+- `Results/resume-andrelademann-iot-acme-gmbh-v1.2.3.pdf` (iot + letter)
+- `Results/resume-andrelademann-example-gmbh-v1.2.3.epub`
+
+Company slug is derived from `letter.company` or the first `letter.to` line (umlauts normalized, lowercase, hyphenated).
 
 ## What not to commit
 

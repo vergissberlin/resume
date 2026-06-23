@@ -4,3 +4,4 @@ from: markdown
 to: pdf
 variables:
   lang: de
+  fontsize: 10pt

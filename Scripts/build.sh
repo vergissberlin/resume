@@ -69,10 +69,13 @@ fi
 # Cover letter (local only, optional)
 LETTER_ACTIVE=0
 LETTER_FILE=""
+LETTER_SUFFIX=""
 if [ -n "$COVER_LETTER" ]; then
   LETTER_FILE="Content/Application/${COVER_LETTER}.md"
   if [ -f "$LETTER_FILE" ]; then
     LETTER_ACTIVE=1
+    LETTER_COMPANY_SLUG=$(sh Scripts/letter-company-slug.sh "$LETTER_FILE" "$COVER_LETTER")
+    LETTER_SUFFIX="-${LETTER_COMPANY_SLUG}"
   else
     echo "⚠️\tCover letter \"${COVER_LETTER}\" not found at ${LETTER_FILE} – building without letter"
   fi
@@ -123,7 +126,8 @@ verify_docker_pandoc
 ## Prepare
 ################################################################################
 
-# Create temporary directory
+# Create temporary directory (clean slate — avoid stale files from failed builds)
+rm -rf Temp
 mkdir -p Temp
 
 # Copy non-markdown assets (Media, etc.) from the content directory
@@ -231,7 +235,7 @@ if [ -n "$PROFILE" ] && [ -f "Template/Config/defaults-pdf-${PROFILE}.yml" ]; th
   DEFAULTS_PDF="Template/Config/defaults-pdf-${PROFILE}.yml"
 fi
 
-RESUME_PDF_OUTPUT="Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.pdf"
+RESUME_PDF_OUTPUT="Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}${LETTER_SUFFIX}-${document_git_tag}.pdf"
 RESUME_PDF_TEMP="Temp/resume-full.pdf"
 
 # EPUB source: optionally prepend cover letter body after the cover image
@@ -282,7 +286,7 @@ fi
 # Generate a singe epub file from all Markdown files in the content directory
 echo "👉\tGenerate EPUB for all files"
 docker_pandoc_run -i \
-  -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.epub \
+  -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}${LETTER_SUFFIX}-${document_git_tag}.epub \
   --defaults Template/Config/defaults-epub.yml \
   --metadata-file Template/Config/metadata-epub.yml \
   -V title="${RESUME_NAME}" \

@@ -1,15 +1,24 @@
 % Pandoc LaTeX template for DIN 5008 Form B business letters (KOMA-Script scrlttr2)
-$passoptions.latex()$
+% Font stack aligned with the Eisvogel resume template (Source Sans Pro, 10pt).
 \documentclass[
-  fontsize=11pt,
+  fontsize=$if(fontsize)$$fontsize$$else$10pt$endif$,
   paper=a4,
   DIN5008B,
   fromphone=false,
   fromfax=false
 ]{scrlttr2}
 \usepackage[ngerman]{babel}
-\usepackage{fontspec}
+\usepackage{iftex}
+\ifluatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage[default]{sourcesanspro}
+\usepackage{sourcecodepro}
 \usepackage{microtype}
+\usepackage{setspace}
+\setstretch{1.2}
 \usepackage{hyperref}
 \hypersetup{
   colorlinks=true,
@@ -18,45 +27,49 @@ $passoptions.latex()$
   citecolor=black
 }
 
-$if(letter-fromname)$
-\setkomavar{fromname}{$letter-fromname$}
+% Pandoc list helper (required when the letter body contains bullet lists)
+\setlength{\emergencystretch}{3em}
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+$if(letter.fromname)$
+\setkomavar{fromname}{$letter.fromname$}
 $endif$
-$if(letter-fromaddress)$
-\setkomavar{fromaddress}{$for(letter-fromaddress)$$letter-fromaddress$\\$endfor$}
+$if(letter.fromaddress)$
+\setkomavar{fromaddress}{$for(letter.fromaddress)$$letter.fromaddress$$sep$\\$endfor$}
 $endif$
-$if(letter-place)$
-\setkomavar{place}{$letter-place$}
+$if(letter.place)$
+\setkomavar{place}{$letter.place$}
 $endif$
-$if(letter-date)$
-\setkomavar{date}{$letter-date$}
+$if(letter.date)$
+\setkomavar{date}{$letter.date$}
 $endif$
-$if(letter-yourref)$
-\setkomavar{yourref}{$letter-yourref$}
+$if(letter.yourref)$
+\setkomavar{yourref}{$letter.yourref$}
 $endif$
-$if(letter-subject)$
-\setkomavar{subject}{$letter-subject$}
+$if(letter.subject)$
+\setkomavar{subject}{$letter.subject$}
 $endif$
-$if(letter-signature)$
-\setkomavar{signature}{$letter-signature$}
+$if(letter.signature)$
+\setkomavar{signature}{$letter.signature$}
 $endif$
 
 \begin{document}
 \begin{letter}{%
-$if(letter-to)$
-$for(letter-to)$$letter-to$\\
-$endfor$
+$if(letter.to)$
+$for(letter.to)$$letter.to$$sep$\\$endfor$
 $endif$
 }
-$if(letter-opening)$
-\opening{$letter-opening$}
+$if(letter.opening)$
+\opening{$letter.opening$}
 $else$
 \opening{Sehr geehrte Damen und Herren,}
 $endif$
 
 $body$
 
-$if(letter-closing)$
-\closing{$letter-closing$}
+$if(letter.closing)$
+\closing{$letter.closing$}
 $else$
 \closing{Mit freundlichen Grüßen}
 $endif$

@@ -61,6 +61,7 @@ Cover letters live under `Content/Application/<slug>.md` and are **never committ
 - Or set `COVER_LETTER=<slug>` in `Content/Application/.env` (also gitignored)
 - **PDF:** DIN 5008 Form B via `scrlttr2`, merged after the title page (`Scripts/merge-letter-pdf.sh`)
 - **EPUB:** letter body prepended as first chapter after the cover image
+- **Output filenames:** combined PDF/EPUB include a slug from the company name (`letter.company` or first `letter.to` line), e.g. `resume-andrelademann-example-gmbh-1.3.2.pdf`
 - CI builds are unchanged (no `--letter`, no `Content/Application/` folder)
 
 Letter metadata is YAML under a `letter:` key (recipient, subject, date, etc.); the Markdown body is the letter text. Use YAML lists for multi-line addresses (`to`, `fromaddress`).

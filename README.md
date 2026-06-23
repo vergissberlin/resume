@@ -39,6 +39,8 @@ just build-letter-iot meine-firma
 
 Optional: `COVER_LETTER=meine-firma` in `Content/Application/.env` so you can run `./Scripts/build.sh` without the flag.
 
+Combined PDF/EPUB filenames include the company from the letter (`letter.company` or the first line of `letter.to`), e.g. `Results/resume-andrelademann-example-gmbh-1.3.2.pdf`.
+
 **Apple Silicon / OrbStack:** The pandoc image is `linux/amd64`. If builds fail with `exec format error` or `checksum failed`, run `just docker-repair`. If that still fails: OrbStack → Settings → Storage → **Reset Docker data**, then `just docker-pull`.
 
 ---
