@@ -1,5 +1,72 @@
 # Changelog
 
+## [1.4.0](https://github.com/vergissberlin/resume/compare/1.3.2...1.4.0) (2026-06-23)
+
+
+### Funktionen
+
+* add company slug to output filenames for better identification ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **AGENTS.md, Justfile, README.md, Scripts:** add just command support for building resumes with cover letters ([a7f0c2a](https://github.com/vergissberlin/resume/commit/a7f0c2a84624f967d8db119350daaaf3b89b5fa3))
+* **Bewerbung.example:** add example cover letter for local use ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* **build.sh:** add support for optional cover letter in PDF generation ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* **functions.sh:** add Docker helper functions for pandoc operations ([a7f0c2a](https://github.com/vergissberlin/resume/commit/a7f0c2a84624f967d8db119350daaaf3b89b5fa3))
+* **letter-din5008.latex:** add support for LuaTeX and XeTeX with unicode-math package ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **letter-din5008.latex:** introduce setspace package for adjustable line spacing ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **local-bewerbung:** add new skill for building local job applications ([0850cac](https://github.com/vergissberlin/resume/commit/0850cace8af8663ceff2bf4ebd74b7a730a7f2a8))
+* **Scripts/docker-repair.sh:** add script to repair corrupted Docker images ([a7f0c2a](https://github.com/vergissberlin/resume/commit/a7f0c2a84624f967d8db119350daaaf3b89b5fa3))
+
+
+### Fehlerbehebungen
+
+* **build.sh:** skip table of contents in PDF when cover letter is active ([c862220](https://github.com/vergissberlin/resume/commit/c862220a88ca28e1b8fa8ce1aa142b5ea23c2afa))
+* **build.sh:** update path for loading local application settings ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+* **curriculum-vitae.md:** remove redundant navigation links for improved readability ([3148880](https://github.com/vergissberlin/resume/commit/31488804ce602b8ebd26bb92af4f76ae9e2f5026))
+* **docker-repair.sh:** add image validation and improve error handling ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+* ensure clean build environment by removing stale files ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **letter-din5008.latex:** update conditional syntax for letter variables to improve compatibility with Pandoc ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **portfolio.md:** remove unnecessary anchor links for cleaner markdown ([3148880](https://github.com/vergissberlin/resume/commit/31488804ce602b8ebd26bb92af4f76ae9e2f5026))
+* **Scripts/build.sh:** refactor docker run commands to use helper functions ([a7f0c2a](https://github.com/vergissberlin/resume/commit/a7f0c2a84624f967d8db119350daaaf3b89b5fa3))
+
+
+### Dokumentation
+
+* **AGENTS.md, README.md:** update documentation to include local cover letter feature ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* **AGENTS.md:** update agent workflow with local-bewerbung skill ([0850cac](https://github.com/vergissberlin/resume/commit/0850cace8af8663ceff2bf4ebd74b7a730a7f2a8))
+* **iot:** remove extra newline and adjust heading levels for consistency ([26f75ad](https://github.com/vergissberlin/resume/commit/26f75add623fb3c253a9d0ae4211defa6399d104))
+* **portfolio:** update headings to consistent markdown level ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+* **README.md:** update instructions for Apple Silicon users ([a7f0c2a](https://github.com/vergissberlin/resume/commit/a7f0c2a84624f967d8db119350daaaf3b89b5fa3))
+* **reference.md:** provide detailed reference for local cover letters ([0850cac](https://github.com/vergissberlin/resume/commit/0850cace8af8663ceff2bf4ebd74b7a730a7f2a8))
+* update documentation to reflect changes in filename structure ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* update documentation to reflect removal of TOC in PDF output ([c862220](https://github.com/vergissberlin/resume/commit/c862220a88ca28e1b8fa8ce1aa142b5ea23c2afa))
+
+
+### Code-Refactoring
+
+* rename Bewerbung directory to Content/Application for clarity ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+
+
+### Build-System
+
+* add defaults configuration for letter PDF generation ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* add LaTeX template for DIN 5008 cover letter ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* add script for merging PDFs with cover letter ([6346620](https://github.com/vergissberlin/resume/commit/634662032220478bb3101b2cc628315547142d49))
+* **build.sh:** adjust image path replacement to be idempotent ([26f75ad](https://github.com/vergissberlin/resume/commit/26f75add623fb3c253a9d0ae4211defa6399d104))
+* **build.sh:** deduplicate reference link definitions in markdown ([26f75ad](https://github.com/vergissberlin/resume/commit/26f75add623fb3c253a9d0ae4211defa6399d104))
+
+
+### Stil
+
+* **letter-din5008.latex:** align font stack with Eisvogel resume template for consistency ([e5c471b](https://github.com/vergissberlin/resume/commit/e5c471bd11da71162c75eb23ee6aaf0414bb9e72))
+* **portfolio:** improve image alt text for accessibility ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+* **portfolio:** remove top links from headers for cleaner markdown ([3148880](https://github.com/vergissberlin/resume/commit/31488804ce602b8ebd26bb92af4f76ae9e2f5026))
+
+
+### Sonstiges
+
+* **links:** remove redundant newlines for cleaner markdown ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+* **markdownlint:** add markdownlint configuration file to disable MD013 and MD033 rules ([3148880](https://github.com/vergissberlin/resume/commit/31488804ce602b8ebd26bb92af4f76ae9e2f5026))
+* **readme:** update directory paths for cover letter storage ([bb45e7c](https://github.com/vergissberlin/resume/commit/bb45e7cc3ff7be492c9b6afb0aa2932e0344ba33))
+
 ## [1.3.2](https://github.com/vergissberlin/resume/compare/1.3.1...1.3.2) (2026-06-22)
 
 
