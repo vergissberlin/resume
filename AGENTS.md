@@ -45,6 +45,10 @@ A resume/CV generator. Markdown sources in `Content/` are rendered to PDF and EP
 # With a local cover letter (Bewerbung/ is gitignored – not used in CI)
 ./Scripts/build.sh --letter=example-gmbh
 ./Scripts/build.sh --profile=iot --letter=acme-gmbh
+
+# Or via just (see `just` / `just --list`)
+just build-letter example-gmbh
+just build-letter-iot example-gmbh
 ```
 
 Outputs land in `Results/`. The script requires Docker to be running and a git tag to exist (`git describe --tags --abbrev=0`).

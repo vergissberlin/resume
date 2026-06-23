@@ -113,8 +113,10 @@ fi
 # Pull docker image ghcr.io/vergissberlin/pandoc-eisvogel-de from GitHub Container Registry if it doesn't exist
 if ! docker image inspect ghcr.io/vergissberlin/pandoc-eisvogel-de > /dev/null 2>&1; then
     echo "👉\tPull docker image ghcr.io/vergissberlin/pandoc-eisvogel-de from GitHub Container Registry"
-    docker pull ghcr.io/vergissberlin/pandoc-eisvogel-de
+    docker_pandoc_pull
 fi
+
+verify_docker_pandoc
 
 
 ################################################################################
@@ -186,7 +188,7 @@ for file in Temp/[0-9]*.md; do
     title=$(grep -m 1 '^# ' $file | sed 's/# //')
 
     echo "👉\tBuild single PDF for \"${title}\""
-    docker run -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de ${file} \
+    docker_pandoc_run ${file} \
       -o Results/${RESUME_FILENAME}${PROFILE_SUFFIX}-${filename}-${document_git_tag}.pdf \
       --defaults Template/Config/defaults-pdf-single.yml \
       --metadata-file Template/Config/metadata-pdf.yml \
@@ -237,7 +239,7 @@ fi
 
 # Generate a single PDF file from all Markdown files in the content directory
 echo "👉\tGenerate PDF for all files"
-docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
+docker_pandoc_run -i \
   -o ${RESUME_PDF_TEMP} \
   --defaults ${DEFAULTS_PDF} \
   --metadata-file Template/Config/metadata-pdf.yml \
@@ -254,7 +256,7 @@ docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
 
 if [ "$LETTER_ACTIVE" -eq 1 ]; then
   echo "👉\tGenerate cover letter PDF (DIN 5008)"
-  docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
+  docker_pandoc_run -i \
     -o Temp/letter.pdf \
     --defaults Template/Config/defaults-letter-pdf.yml \
     Temp/letter.md;
@@ -272,7 +274,7 @@ fi
 
 # Generate a singe epub file from all Markdown files in the content directory
 echo "👉\tGenerate EPUB for all files"
-docker run -i -v $PWD:/data ghcr.io/vergissberlin/pandoc-eisvogel-de \
+docker_pandoc_run -i \
   -o Results/resume-${RESUME_FILENAME}${PROFILE_SUFFIX}-${document_git_tag}.epub \
   --defaults Template/Config/defaults-epub.yml \
   --metadata-file Template/Config/metadata-epub.yml \

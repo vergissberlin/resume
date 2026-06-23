@@ -30,7 +30,16 @@ cp Bewerbung.example/Anschreiben/example-gmbh.md Bewerbung/Anschreiben/meine-fir
 ./Scripts/build.sh --letter=meine-firma
 ```
 
+Or with [just](https://github.com/casey/just):
+
+```sh
+just build-letter meine-firma
+just build-letter-iot meine-firma
+```
+
 Optional: `COVER_LETTER=meine-firma` in `Bewerbung/.env` so you can run `./Scripts/build.sh` without the flag.
+
+**Apple Silicon:** The pandoc image is `linux/amd64`. Enable *Docker Desktop → Settings → General → Use Rosetta for x86_64/amd64 emulation*, then `just docker-pull`.
 
 ---
 
