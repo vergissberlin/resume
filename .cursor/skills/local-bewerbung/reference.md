@@ -3,16 +3,14 @@
 ## File layout
 
 ```
-Bewerbung/                    # gitignored – never commit
-└── Anschreiben/
-    └── <slug>.md             # one file per application
+Content/Application/          # gitignored – never commit
+└── <slug>.md                 # one file per application
 
-Bewerbung.example/
-└── Anschreiben/
-    └── example-gmbh.md       # committed template to copy
+Content/Application.example/
+└── example-gmbh.md           # committed template to copy
 ```
 
-Slug = filename without `.md` (e.g. `acme-gmbh` → `Bewerbung/Anschreiben/acme-gmbh.md`).
+Slug = filename without `.md` (e.g. `acme-gmbh` → `Content/Application/acme-gmbh.md`).
 
 ## YAML front matter (`letter:`)
 
@@ -74,7 +72,7 @@ Discover more profiles: `ls Content/Profiles/`.
 
 ```mermaid
 flowchart LR
-  letterMd[Bewerbung/Anschreiben/slug.md] --> letterPdf[letter.pdf DIN5008]
+  letterMd[Content/Application/slug.md] --> letterPdf[letter.pdf DIN5008]
   combined[Content sections] --> resumePdf[resume-full.pdf Eisvogel]
   resumePdf --> merge[merge-letter-pdf.sh]
   letterPdf --> merge
@@ -97,13 +95,13 @@ With `RESUME_FILENAME=andrelademann` and tag `v1.2.3`:
 
 ## What not to commit
 
-- `Bewerbung/` (entire directory)
+- `Content/Application/` (entire directory)
 - `Results/` (build artifacts)
 - Do not add `--letter` to `.github/workflows/build-and-release.yml`
 
 ## Optional local default
 
-`Bewerbung/.env` (gitignored):
+`Content/Application/.env` (gitignored):
 
 ```sh
 COVER_LETTER=acme-gmbh

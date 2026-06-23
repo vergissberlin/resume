@@ -53,10 +53,10 @@ if [ -n "$PROFILE" ] && [ -f ".env.${PROFILE}" ]; then
 fi
 
 # Load local application settings (gitignored)
-if [ -f "Bewerbung/.env" ]; then
+if [ -f "Content/Application/.env" ]; then
   set -a
   # shellcheck disable=SC1091
-  source Bewerbung/.env
+  source Content/Application/.env
   set +a
 fi
 
@@ -70,7 +70,7 @@ fi
 LETTER_ACTIVE=0
 LETTER_FILE=""
 if [ -n "$COVER_LETTER" ]; then
-  LETTER_FILE="Bewerbung/Anschreiben/${COVER_LETTER}.md"
+  LETTER_FILE="Content/Application/${COVER_LETTER}.md"
   if [ -f "$LETTER_FILE" ]; then
     LETTER_ACTIVE=1
   else
@@ -159,7 +159,7 @@ done
 # Delete files in temporary directory which are not Markdown files
 find Temp -type f -name '*.md"' -delete
 
-# Prepare optional cover letter (local Bewerbung/ folder)
+# Prepare optional cover letter (local Content/Application/ folder)
 if [ "$LETTER_ACTIVE" -eq 1 ]; then
   echo "✅\tPrepare cover letter \"${COVER_LETTER}\""
   cp "$LETTER_FILE" Temp/letter.md

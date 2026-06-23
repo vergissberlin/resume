@@ -21,12 +21,12 @@ You can view the documents directly here at GitHub, or download them as PDF/EBoo
 
 ## Local cover letter (not committed)
 
-For job applications you can prepend a DIN 5008 cover letter after the PDF title page. Letters stay local in `Bewerbung/` (gitignored).
+For job applications you can prepend a DIN 5008 cover letter after the PDF title page. Letters stay local in `Content/Application/` (gitignored).
 
 ```sh
-mkdir -p Bewerbung/Anschreiben
-cp Bewerbung.example/Anschreiben/example-gmbh.md Bewerbung/Anschreiben/meine-firma.md
-# Edit Bewerbung/Anschreiben/meine-firma.md (recipient, subject, body)
+mkdir -p Content/Application
+cp Content/Application.example/example-gmbh.md Content/Application/meine-firma.md
+# Edit Content/Application/meine-firma.md (recipient, subject, body)
 ./Scripts/build.sh --letter=meine-firma
 ```
 
@@ -37,9 +37,9 @@ just build-letter meine-firma
 just build-letter-iot meine-firma
 ```
 
-Optional: `COVER_LETTER=meine-firma` in `Bewerbung/.env` so you can run `./Scripts/build.sh` without the flag.
+Optional: `COVER_LETTER=meine-firma` in `Content/Application/.env` so you can run `./Scripts/build.sh` without the flag.
 
-**Apple Silicon:** The pandoc image is `linux/amd64`. Enable *Docker Desktop → Settings → General → Use Rosetta for x86_64/amd64 emulation*, then `just docker-pull`.
+**Apple Silicon / OrbStack:** The pandoc image is `linux/amd64`. If builds fail with `exec format error` or `checksum failed`, run `just docker-repair`. If that still fails: OrbStack → Settings → Storage → **Reset Docker data**, then `just docker-pull`.
 
 ---
 

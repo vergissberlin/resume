@@ -31,7 +31,7 @@
 
 ### regenfass.eu
 
-_2024 – heute_
+#### 2024 – heute
 
 **regenfass.eu** ist ein IoT-Eigenprodukt für Smart-Home-Anwendungen. Das
 Produkt verbindet Hardware-Sensoren mit einer Cloud-basierten Datenplattform
@@ -59,7 +59,7 @@ IoT-Integration, Dokumentation.
 
 ### CoffeeBin
 
-_2020_
+#### 2020
 
 ![img.png](Media/Portfolio/coffee-bin-nodered.png)
 
@@ -85,10 +85,10 @@ Zeitreihendatenbank, Grafana zur Visualisierung.
 
 ### Digitaler Agenturkicker
 
-_2015 - 2016_
+#### 2015 - 2016
 
-![](Media/Portfolio/piball-header.png)
-![](Media/Portfolio/piball.png)
+![Piball header](Media/Portfolio/piball-header.png)
+![Piball](Media/Portfolio/piball.png)
 
 Die Digitalisierung des Agentur-Kickers ist ein _Multichannel-Experiment_,
 das im Rahmen meiner Research-&-Development-Zeit bei der [Netresearch DTT
@@ -122,7 +122,7 @@ das Flottenmanagement von dockerisierten Anwendungen auf ARM-Architektur.
 
 ### Observability EDEKA PoC
 
-_2023_
+#### 2023
 
 EDEKA möchte mehr Transparenz in seine Prozesse bringen. Viele Microservices
 laufen in einem Orchester ohne Dirigenten. Mit der Observability-Plattform
@@ -143,7 +143,7 @@ Demonstrationsservern durchgeführt.
 
 ### kieks.me
 
-_2025 – heute_
+#### 2025 – heute
 
 **[kieks.me][kieksme]** ist eine Consulting- und Freelance-GbR für
 Web-Entwicklung, SaaS-Websites, Corporate Design und Landing Pages,
@@ -165,7 +165,7 @@ die ich 2025 mitgegründet habe.
 
 ### AIDA board portal
 
-_2013-2016_
+#### 2013-2016
 
 ![AIDA Bordportal](Media/Portfolio/aida-bordportal.png)
 
@@ -192,7 +192,7 @@ Software auf dem Schiff und die Erstellung eines Demosystems.
 
 ### dynamo-dresden.de
 
-_2014 - 2015_
+#### 2014 - 2015
 
 ![Dynamo Dresden Website](Media/Portfolio/dynamo-dresden.png)
 
@@ -216,7 +216,7 @@ Leistungsverbesserungen.
 
 ### EDEKA POS Integration
 
-_2023_ - `now()`
+#### 2023 - `now()`
 
 Der Kunde beauftragte die Gebit mit der Integration der Kassenlösung in die
 EDEKA-Infrastruktur und beauftragte Thinkport als technischen Dienstleister.
@@ -250,7 +250,7 @@ Git-Zweig und den Git-Status anzeigt.
 
 ### Blugento
 
-_2017 - 2018_
+#### 2017 - 2018
 
 ![blugento](Media/Portfolio/blugento.png)
 
@@ -272,7 +272,7 @@ Blugento ist ein Verwaltungssystem für Docker-Anwendungen auf entfernten Server
 
 ### Universal Music – Shop Manager
 
-_2018-2019_
+#### 2018-2019
 
 ![Universal Music](Media/Portfolio/umg.png)
 
@@ -301,78 +301,37 @@ Teams (Australien, USA, Indien). Schulungen zur entwickelten Software.
 
 [apollojs]: https://www.apollographql.com/
 
-
-[aws-ecs]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Basics.html
-
 [aws-ec2]: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-types.html
-
+[aws-ecs]: https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_Basics.html
 [aws-efs]: https://docs.aws.amazon.com/efs/latest/ug/
-
 [aws-rds]: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_MySQL.html
-
-
 [bash]: https://www.gnu.org/software/bash/
-
 [belana.io]: https://belana.io/
-
 [concourse-ci]: https://docs.concourse.ci/
-
-[docker]: https://www.docker.com/
-
-[docker-compose]: https://docs.docker.com/compose/
-
-[docker-registry]: https://docs.docker.com/registry/
-
-[edge-side-includes]: https://en.wikipedia.org/wiki/Edge_Side_Includes
-
-[flutter]: https://flutter.dev/
-
-
-
-[google-firebase]: https://firebase.google.com/
-
-[graphql]: https://graphql.org/
-
-[grafana]: https://grafana.com/
-
-[java]: https://www.java.com/
-
-[kubernetes]: https://kubernetes.io/
-
-[influxdb]: https://influxdb.com/
-
-[ionic-framework]: https://ionicframework.com/
-
-[jmeter]: https://jmeter.apache.org/
-
-[netresearch]: https://www.netresearch.de/
-
-[node-red]: https://nodered.org/
-
-
-[python]: https://www.python.org/
-
-[tasmota]: https://tasmota.github.io/docs/
-
-
-[typo3]: https://typo3.org/
-
-
-[vue.js]: https://vuejs.org/
-
-[varnish]: https://www.varnish-cache.org/
-
-
 [datadog]: https://www.datadoghq.com/
-
-[opentelemetry]: https://opentelemetry.io/
-
+[docker-compose]: https://docs.docker.com/compose/
+[docker-registry]: https://docs.docker.com/registry/
+[docker]: https://www.docker.com/
+[edge-side-includes]: https://en.wikipedia.org/wiki/Edge_Side_Includes
+[flutter]: https://flutter.dev/
+[google-firebase]: https://firebase.google.com/
+[grafana]: https://grafana.com/
+[graphql]: https://graphql.org/
+[influxdb]: https://influxdb.com/
+[ionic-framework]: https://ionicframework.com/
 [jaeger]: https://www.jaegertracing.io/
-
-[prometheus]: https://prometheus.io/
-
+[java]: https://www.java.com/
+[jmeter]: https://jmeter.apache.org/
 [kieksme]: https://kieks.me/
-
-[typescript]: https://www.typescriptlang.org/
-
+[kubernetes]: https://kubernetes.io/
+[netresearch]: https://www.netresearch.de/
+[node-red]: https://nodered.org/
 [nodejs]: https://nodejs.org/
+[opentelemetry]: https://opentelemetry.io/
+[prometheus]: https://prometheus.io/
+[python]: https://www.python.org/
+[tasmota]: https://tasmota.github.io/docs/
+[typescript]: https://www.typescriptlang.org/
+[typo3]: https://typo3.org/
+[varnish]: https://www.varnish-cache.org/
+[vue.js]: https://vuejs.org/

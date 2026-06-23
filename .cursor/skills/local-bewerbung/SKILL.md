@@ -6,7 +6,7 @@ disable-model-invocation: true
 
 # Lokale Bewerbung mit Anschreiben
 
-Orchestrates the existing build pipeline in `Scripts/build.sh`. Does not change CI or commit `Bewerbung/`.
+Orchestrates the existing build pipeline in `Scripts/build.sh`. Does not change CI or commit `Content/Application/`.
 
 ## Workflow checklist
 
@@ -27,7 +27,7 @@ From the repository root:
 
 ```sh
 # Cover letter slugs (basename without .md)
-ls -1 Bewerbung/Anschreiben/*.md 2>/dev/null | while read f; do basename "$f" .md; done
+ls -1 Content/Application/*.md 2>/dev/null | while read f; do basename "$f" .md; done
 
 # Profiles: always include "standard"; add folders under Content/Profiles/
 ls -1 Content/Profiles/ 2>/dev/null
@@ -36,7 +36,7 @@ ls -1 Content/Profiles/ 2>/dev/null
 - **standard** = default build (no `--profile` flag)
 - Any folder under `Content/Profiles/` (e.g. `iot`) → `--profile=<name>`
 
-If `Bewerbung/Anschreiben/` is missing or empty, include **"Neues Anschreiben (aus Vorlage)"** in the letter question.
+If `Content/Application/` is missing or empty, include **"Neues Anschreiben (aus Vorlage)"** in the letter question.
 
 ## Step 2: AskQuestion (required)
 
@@ -55,7 +55,7 @@ Options (build dynamically):
 
 Options:
 
-- Each slug from `Bewerbung/Anschreiben/*.md`
+- Each slug from `Content/Application/*.md`
 - **Neues Anschreiben (aus Vorlage)** if user needs a new letter
 
 If **"Neues Anschreiben"** was selected, ask for a slug (kebab-case, e.g. `acme-gmbh`) before continuing.
@@ -65,8 +65,8 @@ If **"Neues Anschreiben"** was selected, ask for a slug (kebab-case, e.g. `acme-
 Only when the user chose a new letter:
 
 ```sh
-mkdir -p Bewerbung/Anschreiben
-cp Bewerbung.example/Anschreiben/example-gmbh.md Bewerbung/Anschreiben/<slug>.md
+mkdir -p Content/Application
+cp Content/Application.example/example-gmbh.md Content/Application/<slug>.md
 ```
 
 Then collect or edit:
@@ -85,7 +85,7 @@ Then collect or edit:
 ```sh
 docker info >/dev/null 2>&1 || echo "Docker not running"
 git describe --tags --abbrev=0
-test -f "Bewerbung/Anschreiben/<slug>.md"
+test -f "Content/Application/<slug>.md"
 ```
 
 If preflight fails, stop and report the blocker.
@@ -102,7 +102,7 @@ If preflight fails, stop and report the blocker.
 ./Scripts/build.sh --profile=iot --letter=<slug>
 ```
 
-Do **not** commit `Bewerbung/` or `Results/`. Only mention `Bewerbung/.env` with `COVER_LETTER=<slug>` if the user asks for a default without `--letter`.
+Do **not** commit `Content/Application/` or `Results/`. Only mention `Content/Application/.env` with `COVER_LETTER=<slug>` if the user asks for a default without `--letter`.
 
 ## Step 6: Report results
 
