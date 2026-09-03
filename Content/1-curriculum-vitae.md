@@ -6,17 +6,17 @@
 
 | Zeitraum                  | Position                           | Unternehmen                                                                                                                                                                                                                                                                                                                         |
 |:--------------------------|------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **2025**/01 → `now()`     | Mitgründer                         | [kieks.me GbR][kieksme] <br>Consulting- und Freelance-GbR für Web-Entwicklung, SaaS-Websites und Corporate Design. **Technologien:** TypeScript, Vue.js, Node.js                                                                                                                              |
-| **2023**/03 → `now()`     | Senior Cloud Engineer              | [Thinkport GmbH][thinkport] <br>**Technologien:** Azure, Ansible, Terraform, Dart & Flutter, Java, OpenTelemetry. **Themen:** Observability, Cloud Engineering, Softwarearchitektur, Softwareentwicklung, POS                                                                                |
-| **2007**/03 → `now()`     | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins] <br>Einzelunternehmen; nebenberuflich in der Webentwicklung tätig. **Technologien:** Vue.js, TYPO3, OpenAPI, CMS-SaaS                                                                                                                            |
-| **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh] <br>**Aufgaben:** Senior Softwareentwickler; Mitarbeit an Entwicklungsprozessen und Integration in die Produktentwicklung.                                                                                                                       |
-| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www] <br> WebApp zur Verwaltung dockerisierter Anwendungen. <br>**Aufgaben:** Pipelines, Updates, Release-Management; Schulungen beim Kunden (UMG) und intern; Abstimmung mit internationalen Teams. <br>**Technologien:** Docker, Concourse CI, Vue.js, Magento, Marketing-Automatisierung (Autopilot), Prototyping. |
-| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**Technologien:** TYPO3, Vue.js, Docker, Concourse CI                                                                                                                                                                                                                                  |
-| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg] <br>**AIDA Bordportal**<br>**Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportals. <br>**Technologien:** TV-App, Digital Signage, Mobile App, OpenAPI, TYPO3                                                                                                        |
-| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (aufgelöst)_ <br>**Aufgaben:** Anwendungsentwicklung. <br>**Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                     |
-| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert] <br>**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Lasttests mit JMeter. <br>**Aufgaben:** Teamleitung für die Entwicklung von Webanwendungen und Schnittstellen                                                                                |
-| **2009**/07 → **2009**/08 | Dozent                             | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig] <br>**Aufgaben:** Dozent für Webtechnologien: CMS, MVC, Frameworks, Joomla!                                                                                                                                                                                                           |
-| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig] <br>**Technologien:** TYPO3, PHP, JavaScript, ActionScript                                                                                                                                                                                                                                    |
+| **2025**/01 → `now()`     | Mitgründer                         | [kieks.me GbR][kieksme]&nbsp;Consulting- und Freelance-GbR für Web-Entwicklung, SaaS-Websites und Corporate Design. **Technologien:** TypeScript, Vue.js, Node.js                                                                                                                              |
+| **2023**/03 → `now()`     | Senior Cloud Engineer              | [Thinkport GmbH][thinkport]&nbsp;**Technologien:** Azure, Apigee, Terraform, Ansible, Kubernetes, OpenTelemetry. **Themen:** API-Management, Infrastructure as Code, Observability, Cloud Engineering und Softwarearchitektur.                                                                                |
+| **2007**/03 → `now()`     | Freelancer                         | [NULLzuEINS Inh. André Lademann][nullzueins]&nbsp;Einzelunternehmen; nebenberuflich in der Webentwicklung tätig. **Technologien:** Vue.js, TYPO3, OpenAPI, CMS-SaaS                                                                                                                            |
+| **2018**/10 → **2023**/03 | Senior Fullstack Software Engineer | [Netresearch DTT GmbH][netresearch-dtt-gmbh]&nbsp;**Aufgaben:** Senior Softwareentwickler; Mitarbeit an Entwicklungsprozessen und Integration in die Produktentwicklung.                                                                                                                       |
+| **2017**/07 → **2018**/09 | Senior Fullstack Software Engineer | [blugento GmbH][blugento-www]&nbsp;WebApp zur Verwaltung dockerisierter Anwendungen. **Aufgaben:** Pipelines, Updates, Release-Management; Schulungen beim Kunden (UMG) und intern; Abstimmung mit internationalen Teams. **Technologien:** Docker, Concourse CI, Vue.js, Magento, Marketing-Automatisierung (Autopilot), Prototyping. |
+| **2016**/07 → **2017**/08 | Senior Fullstack Software Engineer | [Netresearch GmbH & Co. KG][netresearch-kg]&nbsp;**Technologien:** TYPO3, Vue.js, Docker, Concourse CI                                                                                                                                                                                                                                  |
+| **2013**/09 → **2016**/06 | Projektleiter                      | [Netresearch GmbH & Co. KG][netresearch-kg]&nbsp;**AIDA Bordportal** **Aufgaben:** Planung, Entwicklung und Einrichtung eines Besucherportals. **Technologien:** TV-App, Digital Signage, Mobile App, OpenAPI, TYPO3                                                                                                        |
+| **2013**/06 → **2013**/08 | Senior Fullstack Software Engineer | _Falk Analytics GmbH (aufgelöst)_ **Aufgaben:** Anwendungsentwicklung. **Technologien:** Groovy, Hadoop, PHP, JavaScript                                                                                                                                                                                                     |
+| **2011**/03 → **2013**/03 | CTO                                | [digitalwert GmbH][digitalwert]&nbsp;**Technologien:** TYPO3, PHP, MyTy CMS, JavaScript, Varnish, Lasttests mit JMeter. **Aufgaben:** Teamleitung für die Entwicklung von Webanwendungen und Schnittstellen                                                                                |
+| **2009**/07 → **2009**/08 | Dozent                             | [Berufs-Förderungs-Werk Leipzig][bfw-leipzig]&nbsp;**Aufgaben:** Dozent für Webtechnologien: CMS, MVC, Frameworks, Joomla!                                                                                                                                                                                                           |
+| **2007**/03 → **2008**/02 | Junior-Software-Developer          | [torpedoleipzig GmbH][torpedoleipzig]&nbsp;**Technologien:** TYPO3, PHP, JavaScript, ActionScript                                                                                                                                                                                                                                    |
 
 ## Ausbildung
 
@@ -34,6 +34,7 @@
 | [OpenTelemetry Certified Associate (OTCA)][credly] | Linux Foundation / CNCF | 01/2026 | 01/2028 |
 | [Kubernetes and Cloud Native Associate (KCNA)][credly] | Linux Foundation / CNCF | 01/2025 | 01/2027 |
 | [Linux Foundation Certified Associate (LFCA)][credly] | Linux Foundation / CNCF | 01/2025 | 01/2027 |
+| Online Marketing Certified Associate (OMCA) | Google | 06/2020 | — |
 
 ## Skills
 
@@ -51,13 +52,13 @@
 |--------------------------|--------|
 | [TypeScript][typescript] | C1     |
 | [JavaScript][javascript] | C1     |
-| [Dart][dart]             | C1     |
-| [PHP][php]               | C1     |
-| [Java][java]             | B1     |
-| [Groovy][groovy]         | B1     |
-| [Python][python]         | B1     |
-| [C++][c++]               | B2     |
-| [SQL][sql]               | B2     |
+| [Dart][dart]            | C1     |
+| [PHP][php]              | C1     |
+| [Java][java]            | B1     |
+| [Groovy][groovy]        | B1     |
+| [Python][python]        | B1     |
+| [C++][c++]              | B2     |
+| [SQL][sql]              | B2     |
 
 _… viele weitere mit A2 oder weniger._
 
@@ -65,42 +66,41 @@ _… viele weitere mit A2 oder weniger._
 
 | Framework                    | Niveau |
 |------------------------------|--------|
-| [Vue.js][vue.js]             | C1     |
+| [Vue.js][vue.js]            | C1     |
 | [React Native][react-native] | C1     |
-| [Flutter][flutter]           | C1     |
-| [Extbase][extbase]           | B2     |
-| [Symfony][symfony]           | B2     |
+| [Flutter][flutter]          | C1     |
+| [Extbase][extbase]          | B2     |
+| [Symfony][symfony]          | B2     |
 
 ### Datenbanken
 
 | Datenbank                      | Niveau |
 |--------------------------------|--------|
-| [MySQL][mysql]                 | C1     |
-| [PostgreSQL][postgresql]       | B2     |
-| [MongoDB][mongodb]             | B2     |
-| [Redis][redis]                 | B2     |
+| [MySQL][mysql]                | C1     |
+| [PostgreSQL][postgresql]      | B2     |
+| [MongoDB][mongodb]            | B2     |
+| [Redis][redis]                | B2     |
 | [Elasticsearch][elasticsearch] | B2     |
 
 ### Werkzeuge
 
 | Werkzeug                         | Niveau |
 |----------------------------------|--------|
-| [Ansible][ansible]               | B2     |
-| [GraphQL][graphql]               | B2     |
-| [Docker][docker]                 | B2     |
-| [Git][git]                       | B2     |
-| [GitHub Actions][github]         | B2     |
-| [GitLab][gitlab]                 | B2     |
-| [AWS][aws]                       | B2     |
-| [Azure][azure]                   | B2     |
-| [Terraform][terraform]           | B2     |
-| [OpenTelemetry][opentelemetry]   | C1     |
-| [Kubernetes][kubernetes]         | B2     |
-| [Jenkins][jenkins]               | A2     |
-| [Jira][jira]                     | C2     |
-| [Confluence][confluence]         | C2     |
-| [Grafana][grafana]               | B2     |
-| [TICK Stack][tick]               | B2     |
+| [Ansible][ansible]              | B2     |
+| [GraphQL][graphql]              | B2     |
+| [Docker][docker]                | B2     |
+| [Git][git]                      | B2     |
+| [GitHub Actions][github]        | B2     |
+| [GitLab][gitlab]                | B2     |
+| [Azure][azure]                  | B2     |
+| [Terraform][terraform]          | B2     |
+| [OpenTelemetry][opentelemetry]  | C1     |
+| [Kubernetes][kubernetes]        | B2     |
+| [Jenkins][jenkins]              | A2     |
+| [Jira][jira]                    | C2     |
+| [Confluence][confluence]        | C2     |
+| [Grafana][grafana]              | B2     |
+| [TICK Stack][tick]              | B2     |
 
 ### Weitere Kenntnisse
 
@@ -248,5 +248,3 @@ Zu erreichen bin ich unter folgenden Kontaktdaten:
 [typescript]: https://www.typescriptlang.org/
 
 [vue.js]: https://vuejs.org/
-
-

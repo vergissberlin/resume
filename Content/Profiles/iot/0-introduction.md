@@ -57,7 +57,7 @@ zusätzlich auf Observability und IoT spezialisiert.
 
 ### Cloud & Backend
 
-- Cloud-Architekturen (AWS, Azure)
+- Cloud-Architekturen (Azure)
 - Containerisierung (Docker, Kubernetes)
 - Observability (OpenTelemetry, Grafana, InfluxDB)
 - Infrastructure as Code
@@ -72,7 +72,7 @@ zusätzlich auf Observability und IoT spezialisiert.
 
 IoT, LoRaWAN, MQTT, ESP32, Raspberry Pi, Tasmota, Node-RED, InfluxDB, Grafana,
 OpenTelemetry, IIoT, C++, MicroPython, TypeScript, JavaScript, Docker,
-Kubernetes, AWS, Azure, Flutter, Dart, Node.js, Git, Continuous Integration (CI),
+Kubernetes, Azure, Flutter, Dart, Node.js, Git, Continuous Integration (CI),
 Ansible, Crossplane, Firebase, Nginx
 
 > **Mehr davon?** In meinem [Lebenslauf](./1-curriculum-vitae.md) und
