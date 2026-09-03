@@ -4,32 +4,31 @@
 
 ## Über mich
 
-Ich bin leidenschaftlicher **Software-Engineer** und **Cloud-Engineer** mit
-starker Begeisterung für Observability. In meiner Freizeit experimentiere ich mit
-**Mikrocontrollern** und **autonomem Fahren**.
-**Die Faszination für Software und Hardware motiviert mich, mich fortlaufend in
-neue Technologien einzuarbeiten und mich mit der Community auszutauschen.**
+Ich bin **Software-Engineer** und **Cloud-Engineer** mit Fokus auf
+Infrastructure as Code, Observability und robuste Plattformen. In aktuellen
+Azure-Projekten automatisiere ich API-Management mit **Apigee** und
+**Terraform**. Die Verbindung aus Architektur, Automatisierung und verlässlichem
+Betrieb ist mein Schwerpunkt.
 
 Als **Organisator der [LoRaWAN Leipzig Usergroup][meetup-lorawan]** bringe ich
 regelmäßig Entwickler, Maker und Unternehmen zusammen, um Erfahrungen rund um
 IoT und LoRaWAN auszutauschen.
 
-In meiner beruflichen Laufbahn konnte ich mit internationalen Teams arbeiten und
-Projekte in verschiedenen Ländern realisieren. Im Marketing-Umfeld automatisiere
-ich Prozesse, steigere Effizienz und produziere Inhalte in Bild, Text und Ton.
+In meiner beruflichen Laufbahn habe ich mit internationalen Teams gearbeitet und
+Projekte in verschiedenen Ländern umgesetzt. Neben meiner Cloud-Arbeit
+experimentiere ich mit **Mikrocontrollern** und **autonomem Fahren**.
 
 Mit **[regenfass.eu][regenfass]** entwickle ich ein eigenes IoT-Produkt für
 Smart-Home-Anwendungen. Seit 2025 bin ich Mitgründer der
 **[kieks.me GbR][kieksme]**, einer Consulting- und Freelance-GbR für
 Web-Entwicklung und SaaS-Lösungen.
 
-**Meine Fähigkeiten sind:**
+**Meine Schwerpunkte sind:**
 
-1. Softwareentwicklung
-2. Cloud-Engineering
-3. Softwarearchitektur
-4. Beratung, Trainer, Vortragender
-5. Marketing, SEO, Content-Produktion
+1. Cloud-Engineering und Infrastructure as Code
+2. Observability und zuverlässiger Betrieb
+3. Softwarearchitektur und Softwareentwicklung
+4. Beratung, Schulungen und technischer Austausch
 
 ## Aufgabenschwerpunkte im Verlauf der Zeit
 
@@ -42,39 +41,30 @@ zusätzlich auf Observability spezialisiert.
 
 ## Skills
 
+### Cloud-Engineering
+
+- Azure und API-Management
+- Infrastructure as Code mit Terraform und Ansible
+- Containerisierung mit Docker und Kubernetes
+- Observability mit OpenTelemetry
+
+### Softwarearchitektur & Beratung
+
+- Softwarearchitektur
+- Anforderungsmanagement
+- Projektmanagement
+
 ### Softwareentwicklung
 
 - Anwendungsentwicklung
 - Performance-Optimierung
 - Sicherheitstests (Penetrationstests)
 
-### Beratung
-
-- Projektmanagement
-- Anforderungsmanagement
-- Softwarearchitektur
-
-### Trainer & Vortragender
-
-- Softwareentwicklung
-- DevOps
-
-### Marketing
-
-- SEO
-- Webanalyse, BI
-- Content-Produktion
-- Automatisierung
-
 ## Technologie-Stack
 
-Flutter, Dart, OpenTelemetry, IIoT, TypeScript, JavaScript, Usability, IaC,
-Barrierefreiheit, Vue.js, Docker, Node.js, Performance, ESI, Varnish Reverse Proxy,
-Deployment, Google‑Chrome‑Erweiterungen, Regressionstests, Funktionstests,
-Abnahmetests, Unit-Tests, BDD, PWA, Git, Continuous Integration (CI),
-Concourse CI, Firebase, TYPO3 CMS, Nginx, PHP, IoT, Raspberry Pi, Semantic
-Web, RDF, Looker, ETL, Lasttests, Mobile App‑Entwicklung, Ansible, Vagrant,
-Crossplane
+Azure, Apigee, Terraform, Ansible, Kubernetes, Docker, OpenTelemetry,
+Continuous Integration (CI), Git, TypeScript, Java, Dart, Flutter, Node.js,
+Vue.js, Softwarearchitektur, API-Management, IoT und Raspberry Pi
 
 > **Mehr davon?** In meinem [Lebenslauf](./1-curriculum-vitae.md) und
 > [Portfolio](./2-portfolio.md) gehe ich auf weitere Details ein.
