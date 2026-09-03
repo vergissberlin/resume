@@ -36,6 +36,14 @@
 | [Linux Foundation Certified Associate (LFCA)][credly] | Linux Foundation / CNCF | 01/2025 | 01/2027 |
 | Online Marketing Certified Associate (OMCA) | Google | 06/2020 | — |
 
+### Zertifikats-Badges
+
+| [![OTCA: OpenTelemetry Certified Associate](Media/Certificates/otca.png){ width=45mm }](https://www.credly.com/badges/c9e5732c-2a03-4b57-bb58-0b4e98ce4250) | [![KCNA: Kubernetes and Cloud Native Associate](Media/Certificates/kcna.png){ width=45mm }](https://www.credly.com/badges/222d71f3-a414-43e4-ae54-3f519fb18fd5) | [![LFCA: Linux Foundation Certified IT Associate](Media/Certificates/lfca.png){ width=45mm }](https://www.credly.com/badges/487f0c5d-870f-41f5-bb64-6c8834a27996) |
+|:--:|:--:|:--:|
+| [OTCA](https://www.credly.com/badges/c9e5732c-2a03-4b57-bb58-0b4e98ce4250) | [KCNA](https://www.credly.com/badges/222d71f3-a414-43e4-ae54-3f519fb18fd5) | [LFCA](https://www.credly.com/badges/487f0c5d-870f-41f5-bb64-6c8834a27996) |
+
+[Alle Zertifikate auf Credly](https://www.credly.com/users/andre-lademann/)
+
 ## Skills
 
 ### Sprachen
