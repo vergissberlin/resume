@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.6.0](https://github.com/vergissberlin/resume/compare/1.5.0...1.6.0) (2026-09-03)
+
+
+### Funktionen
+
+* refresh cloud engineering resume profile ([#21](https://github.com/vergissberlin/resume/issues/21)) ([63ef395](https://github.com/vergissberlin/resume/commit/63ef39500ad4b8e2b4ddc06ba5721f67e99b99b3))
+
 ## [1.5.0](https://github.com/vergissberlin/resume/compare/1.4.0...1.5.0) (2026-09-03)
 
 
